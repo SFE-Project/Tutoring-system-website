@@ -7,10 +7,10 @@ public class Action {
     private LogInfoDao dao=new LogInfoDao();
     private Stuloginfo stuloginfo=new Stuloginfo();
     private Stuloginfo stu=new Stuloginfo();
-    private String A=new String();
-    private String password;
-    public String Stulog(){
-        int flag=dao.Stulog(A,password);
+    private String message=new String();
+    private String password=new String();
+    public String StuLog(){
+        int flag=dao.StuLog(message,password);
         if(flag==0){
             return "FAILLOG";
         }else{
@@ -34,12 +34,12 @@ public class Action {
         this.password = password;
     }
 
-    public String getA() {
-        return A;
+    public String getMessage() {
+        return message;
     }
 
-    public void setA(String a) {
-        A = a;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public Stuloginfo getStu() {

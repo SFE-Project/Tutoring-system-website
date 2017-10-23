@@ -12,7 +12,7 @@
 </head>
 <body>
 <form action="stulog.action">
-    输入<input type="text" name="A" value="手机/邮箱/ID"><br/>
+    输入<input type="text" name="message" value="手机/ID"><br/>
     密码<input type="text" name="password"><br/>
     <input type="submit" value="unsure"><br/>
 </form>

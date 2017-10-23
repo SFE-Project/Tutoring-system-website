@@ -2,6 +2,7 @@ package localpackage;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.util.ValueStack;
+import com.sun.org.apache.regexp.internal.RE;
 
 import java.sql.*;
 
@@ -84,27 +85,31 @@ public class LogInfoDao {
             return stu;
         }
     }
-    public int Stulog(String A,String password){
+    public int StuLog(String message,String password){
         Connection con=null;
         PreparedStatement pstID=null;
         PreparedStatement pstPhone=null;
-        PreparedStatement pstMailBox=null;
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,user,pswd);
-            pstID=con.prepareStatement("SELECT * FROM stuloginfo WHERE StuID=?");
-            pstID.setInt(1,Integer.parseInt(A));
-            ResultSet rstID=pstID.executeQuery();
-            pstPhone=con.prepareStatement("SELECT * FROM stuloginfo WHERE PhoneNumber=? ");
-            pstPhone.setString(1,A);
-            ResultSet rstPhone=pstPhone.executeQuery();
-            pstMailBox=con.prepareStatement("SELECT * FROM stuloginfo WHERE MailBox=?");
-            pstMailBox.setString(1,A);
-            ResultSet rstMailBox=pstMailBox.executeQuery();
-            if(rstID.first()||rstPhone.first()||rstMailBox.first()){
-                return 1;
+            if(message.length()==5){
+                pstID=con.prepareStatement("SELECT * FROM stuloginfo WHERE StuID=?");
+                pstID.setInt(1,Integer.parseInt(message));
+                ResultSet rstID=pstID.executeQuery();
+                if(rstID.first()&&rstID.getString("PassWord").equals(password)){
+                    return 1;
+                }else{
+                    return 0;
+                }
             }else{
-                return 0;
+                pstPhone=con.prepareStatement("SELECT * FROM stuloginfo WHERE PhoneNumber=?");
+                pstPhone.setString(1,message);
+                ResultSet rstPhone=pstPhone.executeQuery();
+                if(rstPhone.first()&&rstPhone.getString("PassWord").equals(password)){
+                    return 1;
+                }else{
+                    return 0;
+                }
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -113,53 +118,25 @@ public class LogInfoDao {
         } finally {
         }
         return 0;
-    }
-    /**
-     *
-     * @param stuloginfo
-     * 更新学生个人信息昵称和密码，默认ID一定存在，用户只能操作自己的信息
-     */
-    public void StuInfoUpdate(Stuloginfo stuloginfo){
-        Connection con=null;
-        PreparedStatement pst=null;
-        try {
-            Class.forName(driver);
-            con=DriverManager.getConnection(url,user,pswd);
-            pst=con.prepareStatement("UPDATE stuloginfo SET NickName=?,PassWorld=?WHERE StuID=?");
-            pst.setString(1,stuloginfo.getNickName());
-            pst.setString(2,stuloginfo.getPassWord());
-            pst.setInt(3,stuloginfo.getStuID());
-            pst.executeUpdate();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                pst.close();
-                con.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
 
     }
     public static void main(String[] args) {
        LogInfoDao dao=new LogInfoDao();
        dao.contest();
-       Stuloginfo stuloginfo=new Stuloginfo();
-       stuloginfo.setNickName("rewr");
-       stuloginfo.setPassWord("432423");
-       stuloginfo.setPhoneNumber("111");
-       stuloginfo.setIDCard("13243243");
-       stuloginfo.setMailBox("43243@qq.com");
-       Stuloginfo stu= dao.Stuinsert(stuloginfo);
-        System.out.println(stu.getIDCard());
+//       Stuloginfo stuloginfo=new Stuloginfo();
+//       stuloginfo.setNickName("rewr");
+//       stuloginfo.setPassWord("432423");
+//       stuloginfo.setPhoneNumber("111");
+//       stuloginfo.setIDCard("13243243");
+//       stuloginfo.setMailBox("43243@qq.com");
+//       Stuloginfo stu= dao.Stuinsert(stuloginfo);
+//        System.out.println(stu.getIDCard());
 //        stuloginfo.setStuID(10006);
 //        stuloginfo.setNickName("six");
 //        stuloginfo.setPassWord("1243");
-////        dao.StuInfoUpdate(stuloginfo);
-
+//        dao.StuInfoUpdate(stuloginfo);
+        int i=dao.StuLog("14567894038","tom34567");
+        System.out.println(i);
 
     }
 

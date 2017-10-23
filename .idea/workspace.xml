@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f83ab4-6f1d-481c-98b2-14c7fc10d7e1" name="Default" comment="" />
+    <list default="true" id="86f83ab4-6f1d-481c-98b2-14c7fc10d7e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/WEB-INF/classes/Actionpackage/Action.class" afterPath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/WEB-INF/classes/Actionpackage/Action.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Actionpackage/Action.class" afterPath="$PROJECT_DIR$/target/classes/Actionpackage/Action.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/STsystem.iml" afterPath="$PROJECT_DIR$/STsystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/Stulog.jsp" afterPath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/Stulog.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" afterPath="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Stulog.jsp" afterPath="$PROJECT_DIR$/web/Stulog.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,24 +47,58 @@
         <item name="mydatabase@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="mydatabase" type="e3449647:DbNodeDescriptor" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="mydatabase@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="mydatabase" type="e3449647:DbNodeDescriptor" />
+        <item name="stuloginfo" type="e3449647:DbNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="LogInfoDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LogInfoDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2263">
-              <caret line="112" column="19" lean-forward="false" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+            <state relative-caret-position="-490">
+              <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1508749354398" expanded="true" signature="1803:1919" ph="INSERT INTO stuloginfo... " />
-                <marker date="1508749354398" expanded="true" signature="2298:2337" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508749354398" expanded="true" signature="3650:3688" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508749354398" expanded="true" signature="3834:3878" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508749354398" expanded="true" signature="4021:4061" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508749354398" expanded="true" signature="4874:4931" ph="UPDATE stulo... " />
+                <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+                <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+                <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+                <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stuloginfo" pinned="false" current-in-tab="false">
+        <entry file="das://table:/5e9b78aa/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,8 +107,8 @@
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="378">
+              <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -70,95 +117,8 @@
       <file leaf-file-name="Stulog.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Successlog.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Faillog.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Faillog.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1086#1087#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stuloginfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/Stuloginfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding>
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Welcome.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sturegist.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="378">
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -174,6 +134,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -185,20 +148,20 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/localpackage/Tealoginfo.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/localpackage/Stuloginfo.java" />
         <option value="$PROJECT_DIR$/web/Failregister.jsp" />
         <option value="$PROJECT_DIR$/web/Tearegist.jsp" />
         <option value="$PROJECT_DIR$/web/Tealog.jsp" />
         <option value="$PROJECT_DIR$/web/Welcome.jsp" />
         <option value="$PROJECT_DIR$/web/Successregister.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
         <option value="$PROJECT_DIR$/web/Sturegist.jsp" />
         <option value="$PROJECT_DIR$/web/Faillog.jsp" />
         <option value="$PROJECT_DIR$/web/Successlog.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/web/Stulog.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" />
       </list>
     </option>
   </component>
@@ -216,8 +179,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-613" />
-    <option name="y" value="106" />
+    <option name="x" value="2" />
+    <option name="y" value="47" />
     <option name="width" value="1851" />
     <option name="height" value="819" />
   </component>
@@ -236,66 +199,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Actionpackage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="localpackage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="STsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="STsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="Tutoring-system-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tutoring-system-website" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -303,6 +265,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,7 +320,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_STsystem" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Tutoring-system-website" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -455,17 +418,11 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="STsystem:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="" />
-          </settings>
-        </artifact>
-      </deployment>
+      <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_STsystem" />
+        <option name="BASE_DIRECTORY_NAME" value="_Tutoring-system-website" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -474,7 +431,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55964" />
+        <option name="DEBUG_PORT" value="50703" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -521,12 +478,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="STsystem:war exploded" />
-        </option>
-      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -591,11 +542,13 @@
       <workItem from="1508684105372" duration="373000" />
       <workItem from="1508730992872" duration="11444000" />
       <workItem from="1508746324808" duration="4042000" />
+      <workItem from="1508767913743" duration="1408000" />
+      <workItem from="1508769756097" duration="1411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15859000" />
+    <option name="totallyTimeSpent" value="18678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
@@ -603,28 +556,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22525597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22462942" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64880276" sideWeight="0.14270833" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23321956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12770809" sideWeight="0.85729164" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14583333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -646,16 +599,144 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3942">
+          <caret line="149" column="13" lean-forward="false" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Faillog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/Stuloginfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#271#272#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508749354398" expanded="true" signature="1803:1919" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508749354398" expanded="true" signature="2298:2337" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="3650:3688" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="3834:3878" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="4021:4061" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="4874:4931" ph="UPDATE stulo... " />
+            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
           </folding>
         </state>
       </provider>
@@ -705,19 +786,13 @@
         <state relative-caret-position="243">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#271#272#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo" />
     <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -774,40 +849,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.tealoginfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/Tealoginfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.tealoginfo" />
     <entry file="file://$PROJECT_DIR$/web/Tearegist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -828,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,114 +889,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo" />
     <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="432">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
+        <state relative-caret-position="378">
           <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Faillog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="187">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/Faillog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/Tealoginfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#253#254#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/Stuloginfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="410">
+          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="false" />
+            <element signature="e#271#272#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="378">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-          </folding>
+    <entry file="das://table:/5e9b78aa/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2263">
-          <caret line="112" column="19" lean-forward="false" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+        <state relative-caret-position="-490">
+          <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508749354398" expanded="true" signature="1803:1919" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508749354398" expanded="true" signature="2298:2337" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="3650:3688" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="3834:3878" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="4021:4061" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508749354398" expanded="true" signature="4874:4931" ph="UPDATE stulo... " />
+            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -979,7 +1043,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (STsystem)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1014,12 +1078,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>STsystem</last-edited>
+          <last-edited>Struts 2|Web|STsystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
