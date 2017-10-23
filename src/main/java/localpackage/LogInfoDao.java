@@ -116,6 +116,11 @@ public class LogInfoDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            try {
+                con.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return 0;
 

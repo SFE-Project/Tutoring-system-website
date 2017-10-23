@@ -12,6 +12,6 @@
 </head>
 <body>
 登陆成功！
-您的ID是${A}
+您的是${message}用户
 </body>
 </html>

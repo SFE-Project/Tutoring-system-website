@@ -7,18 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86f83ab4-6f1d-481c-98b2-14c7fc10d7e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/WEB-INF/classes/Actionpackage/Action.class" afterPath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/WEB-INF/classes/Actionpackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Actionpackage/Action.class" afterPath="$PROJECT_DIR$/target/classes/Actionpackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/localpackage/LogInfoDao.class" afterPath="$PROJECT_DIR$/target/classes/localpackage/LogInfoDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/STsystem.iml" afterPath="$PROJECT_DIR$/STsystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/Stulog.jsp" afterPath="$PROJECT_DIR$/out/artifacts/STsystem_war_exploded/Stulog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" afterPath="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Stulog.jsp" afterPath="$PROJECT_DIR$/web/Stulog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Successlog.jsp" afterPath="$PROJECT_DIR$/web/Successlog.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,20 +54,20 @@
       <file leaf-file-name="LogInfoDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-490">
-              <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+            <state relative-caret-position="887">
+              <caret line="118" column="17" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
-                <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
-                <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+                <marker date="1508771437100" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+                <marker date="1508771437100" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+                <marker date="1508771437100" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+                <marker date="1508771437100" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stuloginfo" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stuloginfo" pinned="false" current-in-tab="true">
         <entry file="das://table:/5e9b78aa/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -83,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Successlog.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="e#753#754#0" expanded="true" />
                 <element signature="e#784#785#0" expanded="true" />
@@ -117,8 +120,38 @@
       <file leaf-file-name="Stulog.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="162">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Welcome.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tealog.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Tealog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sturegist.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -156,12 +189,12 @@
         <option value="$PROJECT_DIR$/web/Successregister.jsp" />
         <option value="$PROJECT_DIR$/web/Sturegist.jsp" />
         <option value="$PROJECT_DIR$/web/Faillog.jsp" />
-        <option value="$PROJECT_DIR$/web/Successlog.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Actionpackage/Action.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java" />
         <option value="$PROJECT_DIR$/web/Stulog.jsp" />
+        <option value="$PROJECT_DIR$/web/Successlog.jsp" />
       </list>
     </option>
   </component>
@@ -315,12 +348,12 @@
       <deployment>
         <artifact name="STsystem:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Tutoring-system-website" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Tutoring-system-website_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -329,7 +362,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55964" />
+        <option name="DEBUG_PORT" value="52265" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -376,6 +409,11 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="STsystem:war exploded" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -543,12 +581,12 @@
       <workItem from="1508730992872" duration="11444000" />
       <workItem from="1508746324808" duration="4042000" />
       <workItem from="1508767913743" duration="1408000" />
-      <workItem from="1508769756097" duration="1411000" />
+      <workItem from="1508769756097" duration="2098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18678000" />
+    <option name="totallyTimeSpent" value="19365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
@@ -564,7 +602,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64880276" sideWeight="0.14270833" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12770809" sideWeight="0.85729164" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18129988" sideWeight="0.85729164" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -603,10 +641,10 @@
           <caret line="149" column="13" lean-forward="false" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508771437100" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
           </folding>
         </state>
       </provider>
@@ -633,10 +671,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508771437100" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
           </folding>
         </state>
       </provider>
@@ -733,10 +771,10 @@
           <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508771437100" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
           </folding>
         </state>
       </provider>
@@ -858,14 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Tealog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -890,22 +920,6 @@
       </provider>
     </entry>
     <entry file="das://table:/d38fb284/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo" />
-    <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -918,14 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -976,39 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/5e9b78aa/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-490">
-          <caret line="105" column="44" lean-forward="false" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1508770745181" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
-            <marker date="1508770745181" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
-            <marker date="1508770745181" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Actionpackage/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="e#753#754#0" expanded="true" />
             <element signature="e#784#785#0" expanded="true" />
@@ -1021,6 +998,67 @@
             <element signature="e#1054#1055#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Tealog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Sturegist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Stulog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/localpackage/LogInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="118" column="17" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1508771437100" expanded="true" signature="1849:1965" ph="INSERT INTO stuloginfo... " />
+            <marker date="1508771437100" expanded="true" signature="2344:2383" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="3700:3738" ph="SELECT * FRO... stuloginfo" />
+            <marker date="1508771437100" expanded="true" signature="4103:4147" ph="SELECT * FRO... stuloginfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Successlog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/5e9b78aa/32a7ac22-e1a1-4515-a560-8f3cb47d5f68/mydatabase.stuloginfo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

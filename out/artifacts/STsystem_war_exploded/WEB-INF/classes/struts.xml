@@ -10,9 +10,9 @@
             <result name="SUCCESSREGISTER">Successregister.jsp</result>
             <result name="FAILREGISTER">Failregister.jsp</result>
         </action>
-        <action name="stulog" class="Actionpackage.Action" method="Stulog">
-            <result name="SUCCESSLOG">Successlog.jsp</result>
+        <action name="stulog" class="Actionpackage.Action" method="StuLog">
             <result name="FAILLOG">Faillog.jsp</result>
+            <result name="SUCCESSLOG">Successlog.jsp</result>
         </action>
 
     </package>
