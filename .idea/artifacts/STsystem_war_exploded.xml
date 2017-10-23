@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="STsystem:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/STsystem_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="STsystem" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.struts:struts2-core:2.3.30" />
+          <element id="library" level="project" name="Maven: org.apache.struts.xwork:xwork-core:2.3.30" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.2" />
+          <element id="library" level="project" name="Maven: asm:asm:3.3" />
+          <element id="library" level="project" name="Maven: asm:asm-commons:3.3" />
+          <element id="library" level="project" name="Maven: asm:asm-tree:3.3" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.22" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.0.19" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.11.0.GA" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.44" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="STsystem/web/Web" />
+    </root>
+  </artifact>
+</component>

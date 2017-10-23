@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="ActionPack" extends="struts-default">
+        <action name="sturegist" class="Actionpackage.Action" method="StuRegister">
+            <result name="SUCCESSREGISTER">Successregister.jsp</result>
+            <result name="FAILREGISTER">Failregister.jsp</result>
+        </action>
+        <action name="stulog" class="Actionpackage.Action" method="Stulog">
+            <result name="SUCCESSLOG">Successlog.jsp</result>
+            <result name="FAILLOG">Faillog.jsp</result>
+        </action>
+
+    </package>
+</struts>
