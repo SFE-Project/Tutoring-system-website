@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="ActionPackage" extends="struts-default">
+        <action name="StuInsert" class="ActionPackage.Action" method="StuInsert">
+            <result name="STUSUCCESSREGIST">stusuccessregist.jsp</result>
+            <result name="STUFAILEDREGIST">stufailedregist.jsp</result>
+        </action>
+        <action name="StuLog" class="ActionPackage.Action" method="StuLog">
+            <result name="STUSUCCESSLOG">stusuccesslog.jsp</result>
+            <result name="STUFAILEDLOG">stufaillog.jsp</result>
+        </action>
+        <action name="TeaInsert" class="ActionPackage.Action" method="TeaInsert">
+            <result name="TEASUCCESSREGIST">teasuccessregist.jsp</result>
+            <result name="TEAFAILEDREGIST">teafailregist.jsp</result>
+        </action>
+        <action name="TeaLog" class="ActionPackage.Action" method="TeaLog">
+            <result name="TEASUCCESSLOG">teasuccesslog.jsp</result>
+            <result name="TEAFAILEDLOG">teafaillog.jsp</result>
+        </action>
+        <action name="TeaREINUpdate" class="ActionPackage.Action" method="TeaREINUpdate">
+            <result name="TEASUCCESSREIN">teaREINsuccessInsert.jsp</result>
+            <result name="TEAFAILEDREIN">teaREINfailInsert.jsp</result>
+        </action>
+        <action name="StuREINUpdate" class="ActionPackage.Action" method="StuREINUpdate">
+            <result name="STUSUCCESSREIN">stuREINsuccessInsert.jsp</result>
+            <result name="STUFAILEDREIN">stuREINfailInsert.jsp</result>
+        </action>
+        <action name="MatchForStu" class="ActionPackage.Action" method="MatchForStu">
+            <result name="STUSUCCESSMATCH">StuMatchShow.jsp</result>
+            <result name="STUFAILEDMATCH">NoStuMatchShow.jsp</result>
+        </action>
+        <action name="SingleTea" class="ActionPackage.Action" method="SingleTea">
+            <result name="SINGLETEA">SingleTeaShow.jsp</result>
+        </action>
+
+    </package>
+</struts>
