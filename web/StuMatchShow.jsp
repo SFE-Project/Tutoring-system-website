@@ -12,8 +12,9 @@
     <title>展示为学生匹配家教信息</title>
 </head>
 <body>
-${listoftri.get(0).getID()}
+
 <table border="1">
+    ${teaListAndOneStu.getStuID()}
     <tr>
         <td>ID</td>
         <td>Sex</td>
@@ -22,7 +23,7 @@ ${listoftri.get(0).getID()}
         <td>Subject</td>
         <td>Grade</td>
     </tr>
-    <s:iterator value="#request.listoftri" var="temp">
+    <s:iterator value="#request.teaListAndOneStu.getTeaREINS()" var="temp">
         <tr>
             <%--<td><a href='ABshow.action?ISBN=<s:property value="ISBN"/>'><s:property value="#temp.Title"/></a></td>--%>
             <td><a href='SingleTea.action?TeaID=<s:property value="#temp.ID"/>'><s:property value="#temp.ID"/> </a> </td>
@@ -31,6 +32,7 @@ ${listoftri.get(0).getID()}
             <td><s:property value="#temp.Time"/> </td>
             <td><s:property value="#temp.Subject"/> </td>
             <td><s:property value="#temp.Grade"/> </td>
+            <td><a href='MakeFriends.action?StuID=${teaListAndOneStu.getStuID()}&TeaID=<s:property value="#temp.ID"/>'>关注</a></td>
         </tr>
     </s:iterator>
 </table>

@@ -19,6 +19,8 @@ public class Action {
     private StuREIN stuREIN=new StuREIN();
     private StuREIN sridemo=new StuREIN();
     private List<TeaREIN> listoftri=new ArrayList<TeaREIN>();
+    private List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
+    private TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 
     public static void main(String[] args) {
         Action action=new Action();
@@ -30,6 +32,19 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String MakeFriends(){
+        int flag=dao.MakeFriend(StuID,TeaID);
+        if(flag==1){
+            return "SUCCESSMAKEFRIEND";
+        }else{
+            return "FAILEDMAKEFRIEND";
+        }
+    }
+    public String AllTheTea(){
+        listofbstea=dao.AllTheTea();
+        return "ALLTHETEACHER";
+
+    }
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
         System.out.println(TeaID);
@@ -38,7 +53,7 @@ public class Action {
 
     }
     public String MatchForStu(){
-        listoftri=dao.MatchForStu(StuID);
+        teaListAndOneStu=dao.MatchForStu(StuID);
         if(listoftri!=null){
             return "STUSUCCESSMATCH";
         }else{
@@ -98,6 +113,22 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public List<BSTeacher> getListofbstea() {
+        return listofbstea;
+    }
+
+    public TeaListAndOneStu getTeaListAndOneStu() {
+        return teaListAndOneStu;
+    }
+
+    public void setTeaListAndOneStu(TeaListAndOneStu teaListAndOneStu) {
+        this.teaListAndOneStu = teaListAndOneStu;
+    }
+
+    public void setListofbstea(List<BSTeacher> listofbstea) {
+        this.listofbstea = listofbstea;
     }
 
     public BSTeacher getBsTeacher() {

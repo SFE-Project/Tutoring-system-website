@@ -37,6 +37,13 @@
         <action name="SingleTea" class="ActionPackage.Action" method="SingleTea">
             <result name="SINGLETEA">SingleTeaShow.jsp</result>
         </action>
+        <action name="AllTheTea" class="ActionPackage.Action" method="AllTheTea">
+            <result name="ALLTHETEACHER">AllTheTeaShow.jsp</result>
+        </action>
+        <action name="MakeFriends" class="ActionPackage.Action" method="MakeFriends">
+            <result name="SUCCESSMAKEFRIEND">SuccessMakeFriends.jsp</result>
+            <result name="FAILEDMAKEFRIEND">FailMakeFriends.jsp</result>
+        </action>
 
     </package>
 </struts>

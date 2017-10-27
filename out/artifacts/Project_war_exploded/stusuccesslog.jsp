@@ -17,6 +17,7 @@
     <input name="StuID" type="text" value=${studemo.getID()}><br/>
     <input type="submit" value="一键匹配"><br/>
 </form>
+<a href="AllTheTea.action">预览所有教师信息并操作</a><br/>
 
 </body>
 </html>
