@@ -11,14 +11,21 @@
     <title>登录成功界面</title>
 </head>
 <body>
-登录成功，你好${studemo.getNickName()}，ID是${studemo.getID()}
+个人界面！！！！<br/>
+登录成功，你好${studemo.getNickName()}，ID是${studemo.getID()}<br>
 <a href="stuREINInsert.jsp">更新学生个人信息</a><br/>
 <form action="MatchForStu.action">
     <input name="StuID" type="text" value=${studemo.getID()}><br/>
     <input type="submit" value="一键匹配"><br/>
 </form>
-<a href="AllTheTea.action">预览所有教师信息并操作</a><br/>
+
 <a href='FriendList.action?StuID=${studemo.getID()}'>查看你的朋友圈</a><br/>
+<form action="MessageShow.action">
+    默认发送者为当前用户<input type="hidden" name="OutID" value=${studemo.getID()}><br/>
+    接收者<input type="text" name="RecID"><br>
+    <input type="submit" value="进入会话模式"><br/>
+</form>
+
 
 </body>
 </html>

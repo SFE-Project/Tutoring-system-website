@@ -11,6 +11,7 @@
     <title>会话操作界面</title>
 </head>
 <body>
+${StuID}
 <form action="MessageShow.action">
     发送者<input type="text" name="OutID"><br/>
     接受者<input type="text" name="RecID"><br/>

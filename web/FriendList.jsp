@@ -13,7 +13,7 @@
 </head>
 <body>
 <table border="10">
-    <%--${StuID}--%>
+    ${StuID}
     <tr>
         <td>好友ID</td>
         <td>好友昵称</td>
