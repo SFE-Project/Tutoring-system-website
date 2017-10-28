@@ -33,6 +33,10 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String FriendKill(){
+        dao.KillFriends(TeaID,StuID);
+        return "KILLFRIEND";
+    }
     public String Friendlist(){
         listofteacher=dao.Friendlist(StuID);
         if(listofteacher==null){

@@ -48,6 +48,9 @@
             <result name="EXSITFRIEND">FriendList.jsp</result>
             <result name="NOFRIEND">NoFriend.jsp</result>
         </action>
+        <action name="FriendKill" class="ActionPackage.Action" method="FriendKill">
+            <result name="KILLFRIEND">Head.jsp</result>
+        </action>
 
     </package>
 </struts>

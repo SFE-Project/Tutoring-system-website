@@ -489,14 +489,58 @@ public class Dao {
             return null;
         }
     }
-    public static void main(String[] args) {
-        Dao dao=new Dao();
-        List<Teacher> listofteacher=new ArrayList<Teacher>();
-        listofteacher=dao.Friendlist(1037);
-        for(int i=0;i<listofteacher.size();i++){
-            System.out.println(listofteacher.get(i).getNickName());
+    public void KillFriends(int TeaID,int StuID){
+        Connection con=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        BasicServe bss=new BasicServe();
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM friendrelationship WHERE ID=?");
+            pstA.setInt(1,StuID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                String[] Str=bss.StringIntoArray(rstA.getString("FSIDList"));
+                String[] StrNew=new String[Str.length-1];
+                int i=0;
+                int j=0;
+                while(i<Str.length){
+                    if(Str[i].equals(String.valueOf(TeaID))){
+                        i++;
+                    }else{
+                        StrNew[j]=Str[i];
+                        i++;
+                        j++;
+                    }
+                }
+                String StrInto=StrNew[0];
+                for(int x=1;x<StrNew.length;x++){
+                    StrInto=StrInto+", "+StrNew[x];
+                }
+                pstB=con.prepareStatement("UPDATE friendrelationship SET FSIDList=? WHERE ID=?");
+                pstB.setString(1,StrInto);
+                pstB.setInt(2,StuID);
+                pstB.executeUpdate();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
 
         }
+
+    }
+    public static void main(String[] args) {
+        Dao dao=new Dao();
+        dao.KillFriends(2024,1001);
+//        List<Teacher> listofteacher=new ArrayList<Teacher>();
+//        listofteacher=dao.Friendlist(1037);
+//        for(int i=0;i<listofteacher.size();i++){
+//            System.out.println(listofteacher.get(i).getNickName());
+//
+//        }
 //        int flag=dao.MakeFriend(1001,2022);
 //        System.out.println(flag);
 //        List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
