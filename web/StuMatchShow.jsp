@@ -36,7 +36,7 @@
         </tr>
     </s:iterator>
 </table>
-
+<a href="javascript:history.go(-1)">返回上一步</a><br/>
 
 </body>
 </html>

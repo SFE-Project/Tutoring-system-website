@@ -79,6 +79,7 @@ public class Action {
         return "ALLTHETEACHER";
 
     }
+
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
         System.out.println(TeaID);

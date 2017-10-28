@@ -225,34 +225,38 @@ public class Dao {
         return teaREIN;
     }
     public StuREIN StuReInUpdate(StuREIN stuREIN){
-
+        System.out.println(stuREIN.getID());
         StuREIN sridemo=new StuREIN();
         Connection con=null;
         PreparedStatement pstT=null;
         PreparedStatement pstD=null;
-        try {
-            Class.forName(driver);
-            con=DriverManager.getConnection(url,username,pswd);
-            pstD=con.prepareStatement("SELECT * FROM sturein WHERE ID=?");
-            pstD.setInt(1,stuREIN.getID());
-            pstT=con.prepareStatement("UPDATE sturein SET Sex=?,SexWanted=?,Time=?,Subject=?,Grade=? WHERE ID=?");
-            pstT.setString(1,stuREIN.getSex());
-            pstT.setString(2,stuREIN.getSexWanted());
-            pstT.setString(3,stuREIN.getTime());
-            pstT.setString(4,stuREIN.getSubject());
-            pstT.setString(5,stuREIN.getGrade());
-            pstT.setInt(6,stuREIN.getID());
-            pstT.executeUpdate();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
+        if(stuREIN.getID()==0){
+            return null;
+        }else{
             try {
-                pstT.close();
-                con.close();
+                Class.forName(driver);
+                con=DriverManager.getConnection(url,username,pswd);
+                pstD=con.prepareStatement("SELECT * FROM sturein WHERE ID=?");
+                pstD.setInt(1,stuREIN.getID());
+                pstT=con.prepareStatement("UPDATE sturein SET Sex=?,SexWanted=?,Time=?,Subject=?,Grade=? WHERE ID=?");
+                pstT.setString(1,stuREIN.getSex());
+                pstT.setString(2,stuREIN.getSexWanted());
+                pstT.setString(3,stuREIN.getTime());
+                pstT.setString(4,stuREIN.getSubject());
+                pstT.setString(5,stuREIN.getGrade());
+                pstT.setInt(6,stuREIN.getID());
+                pstT.executeUpdate();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
             } catch (SQLException e) {
                 e.printStackTrace();
+            } finally {
+                try {
+                    pstT.close();
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return stuREIN;
@@ -535,22 +539,34 @@ public class Dao {
         List<Message> listofmessage=new ArrayList<Message>();
         Connection con=null;
         PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstC=null;
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-            pstA=con.prepareStatement("SELECT * FROM message WHERE (OutID=? AND RecID=?)OR(OutID=? AND RecID=?)");
-            pstA.setInt(1,OutID);
-            pstA.setInt(2,RecID);
-            pstA.setInt(3,RecID);
-            pstA.setInt(4,OutID);
-            ResultSet rstA=pstA.executeQuery();
-            while(rstA.next()){
-                Message message=new Message();
-                message.setMessageID(rstA.getInt("ID"));
-                message.setMessagecol(rstA.getString("Messagecol"));
-                message.setOutID(rstA.getInt("OutID"));
-                message.setRecID(rstA.getInt("RecID"));
-                listofmessage.add(message);
+            pstB=con.prepareStatement("SELECT * FROM student WHERE ID=?");
+            pstB.setInt(1,RecID);
+            pstC=con.prepareStatement("SELECT * FROM teacher WHERE ID=?");
+            pstC.setInt(1,RecID);
+            ResultSet rstB=pstB.executeQuery();
+            ResultSet rstC=pstC.executeQuery();
+            if((rstB.first())||(rstC.first())){
+                pstA=con.prepareStatement("SELECT * FROM message WHERE (OutID=? AND RecID=?)OR(OutID=? AND RecID=?)");
+                pstA.setInt(1,OutID);
+                pstA.setInt(2,RecID);
+                pstA.setInt(3,RecID);
+                pstA.setInt(4,OutID);
+                ResultSet rstA=pstA.executeQuery();
+                while(rstA.next()){
+                    Message message=new Message();
+                    message.setMessageID(rstA.getInt("ID"));
+                    message.setMessagecol(rstA.getString("Messagecol"));
+                    message.setOutID(rstA.getInt("OutID"));
+                    message.setRecID(rstA.getInt("RecID"));
+                    listofmessage.add(message);
+                }
+            }else{
+                return null;
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -564,25 +580,26 @@ public class Dao {
         Connection con=null;
         PreparedStatement pstA=null;
         try {
-
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-            if(mess.equals("")){
-                return 0;
-            }else{
-                pstA=con.prepareStatement("INSERT INTO message (Messagecol, OutID, RecID) VALUES (?,?,?)");
-                pstA.setString(1,mess);
-                pstA.setInt(2,OutID);
-                pstA.setInt(3,RecID);
-                pstA.executeUpdate();
-            }
+
+              if(!mess.equals("")){
+                    pstA=con.prepareStatement("INSERT INTO message (Messagecol, OutID, RecID) VALUES (?,?,?)");
+                    pstA.setString(1,mess);
+                    pstA.setInt(2,OutID);
+                    pstA.setInt(3,RecID);
+                    pstA.executeUpdate();
+                    return 1;
+                }else{
+                    return 0;
+                }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
         }
-        return 1;
+        return 0;
     }
     public static void main(String[] args) {
         Dao dao=new Dao();

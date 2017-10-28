@@ -6,59 +6,74 @@
 
 <struts>
     <package name="ActionPackage" extends="struts-default">
+        <!--学生注册-->
         <action name="StuInsert" class="ActionPackage.Action" method="StuInsert">
             <result name="STUSUCCESSREGIST">stusuccessregist.jsp</result>
-            <result name="STUFAILEDREGIST">stufailedregist.jsp</result>
+            <result name="STUFAILEDREGIST">FailInfoPage.jsp</result>
         </action>
+        <!--学生登录-->
         <action name="StuLog" class="ActionPackage.Action" method="StuLog">
-            <result name="STUSUCCESSLOG">stusuccesslog.jsp</result>
-            <result name="STUFAILEDLOG">stufaillog.jsp</result>
+            <result name="STUSUCCESSLOG">StuPersonalPage.jsp</result>
+            <result name="STUFAILEDLOG">FailInfoPage.jsp</result>
         </action>
+        <!--教师注册-->
         <action name="TeaInsert" class="ActionPackage.Action" method="TeaInsert">
             <result name="TEASUCCESSREGIST">teasuccessregist.jsp</result>
-            <result name="TEAFAILEDREGIST">teafailregist.jsp</result>
+            <result name="TEAFAILEDREGIST">FailInfoPage.jsp</result>
         </action>
+        <!--教师登录-->
         <action name="TeaLog" class="ActionPackage.Action" method="TeaLog">
-            <result name="TEASUCCESSLOG">teasuccesslog.jsp</result>
-            <result name="TEAFAILEDLOG">teafaillog.jsp</result>
+            <result name="TEASUCCESSLOG">TeaPersionalPage.jsp</result>
+            <result name="TEAFAILEDLOG">FailInfoPage.jsp</result>
         </action>
+        <!--教师工作信息更新-->
         <action name="TeaREINUpdate" class="ActionPackage.Action" method="TeaREINUpdate">
-            <result name="TEASUCCESSREIN">teaREINsuccessInsert.jsp</result>
-            <result name="TEAFAILEDREIN">teaREINfailInsert.jsp</result>
+            <result name="TEASUCCESSREIN">REINSuccessLoad.jsp</result>
+            <result name="TEAFAILEDREIN">FailInfoPage.jsp</result>
         </action>
+        <!--学生需求信息更新-->
         <action name="StuREINUpdate" class="ActionPackage.Action" method="StuREINUpdate">
-            <result name="STUSUCCESSREIN">stuREINsuccessInsert.jsp</result>
-            <result name="STUFAILEDREIN">stuREINfailInsert.jsp</result>
+            <result name="STUSUCCESSREIN">REINSuccessLoad.jsp</result>
+            <result name="STUFAILEDREIN">FailInfoPage.jsp</result>
         </action>
+        <!--为学生匹配教师列表-->
         <action name="MatchForStu" class="ActionPackage.Action" method="MatchForStu">
             <result name="STUSUCCESSMATCH">StuMatchShow.jsp</result>
             <result name="STUFAILEDMATCH">NoStuMatchShow.jsp</result>
         </action>
+        <!--点击教师链接展示其个人界面-->
         <action name="SingleTea" class="ActionPackage.Action" method="SingleTea">
             <result name="SINGLETEA">SingleTeaShow.jsp</result>
         </action>
+        <!--预览所有教师信息-->
         <action name="AllTheTea" class="ActionPackage.Action" method="AllTheTea">
-            <result name="ALLTHETEACHER">AllTheTeaShow.jsp</result>
+            <result name="ALLTHETEACHER">Head.jsp</result>
         </action>
+        <!--点击教师链接关注功能-->
         <action name="MakeFriends" class="ActionPackage.Action" method="MakeFriends">
             <result name="SUCCESSMAKEFRIEND">SuccessMakeFriends.jsp</result>
             <result name="FAILEDMAKEFRIEND">FailMakeFriends.jsp</result>
         </action>
+        <!--展示个人所有关注对象列表-->
         <action name="FriendList" class="ActionPackage.Action" method="Friendlist">
             <result name="EXSITFRIEND">FriendList.jsp</result>
             <result name="NOFRIEND">NoFriend.jsp</result>
         </action>
+        <!--删除好友，不再关注功能-->
         <action name="FriendKill" class="ActionPackage.Action" method="FriendKill">
-            <result name="KILLFRIEND">Head.jsp</result>
+            <result name="KILLFRIEND">index.jsp</result>
         </action>
+        <!--展示和某位用户的全部聊天记录-->
         <action name="MessageShow" class="ActionPackage.Action" method="MessageShow">
             <result name="THISISMESSAGE">MessageShow.jsp</result>
-            <result name="NOMESSAGE">NoMessageToShow.jsp</result>
+            <result name="NOMESSAGE">FailInfoPage.jsp</result>
         </action>
+        <!--聊天功能-->
         <action name="MessageInsert" class="ActionPackage.Action" method="MessageInsert">
-            <result name="REJECTEMPTYMESSAGE">MessageSuccessSend.jsp</result>
             <result name="INSERTMESSAGE">MessageSuccessSend.jsp</result>
+            <result name="REJECTEMPTYMESSAGE">FailInfoPage.jsp</result>
         </action>
+
 
     </package>
 </struts>

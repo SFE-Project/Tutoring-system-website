@@ -23,7 +23,7 @@ ${OutID}Connecting with${RecID}...<br/><br/>
     消息内容<br/>
     <input type="text" name="mess"/> <br/>
     <input type="submit" value="确定发送"><br/>
-
+    <a href="javascript:history.go(-1)">返回上一步</a><br/>
 </form>
 </body>
 </html>

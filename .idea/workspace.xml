@@ -50,94 +50,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="FriendList.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FriendList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/FriendList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="477">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="223" column="9" lean-forward="true" selection-start-line="223" selection-start-column="9" selection-end-line="223" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#10172#10181#0" expanded="true" />
-                <element signature="e#14556#14567#0" expanded="true" />
-                <element signature="e#18155#18164#0" expanded="true" />
-                <element signature="e#21337#21346#0" expanded="true" />
-                <marker date="1509179194164" expanded="true" signature="1633:1666" ph="INSERT INTO student... " />
-                <marker date="1509179194164" expanded="true" signature="1915:1977" ph="select * fro... student" />
-                <marker date="1509179194164" expanded="true" signature="1949:1976" ph="select max(i... student" />
-                <marker date="1509179194164" expanded="true" signature="2306:2346" ph="INSERT INTO sturein... " />
-                <marker date="1509179194164" expanded="true" signature="2712:2755" ph="INSERT INTO friendrelationship... " />
-                <marker date="1509179194164" expanded="true" signature="3712:3759" ph="SELECT * FRO... student" />
-                <marker date="1509179194164" expanded="true" signature="4929:4962" ph="INSERT INTO teacher... " />
-                <marker date="1509179194164" expanded="true" signature="5211:5273" ph="select * fro... teacher" />
-                <marker date="1509179194164" expanded="true" signature="5245:5272" ph="select max(i... teacher" />
-                <marker date="1509179194164" expanded="true" signature="5661:5701" ph="INSERT INTO tearein... " />
-                <marker date="1509179194164" expanded="true" signature="6772:6819" ph="SELECT * FRO... teacher" />
-                <marker date="1509179194164" expanded="true" signature="7809:7841" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="7928:8000" ph="UPDATE teare... " />
-                <marker date="1509179194164" expanded="true" signature="9054:9086" ph="SELECT * FRO... sturein" />
-                <marker date="1509179194164" expanded="true" signature="9173:9245" ph="UPDATE sture... " />
-                <marker date="1509179194164" expanded="true" signature="10561:10593" ph="SELECT * FRO... sturein" />
-                <marker date="1509179194164" expanded="true" signature="10819:10852" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="10993:11036" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="13206:13238" ph="SELECT * FRO... teacher" />
-                <marker date="1509179194164" expanded="true" signature="13363:13395" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="14827:14848" ph="SELECT * FRO... teacher" />
-                <marker date="1509179194164" expanded="true" signature="14975:14996" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="14975:15007" ph="SELECT * FRO... tearein" />
-                <marker date="1509179194164" expanded="true" signature="16975:17018" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1509179194164" expanded="true" signature="17584:17635" ph="UPDATE frien... " />
-                <marker date="1509179194164" expanded="true" signature="18464:18507" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1509179194164" expanded="true" signature="18856:18888" ph="SELECT * FRO... teacher" />
-                <marker date="1509179194164" expanded="true" signature="20014:20057" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1509179194164" expanded="true" signature="20859:20910" ph="UPDATE frien... " />
-                <marker date="1509179194164" expanded="true" signature="21568:21640" ph="SELECT * FRO... message" />
-                <marker date="1509179194164" expanded="true" signature="22779:22840" ph="INSERT INTO message... " />
-                <marker date="1509179194164" expanded="false" signature="25258:25267" ph="&lt;~&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
-              <folding>
-                <element signature="e#781#792#0" expanded="true" />
-                <element signature="e#919#928#0" expanded="true" />
-                <element signature="e#1028#1037#0" expanded="true" />
-                <element signature="e#4236#4237#0" expanded="true" />
-                <element signature="e#4263#4264#0" expanded="true" />
-                <element signature="e#4303#4304#0" expanded="true" />
-                <element signature="e#4335#4336#0" expanded="true" />
-                <element signature="e#4382#4383#0" expanded="true" />
-                <element signature="e#4418#4419#0" expanded="true" />
-                <element signature="e#4483#4484#0" expanded="true" />
-                <element signature="e#4533#4534#0" expanded="true" />
-                <element signature="e#4568#4569#0" expanded="true" />
-                <element signature="e#4598#4599#0" expanded="true" />
-                <element signature="e#4645#4646#0" expanded="true" />
-                <element signature="e#4683#4684#0" expanded="true" />
-                <element signature="e#4712#4713#0" expanded="true" />
-                <element signature="e#4740#4741#0" expanded="true" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4808#4809#0" expanded="true" />
-                <element signature="e#4837#4838#0" expanded="true" />
-                <element signature="e#4865#4866#0" expanded="true" />
-                <element signature="e#4904#4905#0" expanded="true" />
-                <element signature="e#4933#4934#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +66,27 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="59" column="63" lean-forward="false" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+            <state relative-caret-position="227">
+              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tearein" pinned="false" current-in-tab="false">
+        <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.tearein">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SingleTeaShow.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -158,39 +95,48 @@
       <file leaf-file-name="Head.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Head.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="250">
+              <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllTheTeaShow.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AllTheTeaShow.jsp">
+      <file leaf-file-name="StuPersonalPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/StuPersonalPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="24" column="77" lean-forward="false" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+            <state relative-caret-position="432">
+              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stusuccesslog.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/stusuccesslog.jsp">
+      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+            <state relative-caret-position="-233">
+              <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageOperation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/MessageOperation.jsp">
+      <file leaf-file-name="StuMatchShow.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/StuMatchShow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="28" column="121" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="121" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="friendrelationship" pinned="false" current-in-tab="false">
+        <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.friendrelationship">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -198,18 +144,8 @@
       <file leaf-file-name="MessageShow.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/MessageShow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageSuccessSend.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/MessageSuccessSend.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="327">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -229,6 +165,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>StuREIN</find>
+      <find>all</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,11 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/localpackage/Student.java" />
-        <option value="$PROJECT_DIR$/web/success.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/stusuccessregist.jsp" />
         <option value="$PROJECT_DIR$/web/sturegist.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/stufaillog.jsp" />
         <option value="$PROJECT_DIR$/web/stulog.jsp" />
@@ -257,11 +189,8 @@
         <option value="$PROJECT_DIR$/web/teafailregist.jsp" />
         <option value="$PROJECT_DIR$/web/tealog.jsp" />
         <option value="$PROJECT_DIR$/web/teafaillog.jsp" />
-        <option value="$PROJECT_DIR$/web/teaREINsuccessInsert.jsp" />
         <option value="$PROJECT_DIR$/web/teasuccesslog.jsp" />
-        <option value="$PROJECT_DIR$/web/stuREINsuccessInsert.jsp" />
         <option value="$PROJECT_DIR$/web/teaREINfailInsert.jsp" />
-        <option value="$PROJECT_DIR$/web/stuREINfailInsert.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/BasicServe.java" />
         <option value="$PROJECT_DIR$/web/NoStuMatchShow.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/FakeTeaREIN.java" />
@@ -269,26 +198,38 @@
         <option value="$PROJECT_DIR$/src/localpackage/BSTeacher.java" />
         <option value="$PROJECT_DIR$/web/SingleTeaShow.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/StuREIN.java" />
-        <option value="$PROJECT_DIR$/web/stuREINInsert.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/TeaREIN.java" />
-        <option value="$PROJECT_DIR$/web/teaREINinsert.jsp" />
         <option value="$PROJECT_DIR$/web/SuccessMakeFriends.jsp" />
         <option value="$PROJECT_DIR$/web/FailMakeFriends.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/TeaListAndOneStu.java" />
-        <option value="$PROJECT_DIR$/web/AllTheTeaShow.jsp" />
-        <option value="$PROJECT_DIR$/web/StuMatchShow.jsp" />
         <option value="$PROJECT_DIR$/web/NoFriend.jsp" />
         <option value="$PROJECT_DIR$/web/NoMessageToShow.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/Message.java" />
-        <option value="$PROJECT_DIR$/src/localpackage/Dao.java" />
-        <option value="$PROJECT_DIR$/src/ActionPackage/Action.java" />
-        <option value="$PROJECT_DIR$/web/MessageShow.jsp" />
         <option value="$PROJECT_DIR$/web/MessageSuccessSend.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
-        <option value="$PROJECT_DIR$/web/Head.jsp" />
-        <option value="$PROJECT_DIR$/web/FriendList.jsp" />
         <option value="$PROJECT_DIR$/web/MessageOperation.jsp" />
         <option value="$PROJECT_DIR$/web/stusuccesslog.jsp" />
+        <option value="$PROJECT_DIR$/src/ActionPackage/Action.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/AllTheTeaShow.jsp" />
+        <option value="$PROJECT_DIR$/web/Basic.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/FailLogPage.jsp" />
+        <option value="$PROJECT_DIR$/web/FailRegist.jsp" />
+        <option value="$PROJECT_DIR$/web/stuREINfailInsert.jsp" />
+        <option value="$PROJECT_DIR$/web/stuREINInsert.jsp" />
+        <option value="$PROJECT_DIR$/web/StuMatchShow.jsp" />
+        <option value="$PROJECT_DIR$/web/MessageShow.jsp" />
+        <option value="$PROJECT_DIR$/web/FailInfoPage.jsp" />
+        <option value="$PROJECT_DIR$/src/localpackage/Dao.java" />
+        <option value="$PROJECT_DIR$/web/teaREINsuccessInsert.jsp" />
+        <option value="$PROJECT_DIR$/web/teaREINinsert.jsp" />
+        <option value="$PROJECT_DIR$/web/TeaPersionalPage.jsp" />
+        <option value="$PROJECT_DIR$/web/stuREINsuccessInsert.jsp" />
+        <option value="$PROJECT_DIR$/web/REINSuccessLoad.jsp" />
+        <option value="$PROJECT_DIR$/web/Head.jsp" />
+        <option value="$PROJECT_DIR$/web/StuPersonalPage.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/web/FriendList.jsp" />
       </list>
     </option>
   </component>
@@ -305,11 +246,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-84" />
-    <option name="y" value="122" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="21" />
+    <option name="y" value="45" />
     <option name="width" value="1933" />
-    <option name="height" value="980" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -327,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -375,6 +315,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -633,46 +574,48 @@
       <workItem from="1509086088854" duration="8389000" />
       <workItem from="1509110152022" duration="11601000" />
       <workItem from="1509171022953" duration="11736000" />
+      <workItem from="1509184968204" duration="208000" />
+      <workItem from="1509193367634" duration="9050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62688000" />
+    <option name="totallyTimeSpent" value="71946000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-84" y="122" width="1933" height="980" extended-state="1" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23825888" sideWeight="0.50416666" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3053152" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977092" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45933563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23825888" sideWeight="0.50416666" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3053152" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24284078" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15536375" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18472004" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22395833" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2893773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -714,169 +657,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/teaREINsuccessInsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stuREINsuccessInsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teaREINfailInsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stuREINfailInsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/NoStuMatchShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/FakeTeaREIN.java" />
-    <entry file="file://$PROJECT_DIR$/web/sturegist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stulog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stufaillog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/9ff5dc4a-48dc-4ad4-8aa9-78a31c6df13d/mydatabase.teacher" />
-    <entry file="das://table:/277579c5/9ff5dc4a-48dc-4ad4-8aa9-78a31c6df13d/mydatabase.student" />
-    <entry file="das://table:/277579c5/9ff5dc4a-48dc-4ad4-8aa9-78a31c6df13d/mydatabase.sturein" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/372eb3b0-c18a-4044-a09f-877b8e91ba96/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/372eb3b0-c18a-4044-a09f-877b8e91ba96/mydatabase.sturein" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b0c967b5-6d62-4c02-9b4d-cf13676196dc/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teafaillog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#188#189#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/StuREIN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Image/1001.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stuREINInsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teaREINinsert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/tearegist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="3" column="72" lean-forward="true" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.tearein">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/localpackage/TeaREIN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
@@ -890,13 +676,6 @@
         <state relative-caret-position="162">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.sturein">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -921,14 +700,14 @@
         <state relative-caret-position="211">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="false" />
+            <element signature="e#193#194#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#261#262#0" expanded="false" />
+            <element signature="e#303#304#0" expanded="false" />
+            <element signature="e#334#335#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#429#430#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -952,43 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.friendrelationship">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/StuMatchShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="34" column="130" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/NoMessageToShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/localpackage/BSTeacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1005,23 +747,182 @@
         <state relative-caret-position="324">
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="false" />
+            <element signature="e#247#248#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#463#464#0" expanded="false" />
+            <element signature="e#492#493#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#654#655#0" expanded="false" />
+            <element signature="e#701#702#0" expanded="false" />
+            <element signature="e#738#739#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/MessageSuccessSend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stufaillog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stulog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teafaillog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teafailregist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stufailedregist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AllTheTeaShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Basic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teasuccesslog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FailLogPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FailRegist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stuREINfailInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teaREINfailInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stusuccesslog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stuREINInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.sturein">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stusuccessregist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/MessageOperation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,50 +933,186 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/FailInfoPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teaREINinsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/REINSuccessLoad.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teaREINsuccessInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stuREINsuccessInsert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teasuccessregist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/TeaPersionalPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="561" column="60" lean-forward="true" selection-start-line="561" selection-start-column="60" selection-end-line="561" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509200858156" expanded="true" signature="1633:1666" ph="INSERT INTO student... " />
+            <marker date="1509200858156" expanded="true" signature="1915:1977" ph="select * fro... student" />
+            <marker date="1509200858156" expanded="true" signature="1949:1976" ph="select max(i... student" />
+            <marker date="1509200858156" expanded="true" signature="2306:2346" ph="INSERT INTO sturein... " />
+            <marker date="1509200858156" expanded="true" signature="2712:2755" ph="INSERT INTO friendrelationship... " />
+            <marker date="1509200858156" expanded="true" signature="3712:3759" ph="SELECT * FRO... student" />
+            <marker date="1509200858156" expanded="true" signature="4929:4962" ph="INSERT INTO teacher... " />
+            <marker date="1509200858156" expanded="true" signature="5211:5273" ph="select * fro... teacher" />
+            <marker date="1509200858156" expanded="true" signature="5245:5272" ph="select max(i... teacher" />
+            <marker date="1509200858156" expanded="true" signature="5661:5701" ph="INSERT INTO tearein... " />
+            <marker date="1509200858156" expanded="true" signature="6772:6819" ph="SELECT * FRO... teacher" />
+            <marker date="1509200858156" expanded="true" signature="7809:7841" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="7928:8000" ph="UPDATE teare... " />
+            <marker date="1509200858156" expanded="true" signature="9186:9218" ph="SELECT * FRO... sturein" />
+            <marker date="1509200858156" expanded="true" signature="9313:9385" ph="UPDATE sture... " />
+            <marker date="1509200858156" expanded="true" signature="10787:10819" ph="SELECT * FRO... sturein" />
+            <marker date="1509200858156" expanded="true" signature="11045:11078" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="11219:11262" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="13432:13464" ph="SELECT * FRO... teacher" />
+            <marker date="1509200858156" expanded="true" signature="13589:13621" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="15053:15074" ph="SELECT * FRO... teacher" />
+            <marker date="1509200858156" expanded="true" signature="15201:15222" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="15201:15233" ph="SELECT * FRO... tearein" />
+            <marker date="1509200858156" expanded="true" signature="17201:17244" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1509200858156" expanded="true" signature="17810:17861" ph="UPDATE frien... " />
+            <marker date="1509200858156" expanded="true" signature="18690:18733" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1509200858156" expanded="true" signature="19082:19114" ph="SELECT * FRO... teacher" />
+            <marker date="1509200858156" expanded="true" signature="20240:20283" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1509200858156" expanded="true" signature="21085:21136" ph="UPDATE frien... " />
+            <marker date="1509200858156" expanded="true" signature="21868:21900" ph="SELECT * FRO... student" />
+            <marker date="1509200858156" expanded="true" signature="21977:22009" ph="SELECT * FRO... teacher" />
+            <marker date="1509200858156" expanded="true" signature="22234:22306" ph="SELECT * FRO... message" />
+            <marker date="1509200858156" expanded="true" signature="23521:23582" ph="INSERT INTO message... " />
+            <marker date="1509200858156" expanded="false" signature="26103:26112" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.friendrelationship">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/277579c5/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.tearein">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/NoMessageToShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/StuMatchShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="28" column="121" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/StuPersonalPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
-          <folding>
-            <element signature="e#781#792#0" expanded="true" />
-            <element signature="e#919#928#0" expanded="true" />
-            <element signature="e#1028#1037#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-            <element signature="e#4263#4264#0" expanded="true" />
-            <element signature="e#4303#4304#0" expanded="true" />
-            <element signature="e#4335#4336#0" expanded="true" />
-            <element signature="e#4382#4383#0" expanded="true" />
-            <element signature="e#4418#4419#0" expanded="true" />
-            <element signature="e#4483#4484#0" expanded="true" />
-            <element signature="e#4533#4534#0" expanded="true" />
-            <element signature="e#4568#4569#0" expanded="true" />
-            <element signature="e#4598#4599#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#4712#4713#0" expanded="true" />
-            <element signature="e#4740#4741#0" expanded="true" />
-            <element signature="e#4779#4780#0" expanded="true" />
-            <element signature="e#4808#4809#0" expanded="true" />
-            <element signature="e#4837#4838#0" expanded="true" />
-            <element signature="e#4865#4866#0" expanded="true" />
-            <element signature="e#4904#4905#0" expanded="true" />
-            <element signature="e#4933#4934#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-233">
+          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/MessageShow.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/MessageSuccessSend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="327">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1085,94 +1122,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="59" column="63" lean-forward="false" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+        <state relative-caret-position="227">
+          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/AllTheTeaShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="24" column="77" lean-forward="false" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="223" column="9" lean-forward="true" selection-start-line="223" selection-start-column="9" selection-end-line="223" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10172#10181#0" expanded="true" />
-            <element signature="e#14556#14567#0" expanded="true" />
-            <element signature="e#18155#18164#0" expanded="true" />
-            <element signature="e#21337#21346#0" expanded="true" />
-            <marker date="1509179194164" expanded="true" signature="1633:1666" ph="INSERT INTO student... " />
-            <marker date="1509179194164" expanded="true" signature="1915:1977" ph="select * fro... student" />
-            <marker date="1509179194164" expanded="true" signature="1949:1976" ph="select max(i... student" />
-            <marker date="1509179194164" expanded="true" signature="2306:2346" ph="INSERT INTO sturein... " />
-            <marker date="1509179194164" expanded="true" signature="2712:2755" ph="INSERT INTO friendrelationship... " />
-            <marker date="1509179194164" expanded="true" signature="3712:3759" ph="SELECT * FRO... student" />
-            <marker date="1509179194164" expanded="true" signature="4929:4962" ph="INSERT INTO teacher... " />
-            <marker date="1509179194164" expanded="true" signature="5211:5273" ph="select * fro... teacher" />
-            <marker date="1509179194164" expanded="true" signature="5245:5272" ph="select max(i... teacher" />
-            <marker date="1509179194164" expanded="true" signature="5661:5701" ph="INSERT INTO tearein... " />
-            <marker date="1509179194164" expanded="true" signature="6772:6819" ph="SELECT * FRO... teacher" />
-            <marker date="1509179194164" expanded="true" signature="7809:7841" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="7928:8000" ph="UPDATE teare... " />
-            <marker date="1509179194164" expanded="true" signature="9054:9086" ph="SELECT * FRO... sturein" />
-            <marker date="1509179194164" expanded="true" signature="9173:9245" ph="UPDATE sture... " />
-            <marker date="1509179194164" expanded="true" signature="10561:10593" ph="SELECT * FRO... sturein" />
-            <marker date="1509179194164" expanded="true" signature="10819:10852" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="10993:11036" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="13206:13238" ph="SELECT * FRO... teacher" />
-            <marker date="1509179194164" expanded="true" signature="13363:13395" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="14827:14848" ph="SELECT * FRO... teacher" />
-            <marker date="1509179194164" expanded="true" signature="14975:14996" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="14975:15007" ph="SELECT * FRO... tearein" />
-            <marker date="1509179194164" expanded="true" signature="16975:17018" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1509179194164" expanded="true" signature="17584:17635" ph="UPDATE frien... " />
-            <marker date="1509179194164" expanded="true" signature="18464:18507" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1509179194164" expanded="true" signature="18856:18888" ph="SELECT * FRO... teacher" />
-            <marker date="1509179194164" expanded="true" signature="20014:20057" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1509179194164" expanded="true" signature="20859:20910" ph="UPDATE frien... " />
-            <marker date="1509179194164" expanded="true" signature="21568:21640" ph="SELECT * FRO... message" />
-            <marker date="1509179194164" expanded="true" signature="22779:22840" ph="INSERT INTO message... " />
-            <marker date="1509179194164" expanded="false" signature="25258:25267" ph="&lt;~&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/FriendList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/MessageOperation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/stusuccesslog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="477">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding />
         </state>
       </provider>
