@@ -18,6 +18,7 @@
     <input type="submit" value="一键匹配"><br/>
 </form>
 <a href="AllTheTea.action">预览所有教师信息并操作</a><br/>
+<a href='FriendList.action?StuID=${studemo.getID()}'>查看你的朋友圈</a><br/>
 
 </body>
 </html>

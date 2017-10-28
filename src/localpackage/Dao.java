@@ -132,10 +132,8 @@ public class Dao {
                 pstB.setString(2,teacher.getNickName());
                 pstB.setString(3,teacher.getPassWord());
                 pstB.executeUpdate ();
-
                 pstA=con.prepareStatement("select * from teacher where id = (select max(id) from teacher)");
                 ResultSet rstA=pstA.executeQuery();
-
                 if(rstA.first()){
                     System.out.println(rstA.getInt("ID"));
                     teademo.setID(rstA.getInt("ID"));
@@ -148,13 +146,8 @@ public class Dao {
                     pstC.setString(4,"晚上");
                     pstC.setString(5,"数学");
                     pstC.setString(6,"高中");
-
                     pstC.executeUpdate();
                 }
-
-
-
-
             } catch (ClassNotFoundException e) {
                 e.printStackTrace ();
             } catch (SQLException e) {
@@ -196,7 +189,6 @@ public class Dao {
         } finally {
         }
         return teademo;
-
     }
     //录入教师个人信息
     public TeaREIN TeaReInUpdate(TeaREIN teaREIN){
@@ -263,7 +255,6 @@ public class Dao {
                 e.printStackTrace();
             }
         }
-
         return stuREIN;
     }
     //为学生匹配家教
@@ -293,8 +284,6 @@ public class Dao {
                     pstT.setString(1,"男");
                     pstT.setString(2,"女");
                 }
-
-
                 ResultSet rstT=pstT.executeQuery();
                 String ATime=rstS.getString("Time");
                 String ASubject=rstS.getString("Subject");
@@ -461,11 +450,55 @@ public class Dao {
        return flag;
 
     }
+    public List<Teacher> Friendlist(int StuID){
+        List<Teacher> listofteachers=new ArrayList<Teacher>();
+        Connection con=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        BasicServe bss=new BasicServe();
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM friendrelationship WHERE ID=?");
+            pstA.setInt(1,StuID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                String[] StrArray=bss.StringIntoArray(rstA.getString("FSIDList"));
+                for(int i=0;i<StrArray.length;i++){
+                    Teacher teacher=new Teacher();
+                    pstB=con.prepareStatement("SELECT * FROM teacher WHERE ID=?");
+                    pstB.setInt(1,Integer.parseInt(StrArray[i]));
+                    ResultSet rstB=pstB.executeQuery();
+                    if(rstB.first()){
+                        teacher.setID(rstB.getInt("ID"));
+                        teacher.setNickName(rstB.getString("NickName"));
+                        teacher.setPassWord(rstB.getString("PassWord"));
+                        listofteachers.add(teacher);
+                    }
+                }
+             }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        if(listofteachers.size()>0){
+            return listofteachers;
+        }else{
+            return null;
+        }
+    }
     public static void main(String[] args) {
         Dao dao=new Dao();
+        List<Teacher> listofteacher=new ArrayList<Teacher>();
+        listofteacher=dao.Friendlist(1037);
+        for(int i=0;i<listofteacher.size();i++){
+            System.out.println(listofteacher.get(i).getNickName());
 
-        int flag=dao.MakeFriend(1001,2022);
-        System.out.println(flag);
+        }
+//        int flag=dao.MakeFriend(1001,2022);
+//        System.out.println(flag);
 //        List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
 //        listofbstea=dao.AllTheTea();
 

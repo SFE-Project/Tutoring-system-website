@@ -44,6 +44,10 @@
             <result name="SUCCESSMAKEFRIEND">SuccessMakeFriends.jsp</result>
             <result name="FAILEDMAKEFRIEND">FailMakeFriends.jsp</result>
         </action>
+        <action name="FriendList" class="ActionPackage.Action" method="Friendlist">
+            <result name="EXSITFRIEND">FriendList.jsp</result>
+            <result name="NOFRIEND">NoFriend.jsp</result>
+        </action>
 
     </package>
 </struts>

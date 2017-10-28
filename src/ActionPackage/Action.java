@@ -21,6 +21,7 @@ public class Action {
     private List<TeaREIN> listoftri=new ArrayList<TeaREIN>();
     private List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
     private TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
+    private List<Teacher> listofteacher=new ArrayList<Teacher>();
 
     public static void main(String[] args) {
         Action action=new Action();
@@ -30,6 +31,14 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+    public String Friendlist(){
+        listofteacher=dao.Friendlist(StuID);
+        if(listofteacher==null){
+            return "NOFRIEND";
+        }else{
+            return "EXSITFRIEND";
         }
     }
     public String MakeFriends(){
@@ -113,6 +122,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public List<Teacher> getListofteacher() {
+        return listofteacher;
+    }
+
+    public void setListofteacher(List<Teacher> listofteacher) {
+        this.listofteacher = listofteacher;
     }
 
     public List<BSTeacher> getListofbstea() {
