@@ -530,11 +530,69 @@ public class Dao {
         } finally {
 
         }
+    }
+    public List<Message> MesageShow(int OutID,int RecID){
+        List<Message> listofmessage=new ArrayList<Message>();
+        Connection con=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM message WHERE (OutID=? AND RecID=?)OR(OutID=? AND RecID=?)");
+            pstA.setInt(1,OutID);
+            pstA.setInt(2,RecID);
+            pstA.setInt(3,RecID);
+            pstA.setInt(4,OutID);
+            ResultSet rstA=pstA.executeQuery();
+            while(rstA.next()){
+                Message message=new Message();
+                message.setMessageID(rstA.getInt("ID"));
+                message.setMessagecol(rstA.getString("Messagecol"));
+                message.setOutID(rstA.getInt("OutID"));
+                message.setRecID(rstA.getInt("RecID"));
+                listofmessage.add(message);
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return listofmessage;
+    }
+    public int MessageInsert(int OutID,int RecID,String mess){
+        Connection con=null;
+        PreparedStatement pstA=null;
+        try {
 
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            if(mess.equals("")){
+                return 0;
+            }else{
+                pstA=con.prepareStatement("INSERT INTO message (Messagecol, OutID, RecID) VALUES (?,?,?)");
+                pstA.setString(1,mess);
+                pstA.setInt(2,OutID);
+                pstA.setInt(3,RecID);
+                pstA.executeUpdate();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return 1;
     }
     public static void main(String[] args) {
         Dao dao=new Dao();
-        dao.KillFriends(2024,1001);
+        dao.MessageInsert(1001,2000,"呵呵");
+//        List<Message> list=dao.MesageShow(1001,2000);
+//       for(int i=0;i<list.size();i++){
+//           System.out.println(list.get(i).getMessagecol());
+//
+//       }
+       //        dao.KillFriends(2024,1001);
 //        List<Teacher> listofteacher=new ArrayList<Teacher>();
 //        listofteacher=dao.Friendlist(1037);
 //        for(int i=0;i<listofteacher.size();i++){

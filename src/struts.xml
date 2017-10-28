@@ -51,6 +51,14 @@
         <action name="FriendKill" class="ActionPackage.Action" method="FriendKill">
             <result name="KILLFRIEND">Head.jsp</result>
         </action>
+        <action name="MessageShow" class="ActionPackage.Action" method="MessageShow">
+            <result name="THISISMESSAGE">MessageShow.jsp</result>
+            <result name="NOMESSAGE">NoMessageToShow.jsp</result>
+        </action>
+        <action name="MessageInsert" class="ActionPackage.Action" method="MessageInsert">
+            <result name="REJECTEMPTYMESSAGE">MessageSuccessSend.jsp</result>
+            <result name="INSERTMESSAGE">MessageSuccessSend.jsp</result>
+        </action>
 
     </package>
 </struts>

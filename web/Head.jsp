@@ -15,6 +15,7 @@
 <a href="stulog.jsp">学生登录</a><br/>
 <a href="tearegist.jsp">教师注册</a><br/>
 <a href="tealog.jsp">教师登录</a><br/>
+<a href="MessageOperation.jsp">操作会话</a>
 
 
 

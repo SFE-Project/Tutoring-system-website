@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Action {
+    private String mess;
     private int TeaID;
     private int StuID;
+    private int OutID;
+    private int RecID;
     private BSTeacher bsTeacher=new BSTeacher();
     private Dao dao =new Dao();
     private Student student =new Student();
@@ -22,6 +25,8 @@ public class Action {
     private List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
     private TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
     private List<Teacher> listofteacher=new ArrayList<Teacher>();
+    private Message message=new Message();
+    private List<Message> listofmessage=new ArrayList<Message>();
 
     public static void main(String[] args) {
         Action action=new Action();
@@ -31,6 +36,22 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+    public String MessageInsert(){
+        int flag=dao.MessageInsert(OutID,RecID,mess);
+        if(flag==0){
+            return "REJECTEMPTYMESSAGE";
+        }else{
+            return "INSERTMESSAGE";
+        }
+    }
+    public String MessageShow(){
+        listofmessage=dao.MesageShow(OutID,RecID);
+        if(listofmessage==null){
+            return "NOMESSAGE";
+        }else{
+            return "THISISMESSAGE";
         }
     }
     public String FriendKill(){
@@ -126,6 +147,46 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public String getMess() {
+        return mess;
+    }
+
+    public void setMess(String mess) {
+        this.mess = mess;
+    }
+
+    public List<Message> getListofmessage() {
+        return listofmessage;
+    }
+
+    public void setListofmessage(List<Message> listofmessage) {
+        this.listofmessage = listofmessage;
+    }
+
+    public Message getMessage() {
+        return message;
+    }
+
+    public void setMessage(Message message) {
+        this.message = message;
+    }
+
+    public int getRecID() {
+        return RecID;
+    }
+
+    public void setRecID(int recID) {
+        RecID = recID;
+    }
+
+    public int getOutID() {
+        return OutID;
+    }
+
+    public void setOutID(int outID) {
+        OutID = outID;
     }
 
     public List<Teacher> getListofteacher() {
