@@ -44,6 +44,7 @@ public class Dao {
             PreparedStatement pstA=null;
             PreparedStatement pstC=null;
             PreparedStatement pstD=null;
+            PreparedStatement pstE=null;
             try {
                 Class.forName (driver);
                 con=DriverManager.getConnection(url,username,pswd);
@@ -71,6 +72,10 @@ public class Dao {
                     pstD.setInt(1,rstA.getInt("ID"));
                     pstD.setString(2,"2000");
                     pstD.executeUpdate();
+                    pstE=con.prepareStatement("INSERT INTO persionserver VALUES (?,?)");
+                    pstE.setInt(1,rstA.getInt("ID"));
+                    pstE.setInt(2,0);
+                    pstE.executeUpdate();
                 }
             } catch (ClassNotFoundException e) {
                 e.printStackTrace ();
@@ -579,6 +584,8 @@ public class Dao {
     public int MessageInsert(int OutID,int RecID,String mess){
         Connection con=null;
         PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstC=null;
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
@@ -589,6 +596,16 @@ public class Dao {
                     pstA.setInt(2,OutID);
                     pstA.setInt(3,RecID);
                     pstA.executeUpdate();
+                    pstB=con.prepareStatement("SELECT * FROM persionserver WHERE ID=?");
+                    pstB.setInt(1,OutID);
+                    ResultSet rstB=pstB.executeQuery();
+                    if(rstB.first()){
+                        int num=rstB.getInt("MessageNumber");
+                        pstC=con.prepareStatement("Update persionserver SET MessageNumber=? WHERE ID=?");
+                        pstC.setInt(1,num+1);
+                        pstC.setInt(2,OutID);
+                        pstC.executeUpdate();
+                    }
                     return 1;
                 }else{
                     return 0;
@@ -601,6 +618,22 @@ public class Dao {
         }
         return 0;
     }
+//    public void MessageAttention(int StuID){
+//        Connection con=null;
+//        PreparedStatement pstA=null;
+//        try {
+//            Class.forName(driver);
+//            con=DriverManager.getConnection(url,username,pswd);
+//            pstA
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//
+//        }
+//
+//    }
     public static void main(String[] args) {
         Dao dao=new Dao();
         dao.MessageInsert(1001,2000,"呵呵");
