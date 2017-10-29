@@ -38,6 +38,22 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String TeaNickPswdChange(){
+        int flag=dao.TeaNickPswdUpdate(teacher);
+        if(flag==0){
+            return "UNTEUPDATE";
+        }else{
+            return "TEUPDATE";
+        }
+    }
+    public String StuNickPswdChange(){
+        int flag=dao.StuNickPswdUpdate(student);
+        if(flag==0){
+            return "UNSNUPDATE";
+        }else{
+            return "SNPUPDATE";
+        }
+    }
     public String MessageInsert(){
         int flag=dao.MessageInsert(OutID,RecID,mess);
         if(flag==0){

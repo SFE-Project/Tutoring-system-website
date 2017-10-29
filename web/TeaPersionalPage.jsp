@@ -26,7 +26,16 @@
 
 个人界面！！！！<br/>
 登录成功，你好${teademo.getNickName()}，ID是${teademo.getID()}<br/>
-///////////////////////////更新教师个人信息模块/////////////////////////////////
+////////////////注销操作/////////////////<br/>
+<a href="index.jsp">退出当前账号</a><br/>
+//////////////////////////更新教师昵称密码信息//////////////////////////////<br/>
+<form action="TeaNickPswdChange.action">
+    <input type="hidden" name="teacher.ID" value=${teademo.getID()}><br/>
+    昵称<input type="text" name="teacher.NickName"><br/>
+    密码<input type="text" name="teacher.PassWord"><br/>
+    <input type="submit" value="确定"><br/>
+</form>
+///////////////////////////更新教师需求信息模块/////////////////////////////////<br/>
 <form action="TeaREINUpdate.action">
     <input type="hidden" name="teaREIN.ID" value=${teademo.getID()} ><br/>
     性别：<input type="radio" name="teaREIN.Sex" value="男" checked="checked">男性

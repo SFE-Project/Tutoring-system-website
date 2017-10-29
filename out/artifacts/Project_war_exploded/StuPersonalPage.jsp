@@ -13,7 +13,16 @@
 <body>
 个人界面！！！！<br/>
 登录成功，你好${studemo.getNickName()}，ID是${studemo.getID()}<br>
-////////////////////////////更新学生个人信息板块/////////////////////////////////////<br/>
+////////////////注销操作/////////////////<br/>
+<a href="index.jsp">退出当前账号</a><br/>
+////////////////////更新学生用户民密码/////////////////////<br/>
+<form action="StuNickPswdChange.action">
+    <input type="hidden" name="student.ID" value=${studemo.getID()}><br/>
+    昵称<input type="text" name="student.NickName"><br/>
+    密码<input type="text" name="student.PassWord"><br/>
+    <input type="submit" value="确定"><br>
+</form>
+////////////////////////////更新学生需求信息板块/////////////////////////////////////<br/>
 <form action="StuREINUpdate.action">
     <input type="hidden" name="stuREIN.ID" value=${studemo.getID()}><br/>
     性别：<input type="radio" name="stuREIN.Sex" value="男" checked="checked">男性

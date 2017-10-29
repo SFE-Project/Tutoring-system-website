@@ -51,7 +51,7 @@
         </action>
         <!--点击教师链接关注功能-->
         <action name="MakeFriends" class="ActionPackage.Action" method="MakeFriends">
-            <result name="SUCCESSMAKEFRIEND">SuccessMakeFriends.jsp</result>
+            <result name="SUCCESSMAKEFRIEND">GoodOperation.jsp</result>
             <result name="FAILEDMAKEFRIEND">FailMakeFriends.jsp</result>
         </action>
         <!--展示个人所有关注对象列表-->
@@ -72,6 +72,16 @@
         <action name="MessageInsert" class="ActionPackage.Action" method="MessageInsert">
             <result name="INSERTMESSAGE">MessageSuccessSend.jsp</result>
             <result name="REJECTEMPTYMESSAGE">FailInfoPage.jsp</result>
+        </action>
+        <!--更新学生用户名密码功能-->
+        <action name="StuNickPswdChange" class="ActionPackage.Action" method="StuNickPswdChange">
+            <result name="SNPUPDATE">GoodOperation.jsp</result>
+            <result name="UNSNUPDATE">FailInfoPage.jsp</result>
+        </action>
+        <!--更新教师用户名密码功能-->
+        <action name="TeaNickPswdChange" class="ActionPackage.Action" method="TeaNickPswdChange">
+            <result name="TEUPDATE">GoodOperation.jsp</result>
+            <result name="UNTEUPDATE">FailInfoPage.jsp</result>
         </action>
 
 

@@ -618,25 +618,66 @@ public class Dao {
         }
         return 0;
     }
-//    public void MessageAttention(int StuID){
-//        Connection con=null;
-//        PreparedStatement pstA=null;
-//        try {
-//            Class.forName(driver);
-//            con=DriverManager.getConnection(url,username,pswd);
-//            pstA
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//
-//        }
-//
-//    }
+    public int StuNickPswdUpdate(Student student){
+        Connection con=null;
+        PreparedStatement pstA=null;
+        if(student.getPassWord().equals("")||student.getNickName().equals("")){
+            return 0;
+        }else{
+            try {
+                Class.forName(driver);
+                con=DriverManager.getConnection(url,username,pswd);
+                pstA=con.prepareStatement("UPDATE student SET NickName=?,PassWord=? WHERE ID=?");
+                pstA.setString(1,student.getNickName());
+                pstA.setString(2,student.getPassWord());
+                pstA.setInt(3,student.getID());
+                pstA.executeUpdate();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+            }
+        }
+       return 1;
+    }
+    public int TeaNickPswdUpdate(Teacher teacher){
+        Connection con=null;
+        PreparedStatement pstA=null;
+        if(teacher.getPassWord().equals("")||teacher.getNickName().equals("")){
+            return 0;
+        }else{
+            try {
+                Class.forName(driver);
+                con=DriverManager.getConnection(url,username,pswd);
+                pstA=con.prepareStatement("UPDATE teacher SET NickName=?,PassWord=? WHERE ID=?");
+                pstA.setString(1,teacher.getNickName());
+                pstA.setString(2,teacher.getPassWord());
+                pstA.setInt(3,teacher.getID());
+                pstA.executeUpdate();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+            }
+        }
+        return 1;
+    }
     public static void main(String[] args) {
         Dao dao=new Dao();
-        dao.MessageInsert(1001,2000,"呵呵");
+        Teacher teacher=new Teacher();
+        teacher.setID(2000);
+        teacher.setNickName("root");
+        teacher.setPassWord("1111");
+        dao.TeaNickPswdUpdate(teacher);
+//        Student student=new Student();
+//        student.setID(1001);
+//        student.setNickName("BasicStudent");
+//        student.setPassWord("1111");
+//        dao.StuNickPswdUpdate(student);
+//        dao.MessageInsert(1001,2000,"呵呵");
+
 //        List<Message> list=dao.MesageShow(1001,2000);
 //       for(int i=0;i<list.size();i++){
 //           System.out.println(list.get(i).getMessagecol());
