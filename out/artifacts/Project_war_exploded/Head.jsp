@@ -17,6 +17,7 @@
 <a href="tearegist.jsp">教师注册</a><br/>
 <a href="tealog.jsp">教师登录</a><br/>
 <br/>
+<a href="test.html">测试界面</a>
 <br/>
 展示所有教师信息<br/>
 <table border="10">
