@@ -84,7 +84,7 @@
             padding:20px;
             border:1px solid  #ccc;
             margin:50px auto;
-            background-image: url(Image/Messagebackground.jpeg);
+            background-image: url(images/Messagebackground.jpeg);
             overflow-y: scroll;
         }
         .m1 { position:relative; }
@@ -154,11 +154,11 @@
         <input type="hidden" name="RecID" value=${RecID}><br/>
         <font color="#f0ffff">消息内容</font>
 
-            <input type="text" name="mess" class="input"/> <br/>
+        <input type="text" name="mess" class="input"/> <br/>
         <div class="null">
 
         </div>
-            <input class="sublime" type="submit" value="确定发送"><br/>
+        <input class="sublime" type="submit" value="确定发送"><br/>
 
 
 

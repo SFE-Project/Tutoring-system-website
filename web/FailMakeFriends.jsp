@@ -11,6 +11,6 @@
     <title>添加关注失败界面</title>
 </head>
 <body>
-不能重复操作！
+成功添加关注！
 </body>
 </html>

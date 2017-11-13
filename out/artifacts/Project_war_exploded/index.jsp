@@ -7,11 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>中转界面INDEX</title>
-  </head>
-  <body>
+<head>
+  <title>中转界面INDEX</title>
+</head>
+<body>
 <meta http-equiv="Refresh" content="0,URL=AllTheTea.action">
-  <h1><font color="red">LOADING......</font> </h1>
-  </body>
+<h1><font color="red">LOADING......</font> </h1>
+</body>
 </html>

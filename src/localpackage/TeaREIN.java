@@ -7,7 +7,7 @@ public class TeaREIN {
     private String Time;
     private String Subject;
     private String Grade;
-
+    private String Email;
     /**
      * 教师个人信息包括ID,性别，最高学历，要求时间，学科,年级---仍需添加
      * Sex:0男1女
@@ -63,5 +63,13 @@ public class TeaREIN {
 
     public void setSubject(String subject) {
         Subject = subject;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 }

@@ -7,6 +7,7 @@ public class StuREIN {
     private String Time;
     private String Subject;
     private String Grade;
+    private String Email;
 
     public String getSubject() {
         return Subject;
@@ -54,5 +55,13 @@ public class StuREIN {
 
     public void setID(int ID) {
         this.ID = ID;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 }

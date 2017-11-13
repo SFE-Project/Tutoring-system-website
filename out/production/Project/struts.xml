@@ -6,22 +6,22 @@
 
 <struts>
     <package name="ActionPackage" extends="struts-default">
-        <!--学生注册-->
+        <!--学生注册ok-->
         <action name="StuInsert" class="ActionPackage.Action" method="StuInsert">
             <result name="STUSUCCESSREGIST">stusuccessregist.jsp</result>
             <result name="STUFAILEDREGIST">FailInfoPage.jsp</result>
         </action>
-        <!--学生登录-->
+        <!--学生登录ok-->
         <action name="StuLog" class="ActionPackage.Action" method="StuLog">
             <result name="STUSUCCESSLOG">StuPersonalPage.jsp</result>
             <result name="STUFAILEDLOG">FailInfoPage.jsp</result>
         </action>
-        <!--教师注册-->
+        <!--教师注册ok-->
         <action name="TeaInsert" class="ActionPackage.Action" method="TeaInsert">
             <result name="TEASUCCESSREGIST">teasuccessregist.jsp</result>
             <result name="TEAFAILEDREGIST">FailInfoPage.jsp</result>
         </action>
-        <!--教师登录-->
+        <!--教师登录ok-->
         <action name="TeaLog" class="ActionPackage.Action" method="TeaLog">
             <result name="TEASUCCESSLOG">TeaPersionalPage.jsp</result>
             <result name="TEAFAILEDLOG">FailInfoPage.jsp</result>
@@ -44,14 +44,15 @@
         <!--点击教师链接展示其个人界面-->
         <action name="SingleTea" class="ActionPackage.Action" method="SingleTea">
             <result name="SINGLETEA">SingleTeaShow.jsp</result>
+            <!--<result name="NOSINGLETEA">FailInfoPage.jsp</result>-->
         </action>
-        <!--预览所有教师信息-->
+        <!--预览所有教师信息ok-->
         <action name="AllTheTea" class="ActionPackage.Action" method="AllTheTea">
             <result name="ALLTHETEACHER">Head.jsp</result>
         </action>
         <!--点击教师链接关注功能-->
         <action name="MakeFriends" class="ActionPackage.Action" method="MakeFriends">
-            <result name="SUCCESSMAKEFRIEND">GoodOperation.jsp</result>
+            <result name="SUCCESSMAKEFRIEND">SuccessMakeFriends.jsp</result>
             <result name="FAILEDMAKEFRIEND">FailMakeFriends.jsp</result>
         </action>
         <!--展示个人所有关注对象列表-->
@@ -73,17 +74,14 @@
             <result name="INSERTMESSAGE">MessageSuccessSend.jsp</result>
             <result name="REJECTEMPTYMESSAGE">FailInfoPage.jsp</result>
         </action>
-        <!--更新学生用户名密码功能-->
-        <action name="StuNickPswdChange" class="ActionPackage.Action" method="StuNickPswdChange">
-            <result name="SNPUPDATE">GoodOperation.jsp</result>
-            <result name="UNSNUPDATE">FailInfoPage.jsp</result>
-        </action>
-        <!--更新教师用户名密码功能-->
-        <action name="TeaNickPswdChange" class="ActionPackage.Action" method="TeaNickPswdChange">
-            <result name="TEUPDATE">GoodOperation.jsp</result>
-            <result name="UNTEUPDATE">FailInfoPage.jsp</result>
+
+        <action name="StuReF" class="ActionPackage.Action" method="StuReF">
+            <result name="1">StuReF.jsp</result>
         </action>
 
+        <action name="TeaReF" class="ActionPackage.Action" method="TeaReF">
+            <result name="1">TeaReF.jsp</result>
+        </action>
 
     </package>
 </struts>

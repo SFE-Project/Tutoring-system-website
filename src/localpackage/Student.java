@@ -3,14 +3,14 @@ package localpackage;
 public class Student {
     private int ID;
     private String NickName;
-    private String PassWord;
+    private String Password;
 
-    public String getPassWord() {
-        return PassWord;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setPassWord(String passWord) {
-        PassWord = passWord;
+    public void setPassword(String passWord) {
+        Password = passWord;
     }
 
     public String getNickName() {

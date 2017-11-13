@@ -2,16 +2,16 @@
   <artifact type="exploded-war" name="Project:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Project_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Project/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Project" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Struts 2" />
-          <element id="file-copy" path="A:/StoreHouse/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.44-bin" />
+          <element id="library" level="project" name="commons-fileupload-1.3.3" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="Project/web/Web" />
     </root>
   </artifact>
 </component>

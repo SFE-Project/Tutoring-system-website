@@ -1,0 +1,53 @@
+<%--
+Created by IntelliJ IDEA.
+User: DB
+Date: 2017/10/28
+Time: 20:23
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>学生个人信息以及操作界面</title>
+</head>
+<body>
+个人界面！！！！<br/>
+登录成功，你好${studemo.getNickName()}，ID是${studemo.getID()}<br>
+////////////////////////////更新学生个人信息板块/////////////////////////////////////<br/>
+<form action="StuREINUpdate.action">
+    <input type="hidden" name="stuREIN.ID" value=${studemo.getID()}><br/>
+    性别：<input type="radio" name="stuREIN.Sex" value="男" checked="checked">男性
+    <input type="radio" name="stuREIN.Sex" value="女">女性<br/>
+    需要教师性别<input type="radio" name="stuREIN.SexWanted" value="男" >男性
+    <input type="radio" name="stuREIN.SexWanted" value="女">女性
+    <input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限<br/>
+    可选时间<input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
+    <input type="checkbox" name="stuREIN.Time" value="下午">下午
+    <input type="checkbox" name="stuREIN.Time" value="晚上">晚上<br/>
+    学科<input type="checkbox" name="stuREIN.Subject" value="数学" checked="checked">数学
+    <input type="checkbox" name="stuREIN.Subject" value="语文">语文
+    <input type="checkbox" name="stuREIN.Subject" value="外语">外语<br/>
+    年级<input type="radio" name="stuREIN.Grade" value="小学">小学
+    <input type="radio" name="stuREIN.Grade" value="初中">初中
+    <input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中<br/>
+    <input type="submit" value="确定"><br/>
+</form>
+///////////////////////////////一键匹配教师板块///////////////////////////////////////<br/>
+<form action="MatchForStu.action">
+    <input name="StuID" type="hidden" value=${studemo.getID()}><br/>
+    <input type="submit" value="一键匹配"><br/>
+</form>
+///////////////////////////////关注者展示板块/////////////////////////////////////////<br/>
+<a href='FriendList.action?StuID=${studemo.getID()}'>查看你的朋友圈</a><br/>
+///////////////////////////////与站内用户聊天板块/////////////////////////////////////////<br/>
+<form action="MessageShow.action">
+    默认发送者为当前用户<input type="hidden" name="OutID" value=${studemo.getID()}><br/>
+    接收者<input type="text" name="RecID"><br>
+    <input type="submit" value="进入会话模式"><br/>
+</form>
+
+
+</body>
+</html>
+
+

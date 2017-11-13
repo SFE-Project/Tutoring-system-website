@@ -28,6 +28,7 @@ public class Action {
     private Message message=new Message();
     private List<Message> listofmessage=new ArrayList<Message>();
 
+
     public static void main(String[] args) {
         Action action=new Action();
         action.StuID=1031;
@@ -36,22 +37,6 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
-        }
-    }
-    public String TeaNickPswdChange(){
-        int flag=dao.TeaNickPswdUpdate(teacher);
-        if(flag==0){
-            return "UNTEUPDATE";
-        }else{
-            return "TEUPDATE";
-        }
-    }
-    public String StuNickPswdChange(){
-        int flag=dao.StuNickPswdUpdate(student);
-        if(flag==0){
-            return "UNSNUPDATE";
-        }else{
-            return "SNPUPDATE";
         }
     }
     public String MessageInsert(){
@@ -76,6 +61,7 @@ public class Action {
     }
     public String Friendlist(){
         listofteacher=dao.Friendlist(StuID);
+        listofbstea=dao.TopTea();
         if(listofteacher==null){
             return "NOFRIEND";
         }else{
@@ -98,13 +84,19 @@ public class Action {
 
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
-        System.out.println(TeaID);
-        System.out.println(bsTeacher.getTeacher().getNickName());
-        return "SINGLETEA";
+        listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
+//        if(bsTeacher==null){
+//            return "NOSINGLETEA";
+//        }else{
+            return "SINGLETEA";
+//        }
+
+
 
     }
     public String MatchForStu(){
         teaListAndOneStu=dao.MatchForStu(StuID);
+        listofbstea=dao.TopTea();
         if(listoftri!=null){
             return "STUSUCCESSMATCH";
         }else{
@@ -135,6 +127,7 @@ public class Action {
     }
     public String TeaLog(){
         teademo=dao.TeaLog(teacher);
+        listofbstea=dao.TopTea();
         if(teademo!=null){
             return "TEASUCCESSLOG";
         }else{
@@ -142,7 +135,7 @@ public class Action {
         }
     }
     public String TeaInsert(){
-        teademo=dao.TeaInsert(teacher);
+        teademo=dao.TeaInsert(teacher,teaREIN);
         if(teademo!=null){
             return "TEASUCCESSREGIST";
         }else{
@@ -150,7 +143,7 @@ public class Action {
         }
     }
     public String StuInsert(){
-        studemo=dao.StuInsert(student);
+        studemo=dao.StuInsert(student,stuREIN);
         if(studemo!=null){
             return "STUSUCCESSREGIST";
         }else{
@@ -159,11 +152,20 @@ public class Action {
     }
     public String StuLog(){
         studemo=dao.StuLog(student);
+        listofbstea=dao.TopTea();
         if(studemo!=null){
             return "STUSUCCESSLOG";
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public String StuReF(){
+        return "1";
+    }
+
+    public String TeaReF(){
+        return "1";
     }
 
     public String getMess() {
@@ -333,4 +335,5 @@ public class Action {
     public void setDao(Dao dao) {
         this.dao = dao;
     }
+
 }

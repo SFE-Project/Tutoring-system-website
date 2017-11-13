@@ -34,60 +34,57 @@ public class Dao {
             }
         }
     }
-    public Student StuInsert(Student student){
+    public Student StuInsert(Student student,StuREIN stuRein){
         Student studemo=new Student();
-        if(student.getNickName().equals("")||student.getPassWord().equals("")){
-            studemo=null;
-        }else{
-            Connection con=null;
-            PreparedStatement pstB=null;
-            PreparedStatement pstA=null;
-            PreparedStatement pstC=null;
-            PreparedStatement pstD=null;
-            PreparedStatement pstE=null;
+        Connection con=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstC=null;
+        PreparedStatement pstD=null;
+        PreparedStatement pstE=null;
+
+        try {
+            Class.forName (driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstB=con.prepareStatement ("INSERT INTO student VALUES(?,?,?)");
+            pstB.setInt (1,student.getID());
+            pstB.setString(2,student.getNickName());
+            pstB.setString(3,student.getPassword());
+            pstB.executeUpdate ();
+            pstA=con.prepareStatement("select * from student where id = (select max(id) from student)");
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                studemo.setID(rstA.getInt("ID"));
+                studemo.setNickName(rstA.getString("NickName"));
+                studemo.setPassword(rstA.getString("Password"));
+                pstC=con.prepareStatement("INSERT INTO sturein VALUES (?,?,?,?,?,?,?)");
+                pstC.setInt(1,rstA.getInt("ID"));
+                pstC.setString(2,stuRein.getSex());
+                pstC.setString(3,stuRein.getSexWanted());
+                pstC.setString(4,stuRein.getTime());
+                pstC.setString(5,stuRein.getSubject());
+                pstC.setString(6,stuRein.getGrade());
+                pstC.setString(7,stuRein.getEmail());
+                pstC.executeUpdate();
+                pstD=con.prepareStatement("INSERT INTO friendrelationship VALUES (?,?)");
+                pstD.setInt(1,rstA.getInt("ID"));
+                pstD.setString(2,"2000");
+                pstD.executeUpdate();
+                pstE=con.prepareStatement("INSERT INTO persionserver VALUES (?,?)");
+                pstE.setInt(1,rstA.getInt("ID"));
+                pstE.setInt(2,0);
+                pstE.executeUpdate();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace ();
+        } catch (SQLException e) {
+            e.printStackTrace ();
+        } finally {
             try {
-                Class.forName (driver);
-                con=DriverManager.getConnection(url,username,pswd);
-                pstB=con.prepareStatement ("INSERT INTO student VALUES(?,?,?)");
-                pstB.setInt (1,student.getID());
-                pstB.setString(2,student.getNickName());
-                pstB.setString(3,student.getPassWord());
-                pstB.executeUpdate ();
-                pstA=con.prepareStatement("select * from student where id = (select max(id) from student)");
-                ResultSet rstA=pstA.executeQuery();
-                if(rstA.first()){
-                    studemo.setID(rstA.getInt("ID"));
-                    studemo.setNickName(rstA.getString("NickName"));
-                    studemo.setPassWord(rstA.getString("PassWord"));
-                    pstC=con.prepareStatement("INSERT INTO sturein VALUES (?,?,?,?,?,?)");
-                    pstC.setInt(1,rstA.getInt("ID"));
-                    pstC.setString(2,"男");
-                    pstC.setString(3,"不限");
-                    pstC.setString(4,"晚上");
-                    pstC.setString(5,"数学");
-                    pstC.setString(6,"高中");
-                    pstC.executeUpdate();
-                    pstD=con.prepareStatement("INSERT INTO friendrelationship VALUES (?,?)");
-                    System.out.println(rstA.getInt("ID"));
-                    pstD.setInt(1,rstA.getInt("ID"));
-                    pstD.setString(2,"2000");
-                    pstD.executeUpdate();
-                    pstE=con.prepareStatement("INSERT INTO persionserver VALUES (?,?)");
-                    pstE.setInt(1,rstA.getInt("ID"));
-                    pstE.setInt(2,0);
-                    pstE.executeUpdate();
-                }
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace ();
+                pstB.close();
+                con.close();
             } catch (SQLException e) {
-                e.printStackTrace ();
-            } finally {
-                try {
-                    pstB.close();
-                    con.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+                e.printStackTrace();
             }
         }
         return studemo;
@@ -99,14 +96,14 @@ public class Dao {
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-            pstS=con.prepareStatement("SELECT * FROM student WHERE ID=? AND PassWord=?");
+            pstS=con.prepareStatement("SELECT * FROM student WHERE ID=? AND Password=?");
             pstS.setInt(1,student.getID());
-            pstS.setString(2,student.getPassWord());
+            pstS.setString(2,student.getPassword());
             ResultSet rstS=pstS.executeQuery();
             if(rstS.first()){
                studemo.setID(rstS.getInt("ID"));
                studemo.setNickName(rstS.getString("NickName"));
-               studemo.setPassWord(rstS.getString("PassWord"));
+               studemo.setPassword(rstS.getString("Password"));
             }else{
                 studemo=null;
             }
@@ -120,50 +117,47 @@ public class Dao {
         return studemo;
     }
     //教师注册
-    public Teacher TeaInsert(Teacher teacher){
+    public Teacher TeaInsert(Teacher teacher,TeaREIN teaREIN){
         Teacher teademo=new Teacher();
-        if(teacher.getNickName().equals("")||teacher.getPassWord().equals("")){
-            teademo=null;
-        }else{
-            Connection con=null;
-            PreparedStatement pstB=null;
-            PreparedStatement pstA=null;
-            PreparedStatement pstC=null;
+
+        Connection con=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstC=null;
+        try {
+            Class.forName (driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstB=con.prepareStatement ("INSERT INTO teacher VALUES(?,?,?)");
+            pstB.setInt (1,teacher.getID());
+            pstB.setString(2,teacher.getNickName());
+            pstB.setString(3,teacher.getPassword());
+            pstB.executeUpdate ();
+            pstA=con.prepareStatement("select * from teacher where id = (select max(id) from teacher)");
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                teademo.setID(rstA.getInt("ID"));
+                teademo.setNickName(rstA.getString("NickName"));
+                teademo.setPassword(rstA.getString("Password"));
+                pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?,?)");
+                pstC.setInt(1,rstA.getInt("ID"));
+                pstC.setString(2,teaREIN.getSex());
+                pstC.setString(3,teaREIN.getEducation());
+                pstC.setString(4,teaREIN.getTime());
+                pstC.setString(5,teaREIN.getSubject());
+                pstC.setString(6,teaREIN.getGrade());
+                pstC.setString(7,teaREIN.getEmail());
+                pstC.executeUpdate();
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace ();
+        } catch (SQLException e) {
+            e.printStackTrace ();
+        } finally {
             try {
-                Class.forName (driver);
-                con=DriverManager.getConnection(url,username,pswd);
-                pstB=con.prepareStatement ("INSERT INTO teacher VALUES(?,?,?)");
-                pstB.setInt (1,teacher.getID());
-                pstB.setString(2,teacher.getNickName());
-                pstB.setString(3,teacher.getPassWord());
-                pstB.executeUpdate ();
-                pstA=con.prepareStatement("select * from teacher where id = (select max(id) from teacher)");
-                ResultSet rstA=pstA.executeQuery();
-                if(rstA.first()){
-                    System.out.println(rstA.getInt("ID"));
-                    teademo.setID(rstA.getInt("ID"));
-                    teademo.setNickName(rstA.getString("NickName"));
-                    teademo.setPassWord(rstA.getString("PassWord"));
-                    pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?)");
-                    pstC.setInt(1,rstA.getInt("ID"));
-                    pstC.setString(2,"男");
-                    pstC.setString(3,"本科");
-                    pstC.setString(4,"晚上");
-                    pstC.setString(5,"数学");
-                    pstC.setString(6,"高中");
-                    pstC.executeUpdate();
-                }
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace ();
+                pstB.close();
+                con.close();
             } catch (SQLException e) {
-                e.printStackTrace ();
-            } finally {
-                try {
-                    pstB.close();
-                    con.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+                e.printStackTrace();
             }
         }
         return teademo;
@@ -175,14 +169,14 @@ public class Dao {
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-            pstS=con.prepareStatement("SELECT * FROM teacher WHERE ID=? AND PassWord=?");
+            pstS=con.prepareStatement("SELECT * FROM teacher WHERE ID=? AND Password=?");
             pstS.setInt(1,teacher.getID());
-            pstS.setString(2,teacher.getPassWord());
+            pstS.setString(2,teacher.getPassword());
             ResultSet rstS=pstS.executeQuery();
             if(rstS.first()){
                 teademo.setID(rstS.getInt("ID"));
                 teademo.setNickName(rstS.getString("NickName"));
-                teademo.setPassWord(rstS.getString("PassWord"));
+                teademo.setPassword(rstS.getString("Password"));
             }else{
                 teademo=null;
             }
@@ -230,7 +224,6 @@ public class Dao {
         return teaREIN;
     }
     public StuREIN StuReInUpdate(StuREIN stuREIN){
-        System.out.println(stuREIN.getID());
         StuREIN sridemo=new StuREIN();
         Connection con=null;
         PreparedStatement pstT=null;
@@ -344,18 +337,19 @@ public class Dao {
             pstB=con.prepareStatement("SELECT * FROM tearein WHERE ID=?");
             pstB.setInt(1,TeaID);
             ResultSet rstB=pstB.executeQuery();
-            if(rstA.first()&&rstB.first()){
-                Teacher teacher=new Teacher();
+            if(rstA.first()&&rstB.first()) {
+                Teacher teacher = new Teacher();
                 teacher.setID(rstA.getInt("ID"));
                 teacher.setNickName(rstA.getString("NickName"));
-                teacher.setPassWord(rstA.getString("PassWord"));
-                TeaREIN teaREIN=new TeaREIN();
+                teacher.setPassword(rstA.getString("Password"));
+                TeaREIN teaREIN = new TeaREIN();
                 teaREIN.setID(rstB.getInt("ID"));
                 teaREIN.setSex(rstB.getString("Sex"));
                 teaREIN.setEducation(rstB.getString("Education"));
                 teaREIN.setTime(rstB.getString("Time"));
                 teaREIN.setSubject(rstB.getString("Subject"));
                 teaREIN.setGrade(rstB.getString("Grade"));
+                teaREIN.setEmail(rstB.getString(("Email")));
                 bsTeacher.setTeacher(teacher);
                 bsTeacher.setTeaREIN(teaREIN);
             }
@@ -365,6 +359,7 @@ public class Dao {
             e.printStackTrace();
         } finally {
         }
+
         return bsTeacher;
 
     }
@@ -388,7 +383,7 @@ public class Dao {
                         Teacher teacher=new Teacher();
                         teacher.setID(rstA.getInt("ID"));
                         teacher.setNickName(rstA.getString("NickName"));
-                        teacher.setPassWord(rstA.getString("PassWord"));
+                        teacher.setPassword(rstA.getString("Password"));
                         TeaREIN teaREIN=new TeaREIN();
                         teaREIN.setID(rstB.getInt("ID"));
                         teaREIN.setSex(rstB.getString("Sex"));
@@ -481,7 +476,7 @@ public class Dao {
                     if(rstB.first()){
                         teacher.setID(rstB.getInt("ID"));
                         teacher.setNickName(rstB.getString("NickName"));
-                        teacher.setPassWord(rstB.getString("PassWord"));
+                        teacher.setPassword(rstB.getString("Password"));
                         listofteachers.add(teacher);
                     }
                 }
@@ -598,7 +593,9 @@ public class Dao {
                     pstA.executeUpdate();
                     pstB=con.prepareStatement("SELECT * FROM persionserver WHERE ID=?");
                     pstB.setInt(1,OutID);
+                  System.out.println(OutID);
                     ResultSet rstB=pstB.executeQuery();
+                  System.out.println("num11");
                     if(rstB.first()){
                         int num=rstB.getInt("MessageNumber");
                         pstC=con.prepareStatement("Update persionserver SET MessageNumber=? WHERE ID=?");
@@ -616,71 +613,118 @@ public class Dao {
             e.printStackTrace();
         } finally {
         }
+
         return 0;
     }
-    public int StuNickPswdUpdate(Student student){
+
+    public List<BSTeacher> ProfileTea(String subject){
+        List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
+
         Connection con=null;
         PreparedStatement pstA=null;
-        if(student.getPassWord().equals("")||student.getNickName().equals("")){
-            return 0;
-        }else{
-            try {
-                Class.forName(driver);
-                con=DriverManager.getConnection(url,username,pswd);
-                pstA=con.prepareStatement("UPDATE student SET NickName=?,PassWord=? WHERE ID=?");
-                pstA.setString(1,student.getNickName());
-                pstA.setString(2,student.getPassWord());
-                pstA.setInt(3,student.getID());
-                pstA.executeUpdate();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
+        PreparedStatement pstB=null;
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM tearein WHERE Subject=?");
+            pstA.setString(1,subject);
+            ResultSet rstA=pstA.executeQuery();
+            int counter=0;
+            while(rstA.next()&&counter<9){
+                pstB=con.prepareStatement("SELECT * FROM teacher WHERE ID=?");
+                pstB.setInt(1,rstA.getInt("ID"));
+                ResultSet rstB=pstB.executeQuery();
+                while(rstB.next()){
+                    BSTeacher bsTeacher=new BSTeacher();
+                    Teacher teacher=new Teacher();
+                    teacher.setID(rstB.getInt("ID"));
+                    teacher.setNickName(rstB.getString("NickName"));
+                    teacher.setPassword(rstB.getString("Password"));
+                    TeaREIN teaREIN=new TeaREIN();
+                    teaREIN.setID(rstA.getInt("ID"));
+                    teaREIN.setSex(rstA.getString("Sex"));
+                    teaREIN.setEducation(rstA.getString("Education"));
+                    teaREIN.setTime(rstA.getString("Time"));
+                    teaREIN.setSubject(rstA.getString("Subject"));
+                    teaREIN.setGrade(rstA.getString("Grade"));
+                    bsTeacher.setTeaREIN(teaREIN);
+                    bsTeacher.setTeacher(teacher);
+                    listofbstea.add(bsTeacher);
+                }
+                counter++;
             }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
         }
-       return 1;
+        return listofbstea;
     }
-    public int TeaNickPswdUpdate(Teacher teacher){
+
+
+    public List<BSTeacher> TopTea(){
+        List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
+
         Connection con=null;
         PreparedStatement pstA=null;
-        if(teacher.getPassWord().equals("")||teacher.getNickName().equals("")){
-            return 0;
-        }else{
-            try {
-                Class.forName(driver);
-                con=DriverManager.getConnection(url,username,pswd);
-                pstA=con.prepareStatement("UPDATE teacher SET NickName=?,PassWord=? WHERE ID=?");
-                pstA.setString(1,teacher.getNickName());
-                pstA.setString(2,teacher.getPassWord());
-                pstA.setInt(3,teacher.getID());
-                pstA.executeUpdate();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
+        PreparedStatement pstB=null;
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM tearein");
+            ResultSet rstA=pstA.executeQuery();
+            int counter=0;
+            while(rstA.next()&&counter<8){
+                pstB=con.prepareStatement("SELECT * FROM teacher WHERE ID=?");
+                pstB.setInt(1,rstA.getInt("ID"));
+                ResultSet rstB=pstB.executeQuery();
+                while(rstB.next()){
+                    BSTeacher bsTeacher=new BSTeacher();
+                    Teacher teacher=new Teacher();
+                    teacher.setID(rstB.getInt("ID"));
+                    teacher.setNickName(rstB.getString("NickName"));
+                    teacher.setPassword(rstB.getString("Password"));
+                    TeaREIN teaREIN=new TeaREIN();
+                    teaREIN.setID(rstA.getInt("ID"));
+                    teaREIN.setSex(rstA.getString("Sex"));
+                    teaREIN.setEducation(rstA.getString("Education"));
+                    teaREIN.setTime(rstA.getString("Time"));
+                    teaREIN.setSubject(rstA.getString("Subject"));
+                    teaREIN.setGrade(rstA.getString("Grade"));
+                    bsTeacher.setTeaREIN(teaREIN);
+                    bsTeacher.setTeacher(teacher);
+                    listofbstea.add(bsTeacher);
+                }
+                counter++;
             }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
         }
-        return 1;
+        return listofbstea;
     }
-    //定时监测后台数据
-
-
+//    public void MessageAttention(int StuID){
+//        Connection con=null;
+//        PreparedStatement pstA=null;
+//        try {
+//            Class.forName(driver);
+//            con=DriverManager.getConnection(url,username,pswd);
+//            pstA
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//
+//        }
+//
+//    }
     public static void main(String[] args) {
         Dao dao=new Dao();
-        Teacher teacher=new Teacher();
-        teacher.setID(2000);
-        teacher.setNickName("root");
-        teacher.setPassWord("1111");
-        dao.TeaNickPswdUpdate(teacher);
-//        Student student=new Student();
-//        student.setID(1001);
-//        student.setNickName("BasicStudent");
-//        student.setPassWord("1111");
-//        dao.StuNickPswdUpdate(student);
-//        dao.MessageInsert(1001,2000,"呵呵");
-
+        dao.MessageInsert(1001,2000,"呵呵");
 //        List<Message> list=dao.MesageShow(1001,2000);
 //       for(int i=0;i<list.size();i++){
 //           System.out.println(list.get(i).getMessagecol());
@@ -703,7 +747,7 @@ public class Dao {
 //        System.out.println(bsTeacher.getTeacher().getNickName()+" "+bsTeacher.getTeaREIN().getTime());
 //        Teacher teacher=new Teacher();
 //        teacher.setNickName("shi");
-//        teacher.setPassWord("1232");
+//        teacher.setPassword("1232");
 //        dao.TeaInsert(teacher);
 //          dao.MatchForStu(1001);
 //        TeaREIN teaREIN=new TeaREIN();
@@ -750,19 +794,19 @@ public class Dao {
 //        teaREIN.setGrade("012");
 //        dao.TeaReInUpdate(teaREIN);
 //        student.setNickName("测试");
-//        student.setPassWord("2423");
+//        student.setPassword("2423");
 //        dao.StuInsert(student);
 //        student.setID(1027);
-//        student.setPassWord("435345");
+//        student.setPassword("435345");
 //        Student studemo=dao.StuLog(student);
-//        System.out.println(studemo.getID()+" "+studemo.getNickName()+" "+studemo.getPassWord());
+//        System.out.println(studemo.getID()+" "+studemo.getNickName()+" "+studemo.getPassword());
 //        Teacher teacher=new Teacher();
 ////        teacher.setNickName("peter");
 //        teacher.setID(2008);
-//        teacher.setPassWord("5456");
+//        teacher.setPassword("5456");
 ////        Teacher teademo=dao.TeaInsert(teacher);
 //        Teacher teademo=dao.TeaLog(teacher);
-//        System.out.println(teademo.getID()+" "+teademo.getNickName()+" "+teademo.getPassWord());
+//        System.out.println(teademo.getID()+" "+teademo.getNickName()+" "+teademo.getPassword());
 
     }
 }

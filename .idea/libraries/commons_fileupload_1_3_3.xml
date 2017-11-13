@@ -1,6 +1,7 @@
 <component name="libraryTable">
-  <library name="Struts 2" type="struts2">
+  <library name="commons-fileupload-1.3.3">
     <CLASSES>
+      <root url="jar://A:/StoreHouse/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar!/" />
       <root url="jar://A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/commons-fileupload-1.3.3.jar!/" />
       <root url="jar://A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/commons-io-2.5.jar!/" />
       <root url="jar://A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/commons-lang3-3.6.jar!/" />
