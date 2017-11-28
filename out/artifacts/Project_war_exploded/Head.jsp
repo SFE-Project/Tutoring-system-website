@@ -10,7 +10,7 @@
 <html>
 <head>
 
-    <title>首页</title>
+    <title>Classy Forms Widget A Flat Responsive Widget Template :: W3layouts</title>
 
     <!-- For-Mobile-Apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />

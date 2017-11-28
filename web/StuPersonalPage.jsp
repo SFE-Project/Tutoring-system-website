@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    <title>首页</title>
+    <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Groom Profile :: w3layouts</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -72,11 +72,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bridegroom Profile Details -->
 <div class="w3ls-list">
     <div class="container">
-        <h2>我的关注</h2>
+        <h2>Bridegroom Profile Details</h2>
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">
-                    <img src="images/touxiang.jpg" alt="profile image" />
+                    <img src="images/profile-image-men.jpg" alt="profile image" />
                 </div>
                 <div class="w3layouts_details">
                     <h4>ID : ${studemo.getID()}  昵称 :${studemo.getNickName()}</h4>
@@ -324,7 +324,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul class="profile_item">
                         <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
                             <li class="profile_item-img">
-                                <img src="images/touxiang.jpg" class="img-responsive" alt="">
+                                <img src="images/p1.jpg" class="img-responsive" alt="">
                             </li>
                             <li class="profile_item-desc">
                                 <h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>

@@ -337,12 +337,12 @@ public class Dao {
             pstB=con.prepareStatement("SELECT * FROM tearein WHERE ID=?");
             pstB.setInt(1,TeaID);
             ResultSet rstB=pstB.executeQuery();
-            if(rstA.first()&&rstB.first()) {
-                Teacher teacher = new Teacher();
+            if(rstA.first()&&rstB.first()){
+                Teacher teacher=new Teacher();
                 teacher.setID(rstA.getInt("ID"));
                 teacher.setNickName(rstA.getString("NickName"));
                 teacher.setPassword(rstA.getString("Password"));
-                TeaREIN teaREIN = new TeaREIN();
+                TeaREIN teaREIN=new TeaREIN();
                 teaREIN.setID(rstB.getInt("ID"));
                 teaREIN.setSex(rstB.getString("Sex"));
                 teaREIN.setEducation(rstB.getString("Education"));
@@ -359,7 +359,6 @@ public class Dao {
             e.printStackTrace();
         } finally {
         }
-
         return bsTeacher;
 
     }

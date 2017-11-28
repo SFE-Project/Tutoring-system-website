@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">
-                    <img src="images/touxiang.jpg" alt="profile image" />
+                    <img src="images/profile-image-men.jpg" alt="profile image" />
                 </div>
                 <div class="w3layouts_details">
                     <h4>Profile ID : ${bsTeacher.getTeacher().getID()}</h4>
@@ -323,7 +323,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="profile_item">
                     <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
                         <li class="profile_item-img">
-                            <img src="images/touxiang.jpg" class="img-responsive" alt="">
+                            <img src="images/p1.jpg" class="img-responsive" alt="">
                         </li>
                         <li class="profile_item-desc">
                             <h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>

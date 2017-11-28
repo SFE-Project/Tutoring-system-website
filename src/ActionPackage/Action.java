@@ -61,7 +61,6 @@ public class Action {
     }
     public String Friendlist(){
         listofteacher=dao.Friendlist(StuID);
-        listofbstea=dao.TopTea();
         if(listofteacher==null){
             return "NOFRIEND";
         }else{
@@ -84,19 +83,12 @@ public class Action {
 
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
-        listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
-//        if(bsTeacher==null){
-//            return "NOSINGLETEA";
-//        }else{
-            return "SINGLETEA";
-//        }
-
-
+            listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
+        return "SINGLETEA";
 
     }
     public String MatchForStu(){
         teaListAndOneStu=dao.MatchForStu(StuID);
-        listofbstea=dao.TopTea();
         if(listoftri!=null){
             return "STUSUCCESSMATCH";
         }else{

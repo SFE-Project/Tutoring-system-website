@@ -18,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    <title>个人信息更改</title>
+    <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Assisted Services :: w3layouts</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -78,9 +78,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3ls-assisted_Services">
     <div class="container">
         <div class="assisted_Services-agileits">
+            <a href="map.jsp">为您匹配最佳位置</a><br/>
             <h2>个人资料修改 </h2>
             <form action="StuREINUpdate.action" method="get">
-                <input type="hidden" name="stuREIN.ID" value='<s:property value="StuID"/>'>
+                <input type="hidden" name=" stuREIN.ID" value='<s:property value="StuID"/>'>
                 <label>性别：</label>
                 <input type="radio" name="stuREIN.Sex" value="男" checked="checked">男性
                 <input type="radio" name="stuREIN.Sex" value="女">女性

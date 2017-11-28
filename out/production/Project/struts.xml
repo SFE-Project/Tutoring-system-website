@@ -44,7 +44,6 @@
         <!--点击教师链接展示其个人界面-->
         <action name="SingleTea" class="ActionPackage.Action" method="SingleTea">
             <result name="SINGLETEA">SingleTeaShow.jsp</result>
-            <!--<result name="NOSINGLETEA">FailInfoPage.jsp</result>-->
         </action>
         <!--预览所有教师信息ok-->
         <action name="AllTheTea" class="ActionPackage.Action" method="AllTheTea">
