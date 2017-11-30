@@ -73,14 +73,18 @@
             <result name="INSERTMESSAGE">MessageSuccessSend.jsp</result>
             <result name="REJECTEMPTYMESSAGE">FailInfoPage.jsp</result>
         </action>
-
+<!--跳转到学生更改需求界面-->
         <action name="StuReF" class="ActionPackage.Action" method="StuReF">
             <result name="1">StuReF.jsp</result>
         </action>
-
+<!--跳转到教师更改提供需求界面-->
         <action name="TeaReF" class="ActionPackage.Action" method="TeaReF">
             <result name="1">TeaReF.jsp</result>
         </action>
-
+<!--为学生匹配教师升级版-->
+        <action name="MatchForStuPlus" class="ActionPackage.Action" method="MatchforStuPlus">
+            <result name="LISTTEAFORSTU">StuMatchShow.jsp</result>
+            <result name="NOTEAFORSTU">NoStuMatchShow.jsp</result>
+        </action>
     </package>
 </struts>

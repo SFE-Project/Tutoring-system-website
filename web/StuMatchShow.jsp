@@ -81,23 +81,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <table class="table table-striped">
                     <tr>
-                        <th>昵称</th>
+                        <th>会员号</th>
                         <th>性别</th>
                         <th>学历</th>
-                        <th>可行时间</th>
+                        <th>大致时间</th>
+                        <th>具体时间</th>
                         <th>学科</th>
                         <th>面向年级</th>
+                        <th>Email</th>
+                        <th>可接受地点</th>
+                        <th>补习类型</th>
+                        <th>价格</th>
                     </tr>
                     <tbody>
-
                     <s:iterator value="#request.teaListAndOneStu.getTeaREINS()" var="temp">
                         <tr>
                             <td><a href='SingleTea.action?StuID=<a:property value="StuID"/>&TeaID=<s:property value="#temp.ID"/>'><s:property value="#temp.ID"/> </a> </td>
                             <td><s:property value="#temp.Sex"/> </td>
                             <td><s:property value="#temp.Education"/></td>
+                            <td><s:property value="#temp.Date"/></td>
                             <td><s:property value="#temp.Time"/> </td>
                             <td><s:property value="#temp.Subject"/> </td>
                             <td><s:property value="#temp.Grade"/> </td>
+                            <td><s:property value="#temp.Email"/></td>
+                            <td><s:property value="#temp.AddressAccess"/></td>
+                            <td><s:property value="#temp.Type"/></td>
+                            <td><s:property value="#temp.Price"/></td>
                         </tr>
                     </s:iterator>
                     </tbody>

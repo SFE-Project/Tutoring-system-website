@@ -39,6 +39,14 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String MatchforStuPlus(){
+        teaListAndOneStu=dao.MatchForStuPlus(StuID);
+        if(teaListAndOneStu.getTeaREINS().size()==0){
+            return "NOTEAFORSTU";
+        }else{
+            return "LISTTEAFORSTU";
+        }
+    }
     public String MessageInsert(){
         int flag=dao.MessageInsert(OutID,RecID,mess);
         if(flag==0){

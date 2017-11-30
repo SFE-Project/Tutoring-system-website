@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h4>ID : ${studemo.getID()}  昵称 :${studemo.getNickName()}</h4>
                     <a href='FriendList.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">我的关注</a>
                     <a href="StuReF.action?StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">修改资料</a>
-                    <a href='MatchForStu.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
+                    <a href='MatchForStuPlus.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
                 </div>
                 <div class="clearfix"></div>
             </div>

@@ -113,8 +113,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="checkbox" name="teaREIN.Grade" value="大学">大学
                 <%--补习类别--%>
                 <label>补习类别</label>
-                <input type="checkbox" name="teaREIN.Type" value="0" checked="checked">一对一
-                <input type="checkbox" name="teaREIN.Type" value="1">一对多
+                <input type="checkbox" name="teaREIN.Type" value="一对一" checked="checked">一对一
+                <input type="checkbox" name="teaREIN.Type" value="一对多">一对多
                 <%--时薪--%>
                 <label>时薪</label>
                 <input type="radio" name="teaREIN.Price" value="0/80" checked="checked">80以下

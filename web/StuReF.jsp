@@ -119,8 +119,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="radio" name="stuREIN.Grade" value="大学">大学
                 <%--类别设置--%>
                 <label>补习类别：</label>
-                <input type="radio" name="stuREIN.Type" value="0" checked="checked">一对一
-                <input type="radio" name="stuREIN.Type" value="1">一对多
+                <input type="radio" name="stuREIN.Type" value="一对一" checked="checked">一对一
+                <input type="radio" name="stuREIN.Type" value="一对多">一对多
                 <%--时薪要求--%>
                 <label>时薪</label><input type="radio" name="stuREIN.Price" value="0/80">80以下
                 <input type="radio" name="stuREIN.Price" value="80/150">80~150
