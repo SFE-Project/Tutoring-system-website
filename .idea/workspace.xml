@@ -345,9 +345,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-43" />
-    <option name="y" value="143" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-32" />
+    <option name="y" value="269" />
     <option name="width" value="1933" />
     <option name="height" value="909" />
   </component>
@@ -718,12 +718,12 @@
       <workItem from="1512030038569" duration="4460000" />
       <workItem from="1512034627044" duration="3402000" />
       <workItem from="1512040228215" duration="5542000" />
-      <workItem from="1512045833799" duration="4551000" />
+      <workItem from="1512045833799" duration="4772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107244000" />
+    <option name="totallyTimeSpent" value="107465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +735,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-43" y="143" width="1933" height="909" extended-state="1" />
+    <frame x="-32" y="269" width="1933" height="909" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
