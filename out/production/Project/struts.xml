@@ -91,5 +91,12 @@
             <result name="LISTSTUFORTEA">TeaMatchShow.jsp</result>
             <result name="NOSTUFORTEA">NoStuMatchShow.jsp</result>
         </action>
+        <!--学生评价教师功能-->
+        <action name="EvaluationForTea" class="ActionPackage.Action" method="EvaluationShow">
+            <result name="NOEVALUATION">FailInfoPage.jsp</result>
+            <!--不是错误信息，只是没有评价。。。-->
+            <result name="EVALUATIONSHOW">EvaluationShow.jsp</result>
+
+        </action>
     </package>
 </struts>

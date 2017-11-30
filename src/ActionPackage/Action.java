@@ -29,6 +29,7 @@ public class Action {
     private List<Teacher> listofteacher=new ArrayList<Teacher>();
     private Message message=new Message();
     private List<Message> listofmessage=new ArrayList<Message>();
+    private List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
 
 
     public static void main(String[] args) {
@@ -40,6 +41,15 @@ public class Action {
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
         }
+    }
+    public String EvaluationShow(){
+        stuEvaluationtoTeaList=dao.EvaluationShow(TeaID);
+        if(stuEvaluationtoTeaList==null){
+            return "NOEVALUATION";
+        }else{
+            return "EVALUATIONSHOW";
+        }
+
     }
     public String MatchforTeaPlus(){
         stuListAndOneTea=dao.MatchForTeaPlus(TeaID);
@@ -174,6 +184,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public List<StuEvaluationtoTea> getStuEvaluationtoTeaList() {
+        return stuEvaluationtoTeaList;
+    }
+
+    public void setStuEvaluationtoTeaList(List<StuEvaluationtoTea> stuEvaluationtoTeaList) {
+        this.stuEvaluationtoTeaList = stuEvaluationtoTeaList;
     }
 
     public StuListAndOneTea getStuListAndOneTea() {

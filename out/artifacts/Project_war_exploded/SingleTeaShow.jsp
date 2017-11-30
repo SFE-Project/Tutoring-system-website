@@ -79,6 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3ls-list">
     <div class="container">
         <h2>个人简介</h2>
+        <h2><a href="EvaluationForTea.action?TeaID=${bsTeacher.getTeacher().getID()}">累计评价</a> </h2>
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">

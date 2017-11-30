@@ -2,6 +2,7 @@ package localpackage;
 
 import com.sun.org.apache.regexp.internal.RE;
 
+import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -892,33 +893,79 @@ public class Dao {
 //        }
 //
 //    }
+//    学生评价教师功能
+    public List<StuEvaluationtoTea> EvaluationShow(int TeaID){
+        int existflag=1;
+       List<StuEvaluationtoTea> listofEvaluation=new ArrayList<StuEvaluationtoTea>();
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM evaluation WHERE Evaluated=?");
+            pstB=connection.prepareStatement("SELECT * FROM evaluation WHERE Evaluated=?");
+            pstA.setInt(1,TeaID);
+            pstB.setInt(1,TeaID);
+            ResultSet rstA=pstA.executeQuery();
+            ResultSet rstB=pstB.executeQuery();
+            if(rstB.first()){
+                while(rstA.next()){
+                    StuEvaluationtoTea stuEvaluationtoTea=new StuEvaluationtoTea();
+                    stuEvaluationtoTea.setEvaluatorID(rstA.getInt("Evaluator"));
+                    stuEvaluationtoTea.setEvaluatedID(rstA.getInt("Evaluated"));
+                    stuEvaluationtoTea.setEvaluateContent(rstA.getString("Content"));
+                    stuEvaluationtoTea.setStar(rstA.getInt("Star"));
+                    listofEvaluation.add(stuEvaluationtoTea);
+                }
+            }else{
+                return null;
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return listofEvaluation;
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
-
         Dao dao=new Dao();
-        StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
-        List<StuREIN> listofstu=new ArrayList<StuREIN>();
-        stuListAndOneTea=dao.MatchForTeaPlus(2000);
-        listofstu=stuListAndOneTea.getListofStu();
-        System.out.println(stuListAndOneTea.getListofStu().size());
-        for(int i=0;i<listofstu.size();i++){
-            System.out.println(listofstu.get(i).getID()+" "+
-            listofstu.get(i).getSex()+" "+
-                    listofstu.get(i).getSubject()+" "+
-                    listofstu.get(i).getTime()+" "+
-                    listofstu.get(i).getAddressAccess()+" "+
-                    listofstu.get(i).getSexWanted()+" "+
-                    listofstu.get(i).getGrade()+" "+
-                    listofstu.get(i).getDate()+" "+
-                    listofstu.get(i).getPrice()+" "+
-                    listofstu.get(i).getEmail()+" "+
-                    listofstu.get(i).getType()+" "
-
-            );
+        List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
+        stuEvaluationtoTeaList=dao.EvaluationShow(2000);
+//        if(stuEvaluationtoTeaList==null){
+//            System.out.println("23rcr44vr");
+//        }
+        for(int i=0;i<stuEvaluationtoTeaList.size();i++){
+            System.out.println(stuEvaluationtoTeaList.get(i).getEvaluatedID()+" "+
+            stuEvaluationtoTeaList.get(i).getEvaluatorID()+" "+
+            stuEvaluationtoTeaList.get(i).getEvaluateContent()+" "+
+            stuEvaluationtoTeaList.get(i).getStar());
         }
+//        StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
+//        List<StuREIN> listofstu=new ArrayList<StuREIN>();
+//        stuListAndOneTea=dao.MatchForTeaPlus(2000);
+//        listofstu=stuListAndOneTea.getListofStu();
+//        System.out.println(stuListAndOneTea.getListofStu().size());
+//        for(int i=0;i<listofstu.size();i++){
+//            System.out.println(listofstu.get(i).getID()+" "+
+//            listofstu.get(i).getSex()+" "+
+//                    listofstu.get(i).getSubject()+" "+
+//                    listofstu.get(i).getTime()+" "+
+//                    listofstu.get(i).getAddressAccess()+" "+
+//                    listofstu.get(i).getSexWanted()+" "+
+//                    listofstu.get(i).getGrade()+" "+
+//                    listofstu.get(i).getDate()+" "+
+//                    listofstu.get(i).getPrice()+" "+
+//                    listofstu.get(i).getEmail()+" "+
+//                    listofstu.get(i).getType()+" "
+//
+//            );
+//        }
 //        teaListAndOneStu=dao.MatchForStuPlus(1001);
 //        listoftea=teaListAndOneStu.getTeaREINS();
 //        System.out.println(listoftea.size());
