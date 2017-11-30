@@ -94,6 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <th>价格</th>
                     </tr>
                     <tbody>
+                    <%----%>
                     <s:iterator value="#request.teaListAndOneStu.getTeaREINS()" var="temp">
                         <tr>
                             <td><a href='SingleTea.action?StuID=<a:property value="StuID"/>&TeaID=<s:property value="#temp.ID"/>'><s:property value="#temp.ID"/> </a> </td>
