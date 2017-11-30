@@ -8,6 +8,43 @@ public class TeaREIN {
     private String Subject;
     private String Grade;
     private String Email;
+    private String Date;
+    private String Type;
+    private String Price;
+    private String AddressAccess;
+
+    public String getAddressAccess() {
+        return AddressAccess;
+    }
+
+    public void setAddressAccess(String addressAccess) {
+        AddressAccess = addressAccess;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String price) {
+        Price = price;
+    }
+
+    public String getDate() {
+        return Date;
+    }
+
+    public void setDate(String date) {
+        Date = date;
+    }
+
     /**
      * 教师个人信息包括ID,性别，最高学历，要求时间，学科,年级---仍需添加
      * Sex:0男1女

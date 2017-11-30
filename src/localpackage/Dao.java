@@ -201,13 +201,18 @@ public class Dao {
             con=DriverManager.getConnection(url,username,pswd);
             pstD=con.prepareStatement("SELECT * FROM tearein WHERE ID=?");
             pstD.setInt(1,teaREIN.getID());
-            pstT=con.prepareStatement("UPDATE tearein SET Sex=?,Education=?,Time=?,Subject=?,Grade=? WHERE ID=?");
+            pstT=con.prepareStatement("UPDATE tearein SET Sex=?,Education=?,Time=?,Subject=?,Grade=?,AddressAccess=?,Date=?,Type=?,Price=? WHERE ID=?");
+//            pstT=con.prepareStatement("UPDATE tearein SET Sex=?,Education=?,Time=?,Subject=?,Grade=? WHERE ID=?");
             pstT.setString(1,teaREIN.getSex());
             pstT.setString(2,teaREIN.getEducation());
             pstT.setString(3,teaREIN.getTime());
             pstT.setString(4,teaREIN.getSubject());
             pstT.setString(5,teaREIN.getGrade());
-            pstT.setInt(6,teaREIN.getID());
+            pstT.setString(6,teaREIN.getAddressAccess());
+            pstT.setString(7,teaREIN.getDate());
+            pstT.setString(8,teaREIN.getType());
+            pstT.setString(9,teaREIN.getPrice());
+            pstT.setInt(10,teaREIN.getID());
             pstT.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -729,16 +734,19 @@ public class Dao {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
         Dao dao=new Dao();
-        StuREIN stuREIN=new StuREIN();
-        stuREIN.setAddressAccess("jhffu");
-        stuREIN.setID(1001);
-        stuREIN.setSex("男");
-        stuREIN.setSexWanted("男");
-        stuREIN.setGrade("初中");
-        stuREIN.setTime("晚上");
-//        stuREIN.setEmail("13324324@qq.com");
-        stuREIN.setSubject("数学");
-        stuREIN=dao.StuReInUpdate(stuREIN);
+        TeaREIN teaREIN=new TeaREIN();
+        teaREIN.setID(2000);
+        teaREIN.setSex("男");
+        teaREIN.setGrade("初中");
+        teaREIN.setTime("晚上");
+        teaREIN.setSubject("数学");
+        teaREIN.setEducation("本科");
+        teaREIN.setDate("寒假");
+        teaREIN.setAddressAccess("南岗");
+        teaREIN.setPrice("0/80");
+        teaREIN.setType("0");
+        teaREIN=dao.TeaReInUpdate(teaREIN);
+
 //        List<Message> list=dao.MesageShow(1001,2000);
 //       for(int i=0;i<list.size();i++){
 //           System.out.println(list.get(i).getMessagecol());
