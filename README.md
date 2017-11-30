@@ -1,3 +1,3 @@
 # Tutoring-system-website
 This is the big project of software engineering......
-前端存在问题，作为观察者点击进入他人个人界面时，展示内容太low
+新加为教师提供学生信息功能，但是目前匹配界面没有学生个人界面链接。
