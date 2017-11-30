@@ -1,3 +1,0 @@
-# Tutoring-system-website
-This is the big project of software engineering......
-新加为教师提供学生信息功能，但是目前匹配界面没有学生个人界面链接。
