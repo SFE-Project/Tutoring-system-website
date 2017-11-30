@@ -8,6 +8,42 @@ public class StuREIN {
     private String Subject;
     private String Grade;
     private String Email;
+    private String AddressAccess;
+    private String Price;
+    private String Type;
+    private String Date;
+
+    public String getDate() {
+        return Date;
+    }
+
+    public void setDate(String date) {
+        Date = date;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String price) {
+        Price = price;
+    }
+
+    public String getAddressAccess() {
+        return AddressAccess;
+    }
+
+    public void setAddressAccess(String addressAccess) {
+        AddressAccess = addressAccess;
+    }
 
     public String getSubject() {
         return Subject;

@@ -236,13 +236,17 @@ public class Dao {
                 con=DriverManager.getConnection(url,username,pswd);
                 pstD=con.prepareStatement("SELECT * FROM sturein WHERE ID=?");
                 pstD.setInt(1,stuREIN.getID());
-                pstT=con.prepareStatement("UPDATE sturein SET Sex=?,SexWanted=?,Time=?,Subject=?,Grade=? WHERE ID=?");
+                pstT=con.prepareStatement("UPDATE sturein SET Sex=?,SexWanted=?,Time=?,Subject=?,Grade=?,AddressAccess=?,Price=?,Date=?,Type=? WHERE ID=?");
                 pstT.setString(1,stuREIN.getSex());
                 pstT.setString(2,stuREIN.getSexWanted());
                 pstT.setString(3,stuREIN.getTime());
                 pstT.setString(4,stuREIN.getSubject());
                 pstT.setString(5,stuREIN.getGrade());
-                pstT.setInt(6,stuREIN.getID());
+                pstT.setString(6,stuREIN.getAddressAccess());
+                pstT.setString(7,stuREIN.getPrice());
+                pstT.setString(8,stuREIN.getDate());
+                pstT.setString(9,stuREIN.getType());
+                pstT.setInt(10,stuREIN.getID());
                 pstT.executeUpdate();
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
@@ -722,8 +726,19 @@ public class Dao {
 //
 //    }
     public static void main(String[] args) {
+//        Dao dao=new Dao();
+//        dao.MessageInsert(1001,2000,"呵呵");
         Dao dao=new Dao();
-        dao.MessageInsert(1001,2000,"呵呵");
+        StuREIN stuREIN=new StuREIN();
+        stuREIN.setAddressAccess("jhffu");
+        stuREIN.setID(1001);
+        stuREIN.setSex("男");
+        stuREIN.setSexWanted("男");
+        stuREIN.setGrade("初中");
+        stuREIN.setTime("晚上");
+//        stuREIN.setEmail("13324324@qq.com");
+        stuREIN.setSubject("数学");
+        stuREIN=dao.StuReInUpdate(stuREIN);
 //        List<Message> list=dao.MesageShow(1001,2000);
 //       for(int i=0;i<list.size();i++){
 //           System.out.println(list.get(i).getMessagecol());

@@ -78,25 +78,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3ls-assisted_Services">
     <div class="container">
         <div class="assisted_Services-agileits">
-            <a href="map.jsp">为您匹配最佳位置</a><br/>
-            <h2>个人资料修改 </h2>
-            <form action="StuREINUpdate.action" method="get">
-                <input type="hidden" name=" stuREIN.ID" value='<s:property value="StuID"/>'>
-                <label>性别：</label>
+            <h2>个人需求修改 </h2><br/>
+            <h2>当前账号:${StuID}</h2>
+            <h3>填写前请校验所有信息正确！</h3>
+
+            <form action="StuREINUpdate.action" >
+                <input type="hidden" name="stuREIN.ID" value='<s:property value="StuID"/>'>
+
+                <label>性别：(必填！！！)</label>
                 <input type="radio" name="stuREIN.Sex" value="男" checked="checked">男性
                 <input type="radio" name="stuREIN.Sex" value="女">女性
                 <label>需要教师性别：</label><input type="radio" name="stuREIN.SexWanted" value="男" >男性
                 <input type="radio" name="stuREIN.SexWanted" value="女">女性
                 <input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限
-                <label>可选时间：</label><input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
+                <label>大致时间：</label>
+                <input type="checkbox" name="stuREIN.Date" value="周末" checked="checked">平时周末
+                <input type="checkbox" name="stuREIN.Date" value="寒假">寒假
+                <input type="checkbox" name="stuREIN.Date" value="暑假">暑假
+                <label>具体时间</label>
+                <input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
                 <input type="checkbox" name="stuREIN.Time" value="下午">下午
                 <input type="checkbox" name="stuREIN.Time" value="晚上">晚上
-                <label>学科</label><input type="checkbox" name="stuREIN.Subject" value="数学" checked="checked">数学
-                <input type="checkbox" name="stuREIN.Subject" value="语文">语文
+                <%--学科设置--%>
+                <label>学科</label>
+                <input type="checkbox" name="stuREIN.Subject" value="语文" checked="checked">语文
                 <input type="checkbox" name="stuREIN.Subject" value="外语">外语
-                <label>年级</label><input type="radio" name="stuREIN.Grade" value="小学">小学
+                <input type="checkbox" name="stuREIN.Subject" value="数学">数学
+                <input type="checkbox" name="stuREIN.Subject" value="物理">物理
+                <input type="checkbox" name="stuREIN.Subject" value="化学">化学
+                <input type="checkbox" name="stuREIN.Subject" value="政治">政治
+                <input type="checkbox" name="stuREIN.Subject" value="地理">地理
+                <input type="checkbox" name="stuREIN.Subject" value="历史">历史
+
+                <%--年级需求--%>
+                <label>年级</label>
+                <input type="radio" name="stuREIN.Grade" value="学龄前">学龄前
+                <input type="radio" name="stuREIN.Grade" value="小学">小学
                 <input type="radio" name="stuREIN.Grade" value="初中">初中
                 <input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中
+                <input type="radio" name="stuREIN.Grade" value="大学">大学
+                <%--类别设置--%>
+                <label>补习类别：</label>
+                <input type="radio" name="stuREIN.Type" value="0" checked="checked">一对一
+                <input type="radio" name="stuREIN.Type" value="1">一对多
+                <%--时薪要求--%>
+                <label>时薪</label><input type="radio" name="stuREIN.Price" value="0/80">80以下
+                <input type="radio" name="stuREIN.Price" value="80/150">80~150
+                <input type="radio" name="stuREIN.Price" value="150/200">150~200
+                <input type="radio" name="stuREIN.Price" value="200++" checked="checked">200以上
+                <%--可接受地点设置--%>
+                <label>可接受地点(目前仅支持哈尔滨市内地区)</label>
+                <input type="radio" name="stuREIN.AddressAccess" value="南岗" checked="checked">南岗
+                <input type="radio" name="stuREIN.AddressAccess" value="道里">道里
+                <input type="radio" name="stuREIN.AddressAccess" value="道外">道外
+                <input type="radio" name="stuREIN.AddressAccess" value="平房">平房
+                <input type="radio" name="stuREIN.AddressAccess" value="松北">松北
+                <input type="radio" name="stuREIN.AddressAccess" value="香坊">香坊
+                <input type="radio" name="stuREIN.AddressAccess" value="阿城">阿城
+                <input type="radio" name="stuREIN.AddressAccess" value="呼兰">呼兰
+                <input type="radio" name="stuREIN.AddressAccess" value="双城">双城
                 <input type="submit" value="提交修改" />
             </form>
         </div>

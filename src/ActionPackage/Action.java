@@ -102,16 +102,22 @@ public class Action {
         if(sridemo!=null){
             return "STUSUCCESSREIN";
         }else{
+            System.out.println(stuREIN.getID());
+            System.out.println(stuREIN.getSex());
+            System.out.println(stuREIN.getSexWanted());
+            System.out.println(stuREIN.getGrade());
+            System.out.println(stuREIN.getTime());
+            System.out.println(stuREIN.getSubject());
+            System.out.println(stuREIN.getEmail());
+            System.out.println(stuREIN.getAddressAccess());
             return "STUFAILEDREIN";
         }
-
     }
     public String TeaREINUpdate(){
         tridemo=dao.TeaReInUpdate(teaREIN);
         if(tridemo!=null){
             System.out.println(tridemo.getSex());
             return "TEASUCCESSREIN";
-
         }else{
             return "TEAFAILEDREIN";
         }
