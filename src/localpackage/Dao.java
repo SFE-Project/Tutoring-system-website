@@ -268,6 +268,87 @@ public class Dao {
         }
         return stuREIN;
     }
+    //为教师提供有用的学生信息加强版
+    public StuListAndOneTea MatchForTeaPlus(int TeaID){
+        StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
+        stuListAndOneTea.setTeaID(TeaID);
+        List<StuREIN> listofstu=new ArrayList<StuREIN>();
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstC=null;
+        BasicServe bss=new BasicServe();
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM tearein WHERE ID=?");
+            pstA.setInt(1,TeaID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                String Sex=rstA.getString("Sex");
+                String Time=rstA.getString("Time");
+                String Education=rstA.getString("Education");
+                String Subject=rstA.getString("Subject");
+                String Grade=rstA.getString("Grade");
+                String Email=rstA.getString("Email");
+                String AddressAccess=rstA.getString("AddressAccess");
+                String Price=rstA.getString("Price");
+                String Date=rstA.getString("Date");
+                String Type=rstA.getString("Type");
+                System.out.println(Sex+" "+Time+" "+Education+" "+Subject+" "+Grade+" "+AddressAccess+" "+Price+" "+Date+" "+Type);
+                pstB=connection.prepareStatement("SELECT * FROM sturein");
+                ResultSet rstB=pstB.executeQuery();
+                while(rstB.next()){
+                    int flaggrade=0;
+                    int flagdate=0;
+                    int flagsub=0;
+                    int flagtime=0;
+                    String Sexresp=rstB.getString("SexWanted");
+                    String Timeresp=rstB.getString("Time");
+                    String Subjectresp=rstB.getString("Subject");
+                    String Graderesp=rstB.getString("Grade");
+                    String AddressAccessresp=rstB.getString("AddressAccess");
+                    String Priceresp=rstB.getString("Price");
+                    String Dateresp=rstB.getString("Date");
+                    String Typeresp=rstB.getString("Type");
+
+                    if((Sexresp.equals(Sex)||Sexresp.equals("不限"))&&(Typeresp.equals(Type))&&(AddressAccess.equals(AddressAccessresp))&&(Price.equals(Priceresp))) {
+                        String DateArray[] = bss.StringIntoArray(Date);
+                        String SubArray[] = bss.StringIntoArray(Subject);
+                        String TimeArray[] = bss.StringIntoArray(Time);
+                        String GradeArray[] = bss.StringIntoArray(Grade);
+                        for (int i = 0; i < DateArray.length; i++) { if (DateArray[i].equals(Dateresp)) { flagdate = 1; } }
+                        for (int i = 0; i < SubArray.length; i++) { if (SubArray[i].equals(Subjectresp)) { flagsub = 1; } }
+                        for (int i = 0; i <TimeArray.length;i++) { if(TimeArray[i].equals(Timeresp)){ flagtime=1; } }
+                        for(int i=0;i<GradeArray.length;i++){ if(GradeArray[i].equals(Graderesp)){ flaggrade=1; } }
+                        if(flagdate==1&&flaggrade==1&&flagsub==1&&flagtime==1){
+                            System.out.println(rstB.getString("ID"));
+                            StuREIN stuREIN=new StuREIN();
+                            stuREIN.setID(rstB.getInt("ID"));
+                            stuREIN.setSex(rstB.getString("Sex"));
+                            stuREIN.setSexWanted(rstB.getString("SexWanted"));
+                            stuREIN.setSubject(rstB.getString("Subject"));
+                            stuREIN.setEmail(rstB.getString("Email"));
+                            stuREIN.setTime(rstB.getString("Time"));
+                            stuREIN.setGrade(rstB.getString("Grade"));
+                            stuREIN.setAddressAccess(rstB.getString("AddressAccess"));
+                            stuREIN.setDate(rstB.getString("Date"));
+                            stuREIN.setPrice(rstB.getString("Price"));
+                            stuREIN.setType(rstB.getString("Type"));
+                            listofstu.add(stuREIN);
+                        }
+                    }
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        stuListAndOneTea.setListofStu(listofstu);
+        return stuListAndOneTea;
+    }
     //为学生匹配家教
     //改进为学生匹配
     public TeaListAndOneStu MatchForStuPlus(int StuID){
@@ -814,27 +895,48 @@ public class Dao {
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
-        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
-        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
+//        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
+//        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
+
         Dao dao=new Dao();
-        teaListAndOneStu=dao.MatchForStuPlus(1001);
-        listoftea=teaListAndOneStu.getTeaREINS();
-        System.out.println(listoftea.size());
-        for(int i=0;i<listoftea.size();i++){
-            System.out.println(listoftea.get(i).getID()+" "+
-            listoftea.get(i).getSex()+" "+
-                    listoftea.get(i).getSubject()+" "+
-                    listoftea.get(i).getTime()+" "+
-                    listoftea.get(i).getAddressAccess()+" "+
-                    listoftea.get(i).getEducation()+" "+
-                    listoftea.get(i).getGrade()+" "+
-                    listoftea.get(i).getDate()+" "+
-                    listoftea.get(i).getPrice()+" "+
-                    listoftea.get(i).getEmail()+" "+
-                    listoftea.get(i).getType()+" "
+        StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
+        List<StuREIN> listofstu=new ArrayList<StuREIN>();
+        stuListAndOneTea=dao.MatchForTeaPlus(2000);
+        listofstu=stuListAndOneTea.getListofStu();
+        System.out.println(stuListAndOneTea.getListofStu().size());
+        for(int i=0;i<listofstu.size();i++){
+            System.out.println(listofstu.get(i).getID()+" "+
+            listofstu.get(i).getSex()+" "+
+                    listofstu.get(i).getSubject()+" "+
+                    listofstu.get(i).getTime()+" "+
+                    listofstu.get(i).getAddressAccess()+" "+
+                    listofstu.get(i).getSexWanted()+" "+
+                    listofstu.get(i).getGrade()+" "+
+                    listofstu.get(i).getDate()+" "+
+                    listofstu.get(i).getPrice()+" "+
+                    listofstu.get(i).getEmail()+" "+
+                    listofstu.get(i).getType()+" "
 
             );
         }
+//        teaListAndOneStu=dao.MatchForStuPlus(1001);
+//        listoftea=teaListAndOneStu.getTeaREINS();
+//        System.out.println(listoftea.size());
+//        for(int i=0;i<listoftea.size();i++){
+//            System.out.println(listoftea.get(i).getID()+" "+
+//            listoftea.get(i).getSex()+" "+
+//                    listoftea.get(i).getSubject()+" "+
+//                    listoftea.get(i).getTime()+" "+
+//                    listoftea.get(i).getAddressAccess()+" "+
+//                    listoftea.get(i).getEducation()+" "+
+//                    listoftea.get(i).getGrade()+" "+
+//                    listoftea.get(i).getDate()+" "+
+//                    listoftea.get(i).getPrice()+" "+
+//                    listoftea.get(i).getEmail()+" "+
+//                    listoftea.get(i).getType()+" "
+//
+//            );
+//        }
 //        TeaREIN teaREIN=new TeaREIN();
 //        teaREIN.setID(2000);
 //        teaREIN.setSex("男");

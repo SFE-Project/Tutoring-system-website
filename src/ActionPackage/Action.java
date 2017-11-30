@@ -22,8 +22,10 @@ public class Action {
     private StuREIN stuREIN=new StuREIN();
     private StuREIN sridemo=new StuREIN();
     private List<TeaREIN> listoftri=new ArrayList<TeaREIN>();
+    private List<StuREIN> listofsti=new ArrayList<StuREIN>();
     private List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
     private TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
+    private StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
     private List<Teacher> listofteacher=new ArrayList<Teacher>();
     private Message message=new Message();
     private List<Message> listofmessage=new ArrayList<Message>();
@@ -37,6 +39,14 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+    public String MatchforTeaPlus(){
+        stuListAndOneTea=dao.MatchForTeaPlus(TeaID);
+        if(stuListAndOneTea.getListofStu().size()==0){
+            return "NOSTUFORTEA";
+        }else{
+            return "LISTSTUFORTEA";
         }
     }
     public String MatchforStuPlus(){
@@ -164,6 +174,22 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public StuListAndOneTea getStuListAndOneTea() {
+        return stuListAndOneTea;
+    }
+
+    public void setStuListAndOneTea(StuListAndOneTea stuListAndOneTea) {
+        this.stuListAndOneTea = stuListAndOneTea;
+    }
+
+    public List<StuREIN> getListofsti() {
+        return listofsti;
+    }
+
+    public void setListofsti(List<StuREIN> listofsti) {
+        this.listofsti = listofsti;
     }
 
     public String StuReF(){

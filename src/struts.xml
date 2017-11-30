@@ -86,5 +86,10 @@
             <result name="LISTTEAFORSTU">StuMatchShow.jsp</result>
             <result name="NOTEAFORSTU">NoStuMatchShow.jsp</result>
         </action>
+        <!--为教师匹配学生升级版-->
+        <action name="MatchFOrTeaPlus" class="ActionPackage.Action" method="MatchforTeaPlus">
+            <result name="LISTSTUFORTEA">TeaMatchShow.jsp</result>
+            <result name="NOSTUFORTEA">NoStuMatchShow.jsp</result>
+        </action>
     </package>
 </struts>
