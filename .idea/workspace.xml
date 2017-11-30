@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae1ddc49-1d9a-4e86-bf60-50f4d0a58171" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/localpackage/StuEvaluationtoTea.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/EvaluationShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/StuMatchShow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/StuMatchShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/struts.xml" afterPath="$PROJECT_DIR$/out/production/Project/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionPackage/Action.java" afterPath="$PROJECT_DIR$/src/ActionPackage/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/localpackage/Dao.java" afterPath="$PROJECT_DIR$/src/localpackage/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/SingleTeaShow.jsp" afterPath="$PROJECT_DIR$/web/SingleTeaShow.jsp" />
-    </list>
+    <list default="true" id="ae1ddc49-1d9a-4e86-bf60-50f4d0a58171" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -717,12 +700,12 @@
       <workItem from="1512040228215" duration="5542000" />
       <workItem from="1512045833799" duration="5075000" />
       <workItem from="1512051760736" duration="300000" />
-      <workItem from="1512057970979" duration="3889000" />
+      <workItem from="1512057970979" duration="4014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111957000" />
+    <option name="totallyTimeSpent" value="112082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,6 +718,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-68" y="187" width="1933" height="909" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1161,6 +1145,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/EvaluationShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/localpackage/StuEvaluationtoTea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1183,14 +1175,6 @@
             <element signature="e#758#759#0" expanded="true" />
             <element signature="e#799#800#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/EvaluationShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
