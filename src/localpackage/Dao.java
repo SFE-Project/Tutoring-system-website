@@ -976,14 +976,33 @@ public class Dao {
         }
         return EEvaluationPassword;
     }
-//    
+//    学生更改昵称和密码功能
+    public void StudentUpdate(int ID,String NickName,String PassWord){
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("UPDATE student SET NickName=?,PassWord=?WHERE ID=?");
+            pstA.setString(1,NickName);
+            pstA.setString(2,PassWord);
+            pstA.setInt(3,ID);
+            pstA.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        String ww=dao.EvaluationPasswordShow(2001);
+//        dao.StudentUpdate(1001,"测试","2222");
+//        String ww=dao.EvaluationPasswordShow(2001);
 
 //        dao.UpdateEvaluationPassword(2000,"1111");
 //        List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();

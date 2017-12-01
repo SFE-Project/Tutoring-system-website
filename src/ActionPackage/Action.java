@@ -31,7 +31,8 @@ public class Action {
     private List<Message> listofmessage=new ArrayList<Message>();
     private List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
     private String EvaluationPassword;
-
+    private String PassWord;
+    private String NickName;
 
     public static void main(String[] args) {
         Action action=new Action();
@@ -42,6 +43,10 @@ public class Action {
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
         }
+    }
+    public String StudentUpdate(){
+        dao.StudentUpdate(StuID,NickName,PassWord);
+        return "STUDENTUPDATE";
     }
     public String UpdateEvaluationPassWord(){
         dao.UpdateEvaluationPassword(TeaID,EvaluationPassword);
@@ -197,6 +202,22 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public String getNickName() {
+        return NickName;
+    }
+
+    public void setNickName(String nickName) {
+        NickName = nickName;
+    }
+
+    public String getPassWord() {
+        return PassWord;
+    }
+
+    public void setPassWord(String passWord) {
+        PassWord = passWord;
     }
 
     public String getEvaluationPassword() {

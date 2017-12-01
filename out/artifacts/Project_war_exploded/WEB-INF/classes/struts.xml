@@ -106,5 +106,9 @@
         <action name="UpdateEvaluationPassWord" class="ActionPackage.Action" method="UpdateEvaluationPassWord">
             <result name="SUCCESSUPDATEEVALUATIONPASSWPORD">REINSuccessLoad.jsp</result>
         </action>
+        <!--学生昵称密码更新-->
+        <action name="StudentUpdate" class="ActionPackage.Action" method="StudentUpdate">
+            <result name="STUDENTUPDATE">REINSuccessLoad.jsp</result>
+        </action>
     </package>
 </struts>
