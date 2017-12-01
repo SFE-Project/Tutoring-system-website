@@ -83,6 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href='FriendList.action?StuID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">我的关注</a>
                     <a href="TeaReF.action?TeaID=${teademo.getID()}" data-toggle="modal" data-target="#myModal">修改资料</a>
                     <a href='MatchFOrTeaPlus.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
+                    <a href='EvaluationPasswordShow.action?TeaID=${teademo.getID()}'  data-toggle="modal" data-target="#myModal">更改评价密钥</a>
                 </div>
                 <div class="clearfix"></div>
             </div>

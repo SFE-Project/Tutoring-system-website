@@ -12,6 +12,15 @@ public class TeaREIN {
     private String Type;
     private String Price;
     private String AddressAccess;
+    private String EvaluationPassword;
+
+    public String getEvaluationPassword() {
+        return EvaluationPassword;
+    }
+
+    public void setEvaluationPassword(String evaluationPassword) {
+        EvaluationPassword = evaluationPassword;
+    }
 
     public String getAddressAccess() {
         return AddressAccess;

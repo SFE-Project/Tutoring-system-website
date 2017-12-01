@@ -96,7 +96,12 @@
             <result name="NOEVALUATION">FailInfoPage.jsp</result>
             <!--不是错误信息，只是没有评价。。。-->
             <result name="EVALUATIONSHOW">EvaluationShow.jsp</result>
-
         </action>
+        <!--教师评价密钥展示-->
+        <action name="EvaluationPasswordShow" class="ActionPackage.Action" method="EvaluationPasswordShow">
+            <result name="NULLEVALUATIONPASSWORD">FailInfoPage.jsp</result>
+            <result name="EVALUATIONPASSWORDSHOW">UpdateEvaluationPassword.jsp</result>
+        </action>
+
     </package>
 </struts>

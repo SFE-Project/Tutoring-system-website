@@ -929,23 +929,73 @@ public class Dao {
         }
         return listofEvaluation;
     }
+//   教师评价米密钥设置
+    public void UpdateEvaluationPassword(int TeaID,String PASSWORD){
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("UPDATE tearein SET EvaluationPassword=? WHERE ID=?");
+            pstA.setString(1,PASSWORD);
+            pstA.setInt(2,TeaID);
+            pstA.executeUpdate();
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+    }
+    //敏感操作，教师查看自己评价密钥
+    public String EvaluationPasswordShow(int TeaID){
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        String EEvaluationPassword=new String();
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM tearein WHERE ID=?");
+            pstA.setInt(1,TeaID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                EEvaluationPassword=rstA.getString("EvaluationPassword");
+                if(EEvaluationPassword.equals("")){
+                    return "NULL";
+                }
+//                System.out.println(EEvaluationPassword);
+            }else{
+                return null;
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return EEvaluationPassword;
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
-        stuEvaluationtoTeaList=dao.EvaluationShow(2000);
+        String ww=dao.EvaluationPasswordShow(2001);
+
+//        dao.UpdateEvaluationPassword(2000,"1111");
+//        List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
+//        stuEvaluationtoTeaList=dao.EvaluationShow(2000);
 //        if(stuEvaluationtoTeaList==null){
 //            System.out.println("23rcr44vr");
 //        }
-        for(int i=0;i<stuEvaluationtoTeaList.size();i++){
-            System.out.println(stuEvaluationtoTeaList.get(i).getEvaluatedID()+" "+
-            stuEvaluationtoTeaList.get(i).getEvaluatorID()+" "+
-            stuEvaluationtoTeaList.get(i).getEvaluateContent()+" "+
-            stuEvaluationtoTeaList.get(i).getStar());
-        }
+//        for(int i=0;i<stuEvaluationtoTeaList.size();i++){
+//            System.out.println(stuEvaluationtoTeaList.get(i).getEvaluatedID()+" "+
+//            stuEvaluationtoTeaList.get(i).getEvaluatorID()+" "+
+//            stuEvaluationtoTeaList.get(i).getEvaluateContent()+" "+
+//            stuEvaluationtoTeaList.get(i).getStar());
+//        }
 //        StuListAndOneTea stuListAndOneTea=new StuListAndOneTea();
 //        List<StuREIN> listofstu=new ArrayList<StuREIN>();
 //        stuListAndOneTea=dao.MatchForTeaPlus(2000);

@@ -30,6 +30,7 @@ public class Action {
     private Message message=new Message();
     private List<Message> listofmessage=new ArrayList<Message>();
     private List<StuEvaluationtoTea> stuEvaluationtoTeaList=new ArrayList<StuEvaluationtoTea>();
+    private String EvaluationPassword;
 
 
     public static void main(String[] args) {
@@ -40,6 +41,15 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+
+    public String EvaluationPasswordShow(){
+        EvaluationPassword=dao.EvaluationPasswordShow(TeaID);
+        if(EvaluationPassword.equals("NULL")){
+            return "NULLEVALUATIONPASSWORD";
+        }else{
+            return "EVALUATIONPASSWORDSHOW";
         }
     }
     public String EvaluationShow(){
@@ -184,6 +194,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public String getEvaluationPassword() {
+        return EvaluationPassword;
+    }
+
+    public void setEvaluationPassword(String evaluationPassword) {
+        EvaluationPassword = evaluationPassword;
     }
 
     public List<StuEvaluationtoTea> getStuEvaluationtoTeaList() {
