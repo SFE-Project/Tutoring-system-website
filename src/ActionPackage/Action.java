@@ -43,7 +43,10 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
-
+    public String UpdateEvaluationPassWord(){
+        dao.UpdateEvaluationPassword(TeaID,EvaluationPassword);
+        return "SUCCESSUPDATEEVALUATIONPASSWPORD";
+    }
     public String EvaluationPasswordShow(){
         EvaluationPassword=dao.EvaluationPasswordShow(TeaID);
         if(EvaluationPassword.equals("NULL")){

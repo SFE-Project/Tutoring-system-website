@@ -11,6 +11,11 @@
     <title>更改评价资格密钥</title>
 </head>
 <body>
-${EvaluationPassword}
+您当前的评价资格密钥是${EvaluationPassword}<br/>
+<form action="UpdateEvaluationPassWord.action">
+    请确定您的账号信息<input type="text" name="TeaID"><br>
+    请输入新的评价资格密码<input type="text" name="EvaluationPassword"><br/>
+    <input type="submit" value="确定">
+</form>
 </body>
 </html>

@@ -102,6 +102,9 @@
             <result name="NULLEVALUATIONPASSWORD">FailInfoPage.jsp</result>
             <result name="EVALUATIONPASSWORDSHOW">UpdateEvaluationPassword.jsp</result>
         </action>
-
+        <!--教师评价密钥更改-->
+        <action name="UpdateEvaluationPassWord" class="ActionPackage.Action" method="UpdateEvaluationPassWord">
+            <result name="SUCCESSUPDATEEVALUATIONPASSWPORD">REINSuccessLoad.jsp</result>
+        </action>
     </package>
 </struts>
