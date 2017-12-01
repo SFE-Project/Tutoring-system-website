@@ -110,5 +110,9 @@
         <action name="StudentUpdate" class="ActionPackage.Action" method="StudentUpdate">
             <result name="STUDENTUPDATE">REINSuccessLoad.jsp</result>
         </action>
+        <!--教师昵称密码更新-->
+        <action name="TeacherUpdate" class="ActionPackage.Action" method="TeacherUpdate">
+            <result name="TEACHERUPDATE">REINSuccessLoad.jsp</result>
+        </action>
     </package>
 </struts>

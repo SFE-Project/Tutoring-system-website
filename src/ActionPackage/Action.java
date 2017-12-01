@@ -44,6 +44,10 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String TeacherUpdate(){
+        dao.TeacherUpdate(TeaID,NickName,PassWord);
+        return "TEACHERUPDATE";
+    }
     public String StudentUpdate(){
         dao.StudentUpdate(StuID,NickName,PassWord);
         return "STUDENTUPDATE";
