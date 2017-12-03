@@ -1,6 +1,7 @@
 package localpackage;
 
 import com.sun.org.apache.regexp.internal.RE;
+import com.sun.org.apache.xpath.internal.SourceTree;
 import org.apache.struts2.ServletActionContext;
 import org.gjt.mm.mysql.Driver;
 
@@ -1092,32 +1093,112 @@ public class Dao {
     public void PushUserID(int UserID){
 
     }
+//    教师视角，关注我的
+    public List<Student> Followerlist(int TeaID){
+        List<Student> listofstudent=new ArrayList<Student>();
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        BasicServe bss=new BasicServe();
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM friendrelationship");
+            ResultSet rstA=pstA.executeQuery();
+            while(rstA.next()){
+                String la[]=bss.StringIntoArray(rstA.getString("FSIDList"));
+                int ID=rstA.getInt("ID");
+                for(int i=0;i<la.length;i++){
+                    if(String.valueOf(TeaID).equals(la[i])){
+                        pstB=connection.prepareStatement("SELECT * FROM student WHERE ID=?");
+                        pstB.setInt(1,ID);
+                        ResultSet rstB=pstB.executeQuery();
+                        if(rstB.first()){
+                            Student student=new Student();
+                            student.setID(rstB.getInt("ID"));
+                            student.setNickName(rstB.getString("NickName"));
+                            student.setPassword(rstB.getString("PassWord"));
+                            listofstudent.add(student);
+                        }
 
+                    }
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return listofstudent;
+    }
+//观察者观察学生个人界面
+    public StuREIN SingleStu(int TeaID,int StuID){
+        StuREIN stuREIN=new StuREIN();
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM sturein WHERE ID=?");
+            pstA.setInt(1,StuID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                stuREIN.setID(rstA.getInt("ID"));
+                stuREIN.setSex(rstA.getString("Sex"));
+                stuREIN.setSexWanted(rstA.getString("SexWanted"));
+                stuREIN.setTime(rstA.getString("Time"));
+                stuREIN.setSubject(rstA.getString("Subject"));
+                stuREIN.setGrade(rstA.getString("Grade"));
+                stuREIN.setEmail(rstA.getString("Email"));
+                stuREIN.setAddressAccess(rstA.getString("AddressAccess"));
+                stuREIN.setPrice(rstA.getString("Price"));
+                stuREIN.setPrice(rstA.getString("Date"));
+                stuREIN.setPrice(rstA.getString("Type"));
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return stuREIN;
+
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        Teacher teacher=new Teacher();
-//        teacher.setID(1031);
-        teacher.setNickName("2423");
-        teacher.setPassword("1111");
-        TeaREIN teaREIN=new TeaREIN();
-//        teaREIN.setID(1031);
-        teaREIN.setSex("21");
-        teaREIN.setEducation("gfdgfd");
-        teaREIN.setTime("43534");
-        teaREIN.setPersionalIntroduction("124234");
-        teaREIN.setType("1");
-        teaREIN.setPrice("124234");
-        teaREIN.setEmail("43534");
-        teaREIN.setDate("32435");
-        teaREIN.setAddressAccess("3432");
-        teaREIN.setSubject("4234");
-        teaREIN.setEvaluationPassword("423423");
-        teaREIN.setGrade("sfsdfsd");
-        dao.TeaInsert(teacher,teaREIN);
+        List<Student> studentList=dao.Followerlist(2001);
+        if (studentList.size()==0){
+            System.out.println("kong1");
+        }
+//        for(int i=0;i<studentList.size();i++){
+//            System.out.println(studentList.get(i).getID());
+//            System.out.println(studentList.get(i).getNickName());
+//            System.out.println(studentList.get(i).getPassword());
+//        }
+//        Teacher teacher=new Teacher();
+////        teacher.setID(1031);
+//        teacher.setNickName("2423");
+//        teacher.setPassword("1111");
+//        TeaREIN teaREIN=new TeaREIN();
+////        teaREIN.setID(1031);
+//        teaREIN.setSex("21");
+//        teaREIN.setEducation("gfdgfd");
+//        teaREIN.setTime("43534");
+//        teaREIN.setPersionalIntroduction("124234");
+//        teaREIN.setType("1");
+//        teaREIN.setPrice("124234");
+//        teaREIN.setEmail("43534");
+//        teaREIN.setDate("32435");
+//        teaREIN.setAddressAccess("3432");
+//        teaREIN.setSubject("4234");
+//        teaREIN.setEvaluationPassword("423423");
+//        teaREIN.setGrade("sfsdfsd");
+//        dao.TeaInsert(teacher,teaREIN);
 //        int flag=dao.MakeFriendPlus(1047,2022);
 //        System.out.println(flag);
 //        String Edit=new String();

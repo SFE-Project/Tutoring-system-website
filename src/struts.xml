@@ -132,5 +132,14 @@
         <action name="PushUserIDofTea" class="ActionPackage.Action" method="PushUserIDofTea">
             <result name="1">TeacherUpdate.jsp</result>
         </action>
+        <!--展示教师的followers-->
+        <action name="ShowTheFollowers" class="ActionPackage.Action" method="ShowMyFollowers">
+            <result name="LISTTOFOLLOWYOU">FollowersOfTeacher.jsp</result>
+            <result name="NOONEFOLLOWYOU">NoFriend.jsp</result>
+        </action>
+        <!--点击进入普通学生的个人界面-->
+        <action name="SingleStudent" class="ActionPackage.Action" method="SingleStu">
+            <result name="SINGLESTU">SingleStuShow.jsp</result>
+        </action>
     </package>
 </struts>

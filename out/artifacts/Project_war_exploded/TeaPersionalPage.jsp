@@ -80,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="w3layouts_details">
                     <h4>ID : ${teademo.getID()}  昵称 :${teademo.getNickName()}</h4>
-                    <a href='FriendList.action?StuID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">我的关注</a>
+                    <a href='ShowTheFollowers.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">关注我的</a>
                     <a href="TeaReF.action?TeaID=${teademo.getID()}" data-toggle="modal" data-target="#myModal">修改需求</a>
                     <a href='MatchFOrTeaPlus.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
                     <a href='EvaluationPasswordShow.action?TeaID=${teademo.getID()}'  data-toggle="modal" data-target="#myModal">更改评价密钥</a>

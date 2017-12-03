@@ -38,6 +38,7 @@ public class Action {
     private String PassWord;
     private String NickName;
     private String TeaPersionalIntroduction;
+    private List<Student> listofstudent=new ArrayList<Student>();
 
 
     public static void main(String[] args) {
@@ -49,6 +50,15 @@ public class Action {
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
         }
+    }
+    public String ShowMyFollowers(){
+        listofstudent=dao.Followerlist(TeaID);
+        if(listofstudent.size()==0){
+            return "NOONEFOLLOWYOU";
+        }else{
+            return "LISTTOFOLLOWYOU";
+        }
+
     }
     public String PushUserIDofTea(){
         dao.PushUserID(UserID);
@@ -161,7 +171,10 @@ public class Action {
         return "ALLTHETEACHER";
 
     }
-
+    public String SingleStu(){
+        stuREIN=dao.SingleStu(TeaID,StuID);
+        return "SINGLESTU";
+    }
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
             listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
@@ -237,6 +250,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public List<Student> getListofstudent() {
+        return listofstudent;
+    }
+
+    public void setListofstudent(List<Student> listofstudent) {
+        this.listofstudent = listofstudent;
     }
 
     public int getFollowerID() {

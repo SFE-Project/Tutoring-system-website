@@ -9,7 +9,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    当前账号： ${StuID}
     <title>展示好友列表界面</title>
 </head>
 <body>
@@ -21,9 +20,9 @@
     </tr>
     <s:iterator value="#request.listofteacher" var="temp">
         <tr>
-            <td><s:property value="#temp.getID"/> </td>
+            <td><s:property value="#temp.getID()"/> </td>
             <td><s:property value="#temp.getNickName()"/> </td>
-            <%--<td><a href='MakeFriends.action?StuID=${teaListAndOneStu.getStuID()}&TeaID=<s:property value="#temp.ID"/>'>关注</a></td>--%>
+            <td><a href='MakeFriends.action?StuID=${teaListAndOneStu.getStuID()}&TeaID=<s:property value="#temp.ID"/>'>关注</a></td>
             <td><a href='FriendKill.action?StuID=${StuID}&TeaID=<s:property value="#temp.getID()"/>'>不再关注</a> </td>
         </tr>
     </s:iterator>

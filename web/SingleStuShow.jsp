@@ -1,6 +1,13 @@
-
+<%--
+  Created by IntelliJ IDEA.
+  User: DB
+  Date: 2017/10/27
+  Time: 15:37
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="a" uri="/struts-tags" %>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -12,13 +19,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Groom Profile :: w3layouts</title>
+    当前账号${TeaID}
+    <title>学生资料</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
     <!-- Custom Theme files -->
-    <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->
     <!--theme-style-->
     <link href="css/profile.css" rel="stylesheet" type="text/css" media="all" />
     <!--//theme-style-->
@@ -55,7 +62,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- body -->
 <body>
 
-
 <!-- inner banner -->
 <div class="w3layouts-inner-banner">
     <div class="container">
@@ -69,29 +75,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
+
 <!-- Bridegroom Profile Details -->
 <div class="w3ls-list">
     <div class="container">
-        <h2>Bridegroom Profile Details</h2>
+        <h2>个人简介</h2>
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">
-                    <img src="images/profile-image-men.jpg" alt="profile image" />
+                    <img src="images/touxiang.jpg" alt="profile image" />
                 </div>
                 <div class="w3layouts_details">
-                    <h4>ID : ${teademo.getID()}  昵称 :${teademo.getNickName()}</h4>
-                    <a href='ShowTheFollowers.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">关注我的</a>
-                    <a href="TeaReF.action?TeaID=${teademo.getID()}" data-toggle="modal" data-target="#myModal">修改需求</a>
-                    <a href='MatchFOrTeaPlus.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
-                    <a href='EvaluationPasswordShow.action?TeaID=${teademo.getID()}'  data-toggle="modal" data-target="#myModal">更改评价密钥</a>
-                    <a href='PushUserIDofTea.action?UserID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">更改资料</a>
-                    <a href="SingleTea.action?StuID=0&TeaID=${teademo.getID()}" data-toggle="modal" data-target="#myModal">游客视角个人界面</a>
-                    <form action="TeaEditPersionalIntroduction.action">
-                       此处编辑个人介绍（限定100字）<br/>
-                        <input type="text" name="TeaID" value="${teademo.getID()}" hidden="hidden">
-                        <textarea rows="10" cols="60" name="TeaPersionalIntroduction"></textarea>
-                        <input type="submit" value="确定">
-                    </form>
+                    <h4>Profile ID : ${stuREIN.getID()}</h4>
+                    ${stuREIN.getSex()},${stuREIN.getSexWanted()},${stuREIN.getTime()},
+                    ${stuREIN.getSubject()},${stuREIN.getGrade()},${stuREIN.getEmail()},${stuREIN.getAddressAccess()},${stuREIN.getPrice()},${stuREIN.getDate()},${stuREIN.getType()}
+                    <%--<p>${stuREIN.getNickName()},${stuREIN.getEmail()},${stuREIN.getSex()},${stuREIN.getTime()},${stuREIN.getSubject()},${stuREIN.getGrade()}</p>--%>
+                    <%--<a href='MakeFriends.action?StuID=<a:property value="StuID"/>&TeaID=${bsTeacher.getTeacher().getID()}' data-toggle="modal" data-target="#myModal">好友添加</a>--%>
+                    <%--<a href="/MessageShow.action?OutID=<a:property value="StuID"/>&RecID=${bsTeacher.getTeacher().getID()}" data-toggle="modal" data-target="#myModal">发送信息</a>--%>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -313,32 +313,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>会话模式:</h3>
-            <form action="MessageShow.action" method="get">
-                <input class="text" type="text" name="RecID" placeholder="对方ID" required="">
-                <p hidden><input name="OutID" type="text" value="${teademo.getID()}"></p>
-                <input type="submit" value="开始会话">
+            <h3>教师查询:</h3>
+            <form action="SingleTea.action" method="get">
+                <input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">
+                <p hidden><input name="StuID" type="text" value="<a:property value="StuID"/>"></p>
+                <input type="submit" value="Search">
                 <div class="clearfix"></div>
             </form>
-            <div class="view_profile">
-                <h3>同行</h3>
-                <s:iterator value="#request.listofbstea" var="temp">
-                    <ul class="profile_item">
-                        <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
-                            <li class="profile_item-img">
-                                <img src="images/p1.jpg" class="img-responsive" alt="">
-                            </li>
-                            <li class="profile_item-desc">
-                                <h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>
-                                <p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,
-                                    <s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>
-                                    <s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>
-                            </li>
-                            <div class="clearfix"> </div>
-                        </a>
-                    </ul>
-                </s:iterator>
-            </div>
+            <%--<div class="view_profile">--%>
+            <%--<h3>与他/她相似的教师</h3>--%>
+            <%--<s:iterator value="#request.listofbstea" var="temp">--%>
+            <%--<ul class="profile_item">--%>
+            <%--<a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>--%>
+            <%--<li class="profile_item-img">--%>
+            <%--<img src="images/p1.jpg" class="img-responsive" alt="">--%>
+            <%--</li>--%>
+            <%--<li class="profile_item-desc">--%>
+            <%--<h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>--%>
+            <%--<p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,--%>
+            <%--<s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>--%>
+            <%--<s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>--%>
+            <%--</li>--%>
+            <%--<div class="clearfix"> </div>--%>
+            <%--</a>--%>
+            <%--</ul>--%>
+            <%--</s:iterator>--%>
+            <%--</div>--%>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -408,6 +408,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- //Bridegroom Profile Details -->
 
+
+
 <!-- menu js aim -->
 <script src="js/jquery.menu-aim.js"> </script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
@@ -447,3 +449,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //body -->
 </html>
 <!-- //html -->
+
