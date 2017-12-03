@@ -1,8 +1,12 @@
 package localpackage;
 
 import com.sun.org.apache.regexp.internal.RE;
+import org.apache.struts2.ServletActionContext;
+import org.gjt.mm.mysql.Driver;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.xml.transform.Result;
+import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +47,6 @@ public class Dao {
         PreparedStatement pstC=null;
         PreparedStatement pstD=null;
         PreparedStatement pstE=null;
-
         try {
             Class.forName (driver);
             con=DriverManager.getConnection(url,username,pswd);
@@ -445,7 +448,6 @@ public class Dao {
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-
             pstS=con.prepareStatement("SELECT * FROM sturein WHERE ID=?");
             pstS.setInt(1,StuID);
             ResultSet rstS=pstS.executeQuery();
@@ -1014,13 +1016,34 @@ public class Dao {
         } finally {
         }
     }
+    public void TeaEditPersionalIntroduction(String PersionalIntroduction,int TeaID){
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+            connection= DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("UPDATE tearein SET PersionalIntroduction=? WHERE ID=?");
+            pstA.setString(1,PersionalIntroduction);
+            pstA.setInt(2,TeaID);
+            pstA.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        dao.TeacherUpdate(2000,"测试","1111");
+        String Edit=new String();
+        Edit="本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉";
+        //不能超过一百个字
+        dao.TeaEditPersionalIntroduction(Edit,2000);
+//        dao.TeacherUpdate(2000,"测试","1111");
 //        String ww=dao.EvaluationPasswordShow(2001);
 
 //        dao.UpdateEvaluationPassword(2000,"1111");

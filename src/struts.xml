@@ -114,5 +114,10 @@
         <action name="TeacherUpdate" class="ActionPackage.Action" method="TeacherUpdate">
             <result name="TEACHERUPDATE">REINSuccessLoad.jsp</result>
         </action>
+        <!--教师编辑个人简介不能超过一百字-->
+        <action name="TeaEditPersionalIntroduction" class="ActionPackage.Action" method="TeaEditePersionalIntroduction">
+            <result name="TEAEDITPERSIONALINTRODUCTION">REINSuccessLoad.jsp</result>
+        </action>
+
     </package>
 </struts>

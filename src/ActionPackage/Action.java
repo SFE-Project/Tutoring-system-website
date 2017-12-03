@@ -2,6 +2,8 @@ package ActionPackage;
 
 import localpackage.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +35,8 @@ public class Action {
     private String EvaluationPassword;
     private String PassWord;
     private String NickName;
+    private String TeaPersionalIntroduction;
+
 
     public static void main(String[] args) {
         Action action=new Action();
@@ -43,6 +47,10 @@ public class Action {
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
         }
+    }
+    public String TeaEditePersionalIntroduction(){
+        dao.TeaEditPersionalIntroduction(TeaPersionalIntroduction,TeaID);
+        return "TEAEDITPERSIONALINTRODUCTION";
     }
     public String TeacherUpdate(){
         dao.TeacherUpdate(TeaID,NickName,PassWord);
@@ -206,6 +214,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public String getTeaPersionalIntroduction() {
+        return TeaPersionalIntroduction;
+    }
+
+    public void setTeaPersionalIntroduction(String teaPersionalIntroduction) {
+        TeaPersionalIntroduction = teaPersionalIntroduction;
     }
 
     public String getNickName() {

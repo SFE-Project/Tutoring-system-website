@@ -91,9 +91,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <label>需要教师性别：</label><input type="radio" name="stuREIN.SexWanted" value="男" >男性
                 <input type="radio" name="stuREIN.SexWanted" value="女">女性
                 <input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限
-                <label>大致时间：</label>
-                <input type="checkbox" name="stuREIN.Date" value="周末" checked="checked">平时周末
-                <input type="checkbox" name="stuREIN.Date" value="寒假">寒假
+                <label>大致时间：(为您定制智能详细的月份规划)</label>
+                <input type="checkbox" name="stuREIN.Date" value="寒假" checkout="checked">寒假
+                <input type="checkbox" name="stuREIN.Date" value="平时">平时
                 <input type="checkbox" name="stuREIN.Date" value="暑假">暑假
                 <label>具体时间</label>
                 <input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
