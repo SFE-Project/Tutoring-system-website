@@ -9,11 +9,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    当前账号： ${StuID}
     <title>展示好友列表界面</title>
 </head>
 <body>
 <table border="10">
-    ${StuID}
+
     <tr>
         <td>好友ID</td>
         <td>好友昵称</td>

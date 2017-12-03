@@ -6,6 +6,7 @@ import org.gjt.mm.mysql.Driver;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.xml.transform.Result;
+import javax.xml.ws.soap.Addressing;
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -61,7 +62,7 @@ public class Dao {
                 studemo.setID(rstA.getInt("ID"));
                 studemo.setNickName(rstA.getString("NickName"));
                 studemo.setPassword(rstA.getString("Password"));
-                pstC=con.prepareStatement("INSERT INTO sturein VALUES (?,?,?,?,?,?,?)");
+                pstC=con.prepareStatement("INSERT INTO sturein VALUES (?,?,?,?,?,?,?,?,?,?,?)");
                 pstC.setInt(1,rstA.getInt("ID"));
                 pstC.setString(2,stuRein.getSex());
                 pstC.setString(3,stuRein.getSexWanted());
@@ -69,6 +70,10 @@ public class Dao {
                 pstC.setString(5,stuRein.getSubject());
                 pstC.setString(6,stuRein.getGrade());
                 pstC.setString(7,stuRein.getEmail());
+                pstC.setString(8,stuRein.getAddressAccess());
+                pstC.setString(9,stuRein.getPrice());
+                pstC.setString(10,stuRein.getDate());
+                pstC.setString(11,stuRein.getType());
                 pstC.executeUpdate();
                 pstD=con.prepareStatement("INSERT INTO friendrelationship VALUES (?,?)");
                 pstD.setInt(1,rstA.getInt("ID"));
@@ -586,7 +591,46 @@ public class Dao {
         }
         return listofbstea;
     }
-    //加好友功能
+//    无身份限制加好友加强版
+    public int MakeFriendPlus(int UserID,int FollowerID){
+        int flag=1;
+        BasicServe bss=new BasicServe();
+        Connection con=null;
+        PreparedStatement pstAT=null;
+        PreparedStatement pstBT=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+            pstA=con.prepareStatement("SELECT * FROM friendrelationship WHERE ID=?");
+            pstA.setInt(1,UserID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                String rstAlist=rstA.getString("FSIDList");
+                String Oldfriendlist[]=bss.StringIntoArray(rstAlist);
+                   for(int i=0;i<Oldfriendlist.length;i++){
+                       System.out.println(Oldfriendlist[i]);
+                       if(Oldfriendlist[i].equals(String.valueOf(FollowerID))){
+                           return 0;//之前已关注
+                       }
+               }
+                rstAlist=rstAlist+", "+String.valueOf(FollowerID);
+                pstAT=con.prepareStatement("UPDATE friendrelationship SET FSIDList=? WHERE ID=?");
+                pstAT.setString(1,rstAlist);
+                pstAT.setInt(2,UserID);
+                pstAT.executeUpdate();
+                return 1;//此次成功关注
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+       return 2;
+    }
+    //学生关注老师功能
     public int MakeFriend(int StuID,int TeaID){
         int flag=1;
         BasicServe bss=new BasicServe();
@@ -1034,16 +1078,22 @@ public class Dao {
         } finally {
         }
     }
+//    push账号到下一界面，保存账户
+    public void PushUserID(int UserID){
+
+    }
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        String Edit=new String();
-        Edit="本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉";
-        //不能超过一百个字
-        dao.TeaEditPersionalIntroduction(Edit,2000);
+        int flag=dao.MakeFriendPlus(1047,2022);
+        System.out.println(flag);
+//        String Edit=new String();
+//        Edit="本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉";
+//        //不能超过一百个字
+//        dao.TeaEditPersionalIntroduction(Edit,2000);
 //        dao.TeacherUpdate(2000,"测试","1111");
 //        String ww=dao.EvaluationPasswordShow(2001);
 

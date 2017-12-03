@@ -118,6 +118,14 @@
         <action name="TeaEditPersionalIntroduction" class="ActionPackage.Action" method="TeaEditePersionalIntroduction">
             <result name="TEAEDITPERSIONALINTRODUCTION">REINSuccessLoad.jsp</result>
         </action>
-
+        <!--无身份差别关注功能-->
+        <action name="MakeFriendPlus" class="ActionPackage.Action" method="MakeFriendPlus">
+            <result name="1">SuccessMakeFriends.jsp</result>
+            <result name="0">SuccessMakeFriends.jsp</result>
+        </action>
+        <!--假的cookie将账号push到下一界面-->
+        <action name="PushUserID" class="ActionPackage.Action" method="PushUserID">
+            <result name="1">StudentUpdate.jsp</result>
+        </action>
     </package>
 </struts>

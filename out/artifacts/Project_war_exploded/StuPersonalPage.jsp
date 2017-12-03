@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
+    当前账号${studemo.getID()}
     <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Groom Profile :: w3layouts</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
@@ -83,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href='FriendList.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">我的关注</a>
                     <a href="StuReF.action?StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">修改需求</a>
                     <a href='MatchForStuPlus.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
-                    <a href='StudentUpdate.jsp?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">修改资料</a>
+                    <a href='PushUserID.action?UserID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">修改资料</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -323,7 +324,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h3>教师推荐</h3>
                 <s:iterator value="#request.listofbstea" var="temp">
                     <ul class="profile_item">
-                        <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
+                        <a href='SingleTea.action?StuID=${studemo.getID()}&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
                             <li class="profile_item-img">
                                 <img src="images/p1.jpg" class="img-responsive" alt="">
                             </li>

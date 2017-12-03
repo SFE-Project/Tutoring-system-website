@@ -7,16 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae1ddc49-1d9a-4e86-bf60-50f4d0a58171" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/TeaREIN.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/TeaREIN.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/localpackage/TeaREIN.class" afterPath="$PROJECT_DIR$/out/production/Project/localpackage/TeaREIN.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/FailMakeFriends.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/FailMakeFriends.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/Head.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/Head.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/StuPersonalPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/StuPersonalPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/struts.xml" afterPath="$PROJECT_DIR$/out/production/Project/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionPackage/Action.java" afterPath="$PROJECT_DIR$/src/ActionPackage/Action.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/localpackage/Dao.java" afterPath="$PROJECT_DIR$/src/localpackage/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/localpackage/TeaREIN.java" afterPath="$PROJECT_DIR$/src/localpackage/TeaREIN.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FailMakeFriends.jsp" afterPath="$PROJECT_DIR$/web/FailMakeFriends.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/FriendList.jsp" afterPath="$PROJECT_DIR$/web/FriendList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Head.jsp" afterPath="$PROJECT_DIR$/web/Head.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/SingleTeaShow.jsp" afterPath="$PROJECT_DIR$/web/SingleTeaShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/TeaPersionalPage.jsp" afterPath="$PROJECT_DIR$/web/TeaPersionalPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/StuPersonalPage.jsp" afterPath="$PROJECT_DIR$/web/StuPersonalPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/StuReF.jsp" afterPath="$PROJECT_DIR$/web/StuReF.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/StudentUpdate.jsp" afterPath="$PROJECT_DIR$/web/StudentUpdate.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,51 +56,69 @@
         <item name="mydatabase@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="mydatabase" type="e3449647:DbNodeDescriptor" />
       </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="mydatabase@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="mydatabase" type="e3449647:DbNodeDescriptor" />
-        <item name="student" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="mydatabase@localhost" type="e3449647:DbNodeDescriptor" />
-        <item name="mydatabase" type="e3449647:DbNodeDescriptor" />
-        <item name="tearein" type="e3449647:DbNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="TeaPersionalPage.jsp" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/web/TeaPersionalPage.jsp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="197">
-                    <caret line="86" column="99" lean-forward="false" selection-start-line="86" selection-start-column="99" selection-end-line="86" selection-end-column="99" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2133">
-              <caret line="118" column="84" lean-forward="false" selection-start-line="118" selection-start-column="84" selection-end-line="118" selection-end-column="84" />
+            <state relative-caret-position="406">
+              <caret line="127" column="55" lean-forward="true" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StuPersonalPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/StuPersonalPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailMakeFriends.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/FailMakeFriends.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StuReF.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/StuReF.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendList.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/FriendList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentUpdate.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/StudentUpdate.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -97,108 +127,9 @@
       <file leaf-file-name="SingleTeaShow.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1878">
-              <caret line="89" column="339" lean-forward="false" selection-start-line="89" selection-start-column="339" selection-end-line="89" selection-end-column="339" />
+            <state relative-caret-position="2020">
+              <caret line="326" column="32" lean-forward="true" selection-start-line="326" selection-start-column="32" selection-end-line="326" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tearein" pinned="false" current-in-tab="false">
-        <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.tearein">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="521" column="66" lean-forward="false" selection-start-line="521" selection-start-column="66" selection-end-line="521" selection-end-column="66" />
-              <folding>
-                <element signature="e#10992#11001#0" expanded="true" />
-                <element signature="e#15589#15598#0" expanded="true" />
-                <element signature="e#20033#20042#0" expanded="true" />
-                <element signature="e#24568#24579#0" expanded="true" />
-                <element signature="e#28167#28176#0" expanded="true" />
-                <element signature="e#31349#31358#0" expanded="true" />
-                <element signature="e#34668#34679#0" expanded="true" />
-                <element signature="e#36587#36598#0" expanded="true" />
-                <element signature="e#38985#39005#0" expanded="true" />
-                <marker date="1512286394504" expanded="true" signature="1708:1741" ph="INSERT INTO student... " />
-                <marker date="1512286394504" expanded="true" signature="1970:2032" ph="select * fro... student" />
-                <marker date="1512286394504" expanded="true" signature="2004:2031" ph="select max(i... student" />
-                <marker date="1512286394504" expanded="true" signature="2337:2379" ph="INSERT INTO sturein... " />
-                <marker date="1512286394504" expanded="true" signature="2841:2884" ph="INSERT INTO friendrelationship... " />
-                <marker date="1512286394504" expanded="true" signature="3061:3099" ph="INSERT INTO persionserver... " />
-                <marker date="1512286394504" expanded="true" signature="3915:3962" ph="SELECT * FRO... student" />
-                <marker date="1512286394504" expanded="true" signature="4996:5029" ph="INSERT INTO teacher... " />
-                <marker date="1512286394504" expanded="true" signature="5258:5320" ph="select * fro... teacher" />
-                <marker date="1512286394504" expanded="true" signature="5292:5319" ph="select max(i... teacher" />
-                <marker date="1512286394504" expanded="true" signature="5625:5667" ph="INSERT INTO tearein... " />
-                <marker date="1512286394504" expanded="true" signature="6776:6823" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="7813:7845" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="7932:8042" ph="UPDATE teare... " />
-                <marker date="1512286394504" expanded="true" signature="9507:9539" ph="SELECT * FRO... sturein" />
-                <marker date="1512286394504" expanded="true" signature="9634:9744" ph="UPDATE sture... " />
-                <marker date="1512286394504" expanded="true" signature="11359:11391" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="12247:12268" ph="SELECT * FRO... sturein" />
-                <marker date="1512286394504" expanded="true" signature="15956:15988" ph="SELECT * FRO... sturein" />
-                <marker date="1512286394504" expanded="true" signature="16724:16745" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="20421:20453" ph="SELECT * FRO... sturein" />
-                <marker date="1512286394504" expanded="true" signature="20679:20712" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="20853:20896" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="23066:23098" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="23223:23255" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="24839:24860" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="24987:25019" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="26987:27030" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1512286394504" expanded="true" signature="27596:27647" ph="UPDATE frien... " />
-                <marker date="1512286394504" expanded="true" signature="28476:28519" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1512286394504" expanded="true" signature="28868:28900" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="30026:30069" ph="SELECT * FRO... friendrelationship" />
-                <marker date="1512286394504" expanded="true" signature="30871:30922" ph="UPDATE frien... " />
-                <marker date="1512286394504" expanded="true" signature="31654:31686" ph="SELECT * FRO... student" />
-                <marker date="1512286394504" expanded="true" signature="31763:31795" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="32020:32092" ph="SELECT * FRO... message" />
-                <marker date="1512286394504" expanded="true" signature="33381:33442" ph="INSERT INTO message... " />
-                <marker date="1512286394504" expanded="true" signature="33663:33701" ph="SELECT * FRO... persionserver" />
-                <marker date="1512286394504" expanded="true" signature="34046:34097" ph="Update persi... " />
-                <marker date="1512286394504" expanded="true" signature="34939:34976" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="35180:35212" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="36858:36879" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="37044:37076" ph="SELECT * FRO... teacher" />
-                <marker date="1512286394504" expanded="true" signature="39285:39310" ph="SELECT * FRO... evaluation" />
-                <marker date="1512286394504" expanded="true" signature="39285:39315" ph="SELECT * FRO... evaluation" />
-                <marker date="1512286394504" expanded="true" signature="39285:39327" ph="SELECT * FRO... evaluation" />
-                <marker date="1512286394504" expanded="true" signature="39377:39419" ph="SELECT * FRO... evaluation" />
-                <marker date="1512286394504" expanded="true" signature="40734:40784" ph="UPDATE teare... " />
-                <marker date="1512286394504" expanded="true" signature="41442:41474" ph="SELECT * FRO... tearein" />
-                <marker date="1512286394504" expanded="true" signature="42436:42454" ph="UPDATE stude... " />
-                <marker date="1512286394504" expanded="true" signature="42436:42486" ph="UPDATE stude... " />
-                <marker date="1512286394504" expanded="true" signature="43147:43197" ph="UPDATE teach... " />
-                <marker date="1512286394504" expanded="true" signature="43857:43910" ph="UPDATE teare... " />
-                <marker date="1512286394504" expanded="false" signature="44451:44460" ph="&lt;~&gt;" />
-                <marker date="1512286394504" expanded="false" signature="45590:45599" ph="&lt;~&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeaREIN.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/localpackage/TeaREIN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="44" />
-              <folding>
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -206,11 +137,105 @@
       <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="31" />
+            <state relative-caret-position="459">
+              <caret line="400" column="25" lean-forward="false" selection-start-line="400" selection-start-column="15" selection-end-line="400" selection-end-column="25" />
               <folding>
-                <element signature="e#6760#6761#0" expanded="true" />
-                <element signature="e#6807#6808#0" expanded="true" />
+                <element signature="e#7077#7078#0" expanded="true" />
+                <element signature="e#7110#7111#0" expanded="true" />
+                <element signature="e#7159#7160#0" expanded="true" />
+                <element signature="e#7198#7199#0" expanded="true" />
+                <element signature="e#7228#7229#0" expanded="true" />
+                <element signature="e#7257#7258#0" expanded="true" />
+                <element signature="e#7298#7299#0" expanded="true" />
+                <element signature="e#7329#7330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Head.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Head.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="176" column="104" lean-forward="true" selection-start-line="176" selection-start-column="104" selection-end-line="176" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="1081" column="37" lean-forward="false" selection-start-line="1081" selection-start-column="37" selection-end-line="1081" selection-end-column="37" />
+              <folding>
+                <element signature="e#11261#11270#0" expanded="true" />
+                <element signature="e#15858#15867#0" expanded="true" />
+                <element signature="e#20302#20311#0" expanded="true" />
+                <element signature="e#24837#24848#0" expanded="true" />
+                <element signature="e#30021#30030#0" expanded="true" />
+                <element signature="e#33203#33212#0" expanded="true" />
+                <element signature="e#36522#36533#0" expanded="true" />
+                <element signature="e#38441#38452#0" expanded="true" />
+                <element signature="e#40839#40859#0" expanded="true" />
+                <marker date="1512293478039" expanded="true" signature="1745:1778" ph="INSERT INTO student... " />
+                <marker date="1512293478039" expanded="true" signature="2007:2069" ph="select * fro... student" />
+                <marker date="1512293478039" expanded="true" signature="2041:2068" ph="select max(i... student" />
+                <marker date="1512293478039" expanded="true" signature="2374:2422" ph="INSERT INTO sturein... " />
+                <marker date="1512293478039" expanded="true" signature="2374:2424" ph="INSERT INTO sturein... " />
+                <marker date="1512293478039" expanded="true" signature="3110:3153" ph="INSERT INTO friendrelationship... " />
+                <marker date="1512293478039" expanded="true" signature="3330:3368" ph="INSERT INTO persionserver... " />
+                <marker date="1512293478039" expanded="true" signature="4184:4231" ph="SELECT * FRO... student" />
+                <marker date="1512293478039" expanded="true" signature="5265:5298" ph="INSERT INTO teacher... " />
+                <marker date="1512293478039" expanded="true" signature="5527:5589" ph="select * fro... teacher" />
+                <marker date="1512293478039" expanded="true" signature="5561:5588" ph="select max(i... teacher" />
+                <marker date="1512293478039" expanded="true" signature="5894:5936" ph="INSERT INTO tearein... " />
+                <marker date="1512293478039" expanded="true" signature="7045:7092" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="8082:8114" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="8201:8311" ph="UPDATE teare... " />
+                <marker date="1512293478039" expanded="true" signature="9776:9808" ph="SELECT * FRO... sturein" />
+                <marker date="1512293478039" expanded="true" signature="9903:10013" ph="UPDATE sture... " />
+                <marker date="1512293478039" expanded="true" signature="11628:11660" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="12516:12537" ph="SELECT * FRO... sturein" />
+                <marker date="1512293478039" expanded="true" signature="16225:16257" ph="SELECT * FRO... sturein" />
+                <marker date="1512293478039" expanded="true" signature="16993:17014" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="20690:20722" ph="SELECT * FRO... sturein" />
+                <marker date="1512293478039" expanded="true" signature="20948:20981" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="21122:21165" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="23335:23367" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="23492:23524" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="25108:25129" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="25256:25288" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="27272:27315" ph="SELECT FROM friendrelationship... " />
+                <marker date="1512293478039" expanded="true" signature="27960:28011" ph="UPDATE frien... " />
+                <marker date="1512293478039" expanded="true" signature="28841:28884" ph="SELECT * FRO... friendrelationship" />
+                <marker date="1512293478039" expanded="true" signature="29450:29501" ph="UPDATE frien... " />
+                <marker date="1512293478039" expanded="true" signature="30330:30373" ph="SELECT * FRO... friendrelationship" />
+                <marker date="1512293478039" expanded="true" signature="30722:30754" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="31880:31923" ph="SELECT * FRO... friendrelationship" />
+                <marker date="1512293478039" expanded="true" signature="32725:32776" ph="UPDATE frien... " />
+                <marker date="1512293478039" expanded="true" signature="33508:33540" ph="SELECT * FRO... student" />
+                <marker date="1512293478039" expanded="true" signature="33617:33649" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="33874:33946" ph="SELECT * FRO... message" />
+                <marker date="1512293478039" expanded="true" signature="35235:35296" ph="INSERT INTO message... " />
+                <marker date="1512293478039" expanded="true" signature="35517:35555" ph="SELECT * FRO... persionserver" />
+                <marker date="1512293478039" expanded="true" signature="35900:35951" ph="Update persi... " />
+                <marker date="1512293478039" expanded="true" signature="36793:36830" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="37034:37066" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="38712:38733" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="38898:38930" ph="SELECT * FRO... teacher" />
+                <marker date="1512293478039" expanded="true" signature="41139:41164" ph="SELECT * FRO... evaluation" />
+                <marker date="1512293478039" expanded="true" signature="41139:41169" ph="SELECT * FRO... evaluation" />
+                <marker date="1512293478039" expanded="true" signature="41139:41181" ph="SELECT * FRO... evaluation" />
+                <marker date="1512293478039" expanded="true" signature="41231:41273" ph="SELECT * FRO... evaluation" />
+                <marker date="1512293478039" expanded="true" signature="42588:42638" ph="UPDATE teare... " />
+                <marker date="1512293478039" expanded="true" signature="43296:43328" ph="SELECT * FRO... tearein" />
+                <marker date="1512293478039" expanded="true" signature="44290:44308" ph="UPDATE stude... " />
+                <marker date="1512293478039" expanded="true" signature="44290:44340" ph="UPDATE stude... " />
+                <marker date="1512293478039" expanded="true" signature="45001:45051" ph="UPDATE teach... " />
+                <marker date="1512293478039" expanded="true" signature="45711:45764" ph="UPDATE teare... " />
+                <marker date="1512293478039" expanded="false" signature="46375:46384" ph="&lt;~&gt;" />
+                <marker date="1512293478039" expanded="false" signature="47604:47613" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -239,6 +264,9 @@
       <find>Update</find>
       <find>Sin</find>
       <find>SingleTea</find>
+      <find>Make</find>
+      <find>FailMak</find>
+      <find>好友添加</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -258,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/stusuccesslog.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/AllTheTeaShow.jsp" />
         <option value="$PROJECT_DIR$/web/Basic.jsp" />
@@ -272,7 +299,6 @@
         <option value="$PROJECT_DIR$/web/teaREINinsert.jsp" />
         <option value="$PROJECT_DIR$/web/stuREINsuccessInsert.jsp" />
         <option value="$PROJECT_DIR$/web/REINSuccessLoad.jsp" />
-        <option value="$PROJECT_DIR$/web/FriendList.jsp" />
         <option value="$PROJECT_DIR$/web/MessageShow.jsp" />
         <option value="$PROJECT_DIR$/web/map.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/Project_war_exploded/StuReF.jsp" />
@@ -284,8 +310,6 @@
         <option value="$PROJECT_DIR$/web/EvaluationShow.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/StuEvaluationtoTea.java" />
         <option value="$PROJECT_DIR$/web/UpdateEvaluationPassword.jsp" />
-        <option value="$PROJECT_DIR$/web/StuPersonalPage.jsp" />
-        <option value="$PROJECT_DIR$/web/StudentUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/TeacherUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/localpackage/LoadStoreBLON.java" />
         <option value="$PROJECT_DIR$/web/PictureTest.jsp" />
@@ -295,20 +319,24 @@
         <option value="$PROJECT_DIR$/web/update.html" />
         <option value="$PROJECT_DIR$/web/update.jsp" />
         <option value="$PROJECT_DIR$/web/update.asp" />
-        <option value="$PROJECT_DIR$/web/Head.jsp" />
         <option value="$PROJECT_DIR$/web/test.html" />
         <option value="$PROJECT_DIR$/src/SearchServlet.java" />
         <option value="$PROJECT_DIR$/src/Ajex/SearchServlet.java" />
         <option value="$PROJECT_DIR$/src/localpackage/DoAjaxServlet.java" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
-        <option value="$PROJECT_DIR$/web/StuReF.jsp" />
         <option value="$PROJECT_DIR$/web/TeaReF.jsp" />
-        <option value="$PROJECT_DIR$/src/ActionPackage/Action.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/localpackage/TeaREIN.java" />
-        <option value="$PROJECT_DIR$/src/localpackage/Dao.java" />
-        <option value="$PROJECT_DIR$/web/SingleTeaShow.jsp" />
         <option value="$PROJECT_DIR$/web/TeaPersionalPage.jsp" />
+        <option value="$PROJECT_DIR$/web/Head.jsp" />
+        <option value="$PROJECT_DIR$/web/SingleTeaShow.jsp" />
+        <option value="$PROJECT_DIR$/web/FailMakeFriends.jsp" />
+        <option value="$PROJECT_DIR$/src/localpackage/Dao.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/ActionPackage/Action.java" />
+        <option value="$PROJECT_DIR$/web/StuPersonalPage.jsp" />
+        <option value="$PROJECT_DIR$/web/StudentUpdate.jsp" />
+        <option value="$PROJECT_DIR$/web/StuReF.jsp" />
+        <option value="$PROJECT_DIR$/web/FriendList.jsp" />
       </list>
     </option>
   </component>
@@ -325,9 +353,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="447" />
-    <option name="y" value="79" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
     <option name="width" value="1933" />
     <option name="height" value="864" />
   </component>
@@ -356,37 +383,6 @@
           <expand>
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -737,12 +733,12 @@
       <workItem from="1512057970979" duration="4414000" />
       <workItem from="1512099396532" duration="9870000" />
       <workItem from="1512216792826" duration="9754000" />
-      <workItem from="1512282771614" duration="4807000" />
+      <workItem from="1512282771614" duration="11531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136913000" />
+    <option name="totallyTimeSpent" value="143637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,7 +750,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="447" y="79" width="1933" height="864" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,13 +764,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3040201" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32788944" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20385233" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07098381" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32788944" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138361" sideWeight="0.8453453" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18844493" sideWeight="0.8453453" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19168466" sideWeight="0.15465465" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2413607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959305" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -801,7 +797,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/localpackage/Dao.java</url>
-          <line>275</line>
+          <line>280</line>
           <properties class="localpackage.Dao" method="MatchForTeaPlus">
             <option name="EMULATED" value="true" />
           </properties>
@@ -817,64 +813,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/StuMatchShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="115" column="14" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="115" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/EvaluationShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/StuEvaluationtoTea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/REINSuccessLoad.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teasuccessregist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/TeacherUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/LoadStoreBLON.java" />
-    <entry file="file://$PROJECT_DIR$/web/images/touxiang.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/Messagebackground.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/profile.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -883,13 +821,6 @@
     <entry file="file://$PROJECT_DIR$/web/images/tick.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ui-choose.css" />
@@ -903,6 +834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,6 +842,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1511836537832" expanded="true" signature="2186:2201" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -919,14 +854,6 @@
     <entry file="file://$PROJECT_DIR$/web/test.html" />
     <entry file="file://$PROJECT_DIR$/src/SearchServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/Ajex/SearchServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/Head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -942,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/FriendList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="28" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/localpackage/DoAjaxServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/test.jsp" />
     <entry file="file://$PROJECT_DIR$/Project.iml">
@@ -960,55 +879,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/StuPersonalPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="85" column="70" lean-forward="false" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/StudentUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.sturein">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.evaluation">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/UpdateEvaluationPassword.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/StuReF.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="96" column="72" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="96" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -1021,87 +895,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="31" />
-          <folding>
-            <element signature="e#6760#6761#0" expanded="true" />
-            <element signature="e#6807#6808#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-567">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
+    <entry file="file://$PROJECT_DIR$/web/stusuccessregist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="521" column="66" lean-forward="false" selection-start-line="521" selection-start-column="66" selection-end-line="521" selection-end-column="66" />
-          <folding>
-            <element signature="e#10992#11001#0" expanded="true" />
-            <element signature="e#15589#15598#0" expanded="true" />
-            <element signature="e#20033#20042#0" expanded="true" />
-            <element signature="e#24568#24579#0" expanded="true" />
-            <element signature="e#28167#28176#0" expanded="true" />
-            <element signature="e#31349#31358#0" expanded="true" />
-            <element signature="e#34668#34679#0" expanded="true" />
-            <element signature="e#36587#36598#0" expanded="true" />
-            <element signature="e#38985#39005#0" expanded="true" />
-            <marker date="1512286394504" expanded="true" signature="1708:1741" ph="INSERT INTO student... " />
-            <marker date="1512286394504" expanded="true" signature="1970:2032" ph="select * fro... student" />
-            <marker date="1512286394504" expanded="true" signature="2004:2031" ph="select max(i... student" />
-            <marker date="1512286394504" expanded="true" signature="2337:2379" ph="INSERT INTO sturein... " />
-            <marker date="1512286394504" expanded="true" signature="2841:2884" ph="INSERT INTO friendrelationship... " />
-            <marker date="1512286394504" expanded="true" signature="3061:3099" ph="INSERT INTO persionserver... " />
-            <marker date="1512286394504" expanded="true" signature="3915:3962" ph="SELECT * FRO... student" />
-            <marker date="1512286394504" expanded="true" signature="4996:5029" ph="INSERT INTO teacher... " />
-            <marker date="1512286394504" expanded="true" signature="5258:5320" ph="select * fro... teacher" />
-            <marker date="1512286394504" expanded="true" signature="5292:5319" ph="select max(i... teacher" />
-            <marker date="1512286394504" expanded="true" signature="5625:5667" ph="INSERT INTO tearein... " />
-            <marker date="1512286394504" expanded="true" signature="6776:6823" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="7813:7845" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="7932:8042" ph="UPDATE teare... " />
-            <marker date="1512286394504" expanded="true" signature="9507:9539" ph="SELECT * FRO... sturein" />
-            <marker date="1512286394504" expanded="true" signature="9634:9744" ph="UPDATE sture... " />
-            <marker date="1512286394504" expanded="true" signature="11359:11391" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="12247:12268" ph="SELECT * FRO... sturein" />
-            <marker date="1512286394504" expanded="true" signature="15956:15988" ph="SELECT * FRO... sturein" />
-            <marker date="1512286394504" expanded="true" signature="16724:16745" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="20421:20453" ph="SELECT * FRO... sturein" />
-            <marker date="1512286394504" expanded="true" signature="20679:20712" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="20853:20896" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="23066:23098" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="23223:23255" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="24839:24860" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="24987:25019" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="26987:27030" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1512286394504" expanded="true" signature="27596:27647" ph="UPDATE frien... " />
-            <marker date="1512286394504" expanded="true" signature="28476:28519" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1512286394504" expanded="true" signature="28868:28900" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="30026:30069" ph="SELECT * FRO... friendrelationship" />
-            <marker date="1512286394504" expanded="true" signature="30871:30922" ph="UPDATE frien... " />
-            <marker date="1512286394504" expanded="true" signature="31654:31686" ph="SELECT * FRO... student" />
-            <marker date="1512286394504" expanded="true" signature="31763:31795" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="32020:32092" ph="SELECT * FRO... message" />
-            <marker date="1512286394504" expanded="true" signature="33381:33442" ph="INSERT INTO message... " />
-            <marker date="1512286394504" expanded="true" signature="33663:33701" ph="SELECT * FRO... persionserver" />
-            <marker date="1512286394504" expanded="true" signature="34046:34097" ph="Update persi... " />
-            <marker date="1512286394504" expanded="true" signature="34939:34976" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="35180:35212" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="36858:36879" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="37044:37076" ph="SELECT * FRO... teacher" />
-            <marker date="1512286394504" expanded="true" signature="39285:39310" ph="SELECT * FRO... evaluation" />
-            <marker date="1512286394504" expanded="true" signature="39285:39315" ph="SELECT * FRO... evaluation" />
-            <marker date="1512286394504" expanded="true" signature="39285:39327" ph="SELECT * FRO... evaluation" />
-            <marker date="1512286394504" expanded="true" signature="39377:39419" ph="SELECT * FRO... evaluation" />
-            <marker date="1512286394504" expanded="true" signature="40734:40784" ph="UPDATE teare... " />
-            <marker date="1512286394504" expanded="true" signature="41442:41474" ph="SELECT * FRO... tearein" />
-            <marker date="1512286394504" expanded="true" signature="42436:42454" ph="UPDATE stude... " />
-            <marker date="1512286394504" expanded="true" signature="42436:42486" ph="UPDATE stude... " />
-            <marker date="1512286394504" expanded="true" signature="43147:43197" ph="UPDATE teach... " />
-            <marker date="1512286394504" expanded="true" signature="43857:43910" ph="UPDATE teare... " />
-            <marker date="1512286394504" expanded="false" signature="44451:44460" ph="&lt;~&gt;" />
-            <marker date="1512286394504" expanded="false" signature="45590:45599" ph="&lt;~&gt;" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,11 +924,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Project_war_exploded/SingleTeaShow.jsp">
+    <entry file="file://$PROJECT_DIR$/web/TeaPersionalPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="197">
+          <caret line="86" column="99" lean-forward="false" selection-start-line="86" selection-start-column="99" selection-end-line="86" selection-end-column="99" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/localpackage/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.test">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/localpackage/BasicServe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.evaluation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.persionserver">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.sturein">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1133,26 +1004,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stusuccessregist.jsp">
+    <entry file="file://$PROJECT_DIR$/web/NoFriend.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="195">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SuccessMakeFriends.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1878">
-          <caret line="89" column="339" lean-forward="false" selection-start-line="89" selection-start-column="339" selection-end-line="89" selection-end-column="339" />
-          <folding />
+    <entry file="das://table:/50c55e46/b0c967b5-6d62-4c02-9b4d-cf13676196dc/mydatabase.friendrelationship">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/TeaPersionalPage.jsp">
+    <entry file="file://$PROJECT_DIR$/web/FailMakeFriends.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="86" column="99" lean-forward="false" selection-start-line="86" selection-start-column="99" selection-end-line="86" selection-end-column="99" />
+        <state relative-caret-position="351">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1162,8 +1040,149 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="118" column="84" lean-forward="false" selection-start-line="118" selection-start-column="84" selection-end-line="118" selection-end-column="84" />
+        <state relative-caret-position="406">
+          <caret line="127" column="55" lean-forward="true" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/localpackage/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="1081" column="37" lean-forward="false" selection-start-line="1081" selection-start-column="37" selection-end-line="1081" selection-end-column="37" />
+          <folding>
+            <element signature="e#11261#11270#0" expanded="true" />
+            <element signature="e#15858#15867#0" expanded="true" />
+            <element signature="e#20302#20311#0" expanded="true" />
+            <element signature="e#24837#24848#0" expanded="true" />
+            <element signature="e#30021#30030#0" expanded="true" />
+            <element signature="e#33203#33212#0" expanded="true" />
+            <element signature="e#36522#36533#0" expanded="true" />
+            <element signature="e#38441#38452#0" expanded="true" />
+            <element signature="e#40839#40859#0" expanded="true" />
+            <marker date="1512293478039" expanded="true" signature="1745:1778" ph="INSERT INTO student... " />
+            <marker date="1512293478039" expanded="true" signature="2007:2069" ph="select * fro... student" />
+            <marker date="1512293478039" expanded="true" signature="2041:2068" ph="select max(i... student" />
+            <marker date="1512293478039" expanded="true" signature="2374:2422" ph="INSERT INTO sturein... " />
+            <marker date="1512293478039" expanded="true" signature="2374:2424" ph="INSERT INTO sturein... " />
+            <marker date="1512293478039" expanded="true" signature="3110:3153" ph="INSERT INTO friendrelationship... " />
+            <marker date="1512293478039" expanded="true" signature="3330:3368" ph="INSERT INTO persionserver... " />
+            <marker date="1512293478039" expanded="true" signature="4184:4231" ph="SELECT * FRO... student" />
+            <marker date="1512293478039" expanded="true" signature="5265:5298" ph="INSERT INTO teacher... " />
+            <marker date="1512293478039" expanded="true" signature="5527:5589" ph="select * fro... teacher" />
+            <marker date="1512293478039" expanded="true" signature="5561:5588" ph="select max(i... teacher" />
+            <marker date="1512293478039" expanded="true" signature="5894:5936" ph="INSERT INTO tearein... " />
+            <marker date="1512293478039" expanded="true" signature="7045:7092" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="8082:8114" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="8201:8311" ph="UPDATE teare... " />
+            <marker date="1512293478039" expanded="true" signature="9776:9808" ph="SELECT * FRO... sturein" />
+            <marker date="1512293478039" expanded="true" signature="9903:10013" ph="UPDATE sture... " />
+            <marker date="1512293478039" expanded="true" signature="11628:11660" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="12516:12537" ph="SELECT * FRO... sturein" />
+            <marker date="1512293478039" expanded="true" signature="16225:16257" ph="SELECT * FRO... sturein" />
+            <marker date="1512293478039" expanded="true" signature="16993:17014" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="20690:20722" ph="SELECT * FRO... sturein" />
+            <marker date="1512293478039" expanded="true" signature="20948:20981" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="21122:21165" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="23335:23367" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="23492:23524" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="25108:25129" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="25256:25288" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="27272:27315" ph="SELECT FROM friendrelationship... " />
+            <marker date="1512293478039" expanded="true" signature="27960:28011" ph="UPDATE frien... " />
+            <marker date="1512293478039" expanded="true" signature="28841:28884" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1512293478039" expanded="true" signature="29450:29501" ph="UPDATE frien... " />
+            <marker date="1512293478039" expanded="true" signature="30330:30373" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1512293478039" expanded="true" signature="30722:30754" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="31880:31923" ph="SELECT * FRO... friendrelationship" />
+            <marker date="1512293478039" expanded="true" signature="32725:32776" ph="UPDATE frien... " />
+            <marker date="1512293478039" expanded="true" signature="33508:33540" ph="SELECT * FRO... student" />
+            <marker date="1512293478039" expanded="true" signature="33617:33649" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="33874:33946" ph="SELECT * FRO... message" />
+            <marker date="1512293478039" expanded="true" signature="35235:35296" ph="INSERT INTO message... " />
+            <marker date="1512293478039" expanded="true" signature="35517:35555" ph="SELECT * FRO... persionserver" />
+            <marker date="1512293478039" expanded="true" signature="35900:35951" ph="Update persi... " />
+            <marker date="1512293478039" expanded="true" signature="36793:36830" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="37034:37066" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="38712:38733" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="38898:38930" ph="SELECT * FRO... teacher" />
+            <marker date="1512293478039" expanded="true" signature="41139:41164" ph="SELECT * FRO... evaluation" />
+            <marker date="1512293478039" expanded="true" signature="41139:41169" ph="SELECT * FRO... evaluation" />
+            <marker date="1512293478039" expanded="true" signature="41139:41181" ph="SELECT * FRO... evaluation" />
+            <marker date="1512293478039" expanded="true" signature="41231:41273" ph="SELECT * FRO... evaluation" />
+            <marker date="1512293478039" expanded="true" signature="42588:42638" ph="UPDATE teare... " />
+            <marker date="1512293478039" expanded="true" signature="43296:43328" ph="SELECT * FRO... tearein" />
+            <marker date="1512293478039" expanded="true" signature="44290:44308" ph="UPDATE stude... " />
+            <marker date="1512293478039" expanded="true" signature="44290:44340" ph="UPDATE stude... " />
+            <marker date="1512293478039" expanded="true" signature="45001:45051" ph="UPDATE teach... " />
+            <marker date="1512293478039" expanded="true" signature="45711:45764" ph="UPDATE teare... " />
+            <marker date="1512293478039" expanded="false" signature="46375:46384" ph="&lt;~&gt;" />
+            <marker date="1512293478039" expanded="false" signature="47604:47613" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="176" column="104" lean-forward="true" selection-start-line="176" selection-start-column="104" selection-end-line="176" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ActionPackage/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="400" column="25" lean-forward="false" selection-start-line="400" selection-start-column="15" selection-end-line="400" selection-end-column="25" />
+          <folding>
+            <element signature="e#7077#7078#0" expanded="true" />
+            <element signature="e#7110#7111#0" expanded="true" />
+            <element signature="e#7159#7160#0" expanded="true" />
+            <element signature="e#7198#7199#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7257#7258#0" expanded="true" />
+            <element signature="e#7298#7299#0" expanded="true" />
+            <element signature="e#7329#7330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/StudentUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/SingleTeaShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2020">
+          <caret line="326" column="32" lean-forward="true" selection-start-line="326" selection-start-column="32" selection-end-line="326" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/StuPersonalPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/StuReF.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FriendList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
       </provider>

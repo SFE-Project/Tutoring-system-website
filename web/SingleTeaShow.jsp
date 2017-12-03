@@ -19,6 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
+    当前账号${StuID}
     <title>教师资料</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
@@ -318,25 +319,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="submit" value="Search">
                 <div class="clearfix"></div>
             </form>
-            <div class="view_profile">
-                <h3>与他/她相似的教师</h3>
-                <s:iterator value="#request.listofbstea" var="temp">
-                <ul class="profile_item">
-                    <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
-                        <li class="profile_item-img">
-                            <img src="images/p1.jpg" class="img-responsive" alt="">
-                        </li>
-                        <li class="profile_item-desc">
-                            <h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>
-                            <p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,
-                                <s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>
-                                <s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>
-                        </li>
-                        <div class="clearfix"> </div>
-                    </a>
-                </ul>
-                </s:iterator>
-            </div>
+            <%--<div class="view_profile">--%>
+                <%--<h3>与他/她相似的教师</h3>--%>
+                <%--<s:iterator value="#request.listofbstea" var="temp">--%>
+                <%--<ul class="profile_item">--%>
+                    <%--<a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>--%>
+                        <%--<li class="profile_item-img">--%>
+                            <%--<img src="images/p1.jpg" class="img-responsive" alt="">--%>
+                        <%--</li>--%>
+                        <%--<li class="profile_item-desc">--%>
+                            <%--<h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>--%>
+                            <%--<p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,--%>
+                                <%--<s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>--%>
+                                <%--<s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>--%>
+                        <%--</li>--%>
+                        <%--<div class="clearfix"> </div>--%>
+                    <%--</a>--%>
+                <%--</ul>--%>
+                <%--</s:iterator>--%>
+            <%--</div>--%>
         </div>
         <div class="clearfix"></div>
     </div>

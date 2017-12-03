@@ -127,22 +127,62 @@
                                     </li>
 
                                     <li>
-                                        <label>可选时间<input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
+                                        <label>具体时间<input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
                                             <input type="checkbox" name="stuREIN.Time" value="下午">下午
                                             <input type="checkbox" name="stuREIN.Time" value="晚上">晚上</label><br/>
+                                    </li>
+                                    <li>
+                                        <label>大致时间<input type="checkbox" name="stuREIN.Date" value="寒假" checked="checked">寒假
+                                            <input type="checkbox" name="stuREIN.Date" value="暑假">暑假
+                                            <input type="checkbox" name="stuREIN.Date" value="平时">平时</label><br/>
                                     </li>
                                     <li>
                                         <label>
                                             学科<input type="checkbox" name="stuREIN.Subject" value="数学" checked="checked">数学
                                             <input type="checkbox" name="stuREIN.Subject" value="语文">语文
-                                            <input type="checkbox" name="stuREIN.Subject" value="外语">外语<br/>
+                                            <input type="checkbox" name="stuREIN.Subject" value="外语">外语
+                                            <input type="checkbox" name="stuREIN.Subject" value="物理">物理
+                                            <input type="checkbox" name="stuREIN.Subject" value="化学">化学
+                                            <input type="checkbox" name="stuREIN.Subject" value="政治">政治
+                                            <input type="checkbox" name="stuREIN.Subject" value="地理">地理
+                                            <input type="checkbox" name="stuREIN.Subject" value="历史">历史<br/>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            年级<input type="radio" name="stuREIN.Grade" value="小学">小学
+                                            年级<input type="radio" name="stuREIN.Grade" value="学龄前">学龄前
+                                            <input type="radio" name="stuREIN.Grade" value="小学">小学
                                             <input type="radio" name="stuREIN.Grade" value="初中">初中
-                                            <input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中<br/>
+                                            <input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中
+                                            <input type="radio" name="stuREIN.Grade" value="大学">大学<br/>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            补习类别<input type="radio" name="stuREIN.Type" value="一对一">一对一
+                                            <input type="radio" name="stuREIN.Type" value="一对多" checked="checked">一对多
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            时薪要求<input type="radio" name="stuREIN.Price" value="0/80" checked="checked">80以下
+                                            <input type="radio" name="stuREIN.Price" value="80/150">80~150
+                                            <input type="radio" name="stuREIN.Price" value="150/200">150~200
+                                            <input type="radio" name="stuREIN.Price" value="200++">200以上
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            可接受地点设置
+                                            <input type="radio" name="stuREIN.AddressAccess" value="南岗" checked="checked">南岗
+                                            <input type="radio" name="stuREIN.AddressAccess" value="道里">道里
+                                            <input type="radio" name="stuREIN.AddressAccess" value="道外">道外
+                                            <input type="radio" name="stuREIN.AddressAccess" value="平房">平房
+                                            <input type="radio" name="stuREIN.AddressAccess" value="松北">松北
+                                            <input type="radio" name="stuREIN.AddressAccess" value="香坊">香坊
+                                            <input type="radio" name="stuREIN.AddressAccess" value="阿城">阿城
+                                            <input type="radio" name="stuREIN.AddressAccess" value="呼兰">呼兰
+                                            <input type="radio" name="stuREIN.AddressAccess" value="双城">双城
                                         </label>
                                     </li>
                                     <input type="submit" value="注册">

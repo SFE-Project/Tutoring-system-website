@@ -13,6 +13,8 @@ public class Action {
     private int StuID;
     private int OutID;
     private int RecID;
+    private int UserID;
+    private int FollowerID;
     private BSTeacher bsTeacher=new BSTeacher();
     private Dao dao =new Dao();
     private Student student =new Student();
@@ -46,6 +48,18 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+    public String PushUserID(){
+        dao.PushUserID(UserID);
+        return "1";
+    }
+    public String MakeFriendPlus(){
+        int flag=dao.MakeFriendPlus(UserID,FollowerID);
+        if(flag==0){
+            return "0";
+        }else{
+            return "1";
         }
     }
     public String TeaEditePersionalIntroduction(){
@@ -214,6 +228,22 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public int getFollowerID() {
+        return FollowerID;
+    }
+
+    public void setFollowerID(int followerID) {
+        FollowerID = followerID;
+    }
+
+    public int getUserID() {
+        return UserID;
+    }
+
+    public void setUserID(int userID) {
+        UserID = userID;
     }
 
     public String getTeaPersionalIntroduction() {
