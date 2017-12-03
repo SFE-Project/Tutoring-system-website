@@ -50,6 +50,10 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String PushUserIDofTea(){
+        dao.PushUserID(UserID);
+        return "1";
+    }
     public String PushUserID(){
         dao.PushUserID(UserID);
         return "1";

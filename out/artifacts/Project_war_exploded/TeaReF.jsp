@@ -18,6 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
+    当前账号：${TeaID}
     <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Assisted Services :: w3layouts</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
@@ -79,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="assisted_Services-agileits">
             <h2>个人资料修改 </h2>
-            <h2>当前账号：${TeaID}</h2>
+
             <form action="TeaREINUpdate.action">
                 <input type="hidden" name="TeaREIN.ID" value='<s:property value="TeaID"/>'>
                 <label>性别：</label>

@@ -124,9 +124,13 @@
             <result name="1">SuccessMakeFriends.jsp</result>
             <result name="0">SuccessMakeFriends.jsp</result>
         </action>
-        <!--假的cookie将账号push到下一界面-->
+        <!--假的cookie将账号push到下一界面学生操作-->
         <action name="PushUserID" class="ActionPackage.Action" method="PushUserID">
             <result name="1">StudentUpdate.jsp</result>
+        </action>
+        <!--假的cookie将账号push到下一界面教师操作-->
+        <action name="PushUserIDofTea" class="ActionPackage.Action" method="PushUserIDofTea">
+            <result name="1">TeacherUpdate.jsp</result>
         </action>
     </package>
 </struts>

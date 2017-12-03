@@ -1088,10 +1088,11 @@ public class Dao {
         } finally {
         }
     }
-//    push账号到下一界面，保存账户
+//    学生更改个人信息push账号到下一界面，保存账户
     public void PushUserID(int UserID){
 
     }
+
     public static void main(String[] args) {
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");

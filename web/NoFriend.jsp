@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    当前账号:${StuID}
     <title>没有任何好友界面</title>
 </head>
 <body>

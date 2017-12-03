@@ -8,12 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    当前账号：${TeaID}
     <title>更改评价资格密钥</title>
 </head>
 <body>
 您当前的评价资格密钥是${EvaluationPassword}<br/>
 <form action="UpdateEvaluationPassWord.action">
-    请确定您的账号信息<input type="text" name="TeaID"><br>
+    <input type="text" name="TeaID" hidden="hidden" value=${TeaID}><br>
     请输入新的评价资格密码<input type="text" name="EvaluationPassword"><br/>
     <input type="submit" value="确定">
 </form>
