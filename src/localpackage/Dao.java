@@ -711,11 +711,14 @@ public class Dao {
             return null;
         }
     }
-    public void KillFriends(int TeaID,int StuID){
+    public int KillFriends(int TeaID,int StuID){
         Connection con=null;
         PreparedStatement pstA=null;
         PreparedStatement pstB=null;
         BasicServe bss=new BasicServe();
+        if(TeaID==2000){
+            return 0;//基本用户不能删除
+        }
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
@@ -752,6 +755,7 @@ public class Dao {
         } finally {
 
         }
+        return 1;//成功删除
     }
     public List<Message> MesageShow(int OutID,int RecID){
         List<Message> listofmessage=new ArrayList<Message>();

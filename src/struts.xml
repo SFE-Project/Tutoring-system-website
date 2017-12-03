@@ -61,7 +61,8 @@
         </action>
         <!--删除好友，不再关注功能-->
         <action name="FriendKill" class="ActionPackage.Action" method="FriendKill">
-            <result name="KILLFRIEND">index.jsp</result>
+            <result name="KILLFRIEND">SuccessKillFriend.jsp</result>
+            <result name="FAILTOKILLFRIEND">FailKillFriend.jsp</result>
         </action>
         <!--展示和某位用户的全部聊天记录-->
         <action name="MessageShow" class="ActionPackage.Action" method="MessageShow">

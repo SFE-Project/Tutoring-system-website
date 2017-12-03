@@ -128,8 +128,13 @@ public class Action {
         }
     }
     public String FriendKill(){
-        dao.KillFriends(TeaID,StuID);
-        return "KILLFRIEND";
+        int flag=dao.KillFriends(TeaID,StuID);
+        if(flag==0){
+            return "FAILTOKILLFRIEND";
+        }else{
+            return "KILLFRIEND";
+        }
+
     }
     public String Friendlist(){
         listofteacher=dao.Friendlist(StuID);
