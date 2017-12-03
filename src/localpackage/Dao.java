@@ -524,6 +524,7 @@ public class Dao {
                 teaREIN.setSubject(rstB.getString("Subject"));
                 teaREIN.setGrade(rstB.getString("Grade"));
                 teaREIN.setEmail(rstB.getString(("Email")));
+                teaREIN.setPersionalIntroduction(rstB.getString("PersionalIntroduction"));
                 bsTeacher.setTeacher(teacher);
                 bsTeacher.setTeaREIN(teaREIN);
             }

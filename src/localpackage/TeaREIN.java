@@ -13,9 +13,18 @@ public class TeaREIN {
     private String Price;
     private String AddressAccess;
     private String EvaluationPassword;
+    private String PersionalIntroduction;
 
     public String getEvaluationPassword() {
         return EvaluationPassword;
+    }
+
+    public String getPersionalIntroduction() {
+        return PersionalIntroduction;
+    }
+
+    public void setPersionalIntroduction(String persionalIntroduction) {
+        PersionalIntroduction = persionalIntroduction;
     }
 
     public void setEvaluationPassword(String evaluationPassword) {

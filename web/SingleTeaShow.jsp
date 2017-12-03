@@ -87,7 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="w3layouts_details">
                     <h4>Profile ID : ${bsTeacher.getTeacher().getID()}</h4>
-                    <p>${bsTeacher.getTeacher().getNickName()},${bsTeacher.getTeaREIN().getEmail()},${bsTeacher.getTeaREIN().getSex()},${bsTeacher.getTeaREIN().getEducation()},${bsTeacher.getTeaREIN().getTime()},${bsTeacher.getTeaREIN().getSubject()},${bsTeacher.getTeaREIN().getGrade()}。</p>
+                    <p>${bsTeacher.getTeacher().getNickName()},${bsTeacher.getTeaREIN().getEmail()},${bsTeacher.getTeaREIN().getSex()},${bsTeacher.getTeaREIN().getEducation()},${bsTeacher.getTeaREIN().getTime()},${bsTeacher.getTeaREIN().getSubject()},${bsTeacher.getTeaREIN().getGrade()},${bsTeacher.getTeaREIN().getPersionalIntroduction()}</p>
                     <a href='MakeFriends.action?StuID=<a:property value="StuID"/>&TeaID=${bsTeacher.getTeacher().getID()}' data-toggle="modal" data-target="#myModal">好友添加</a>
                     <a href="/MessageShow.action?OutID=<a:property value="StuID"/>&RecID=${bsTeacher.getTeacher().getID()}" data-toggle="modal" data-target="#myModal">发送信息</a>
                 </div>

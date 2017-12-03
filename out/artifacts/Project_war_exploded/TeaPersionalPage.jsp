@@ -85,6 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href='MatchFOrTeaPlus.action?TeaID=${teademo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
                     <a href='EvaluationPasswordShow.action?TeaID=${teademo.getID()}'  data-toggle="modal" data-target="#myModal">更改评价密钥</a>
                     <a href='TeacherUpdate.jsp' data-toggle="modal" data-target="#myModal">更改资料</a>
+                    <a href="SingleTea.action?StuID=0&TeaID=${teademo.getID()}" data-toggle="modal" data-target="#myModal">游客视角个人界面</a>
                     <form action="TeaEditPersionalIntroduction.action">
                        此处编辑个人介绍（限定100字）<br/>
                         <input type="text" name="TeaID" value="${teademo.getID()}" hidden="hidden">
