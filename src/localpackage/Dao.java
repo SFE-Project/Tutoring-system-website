@@ -147,7 +147,7 @@ public class Dao {
                 teademo.setID(rstA.getInt("ID"));
                 teademo.setNickName(rstA.getString("NickName"));
                 teademo.setPassword(rstA.getString("Password"));
-                pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?,?)");
+                pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
                 pstC.setInt(1,rstA.getInt("ID"));
                 pstC.setString(2,teaREIN.getSex());
                 pstC.setString(3,teaREIN.getEducation());
@@ -155,6 +155,12 @@ public class Dao {
                 pstC.setString(5,teaREIN.getSubject());
                 pstC.setString(6,teaREIN.getGrade());
                 pstC.setString(7,teaREIN.getEmail());
+                pstC.setString(8,teaREIN.getAddressAccess());
+                pstC.setString(9, teaREIN.getDate());
+                pstC.setString(10,teaREIN.getType());
+                pstC.setString(11,teaREIN.getPrice());
+                pstC.setString(12,teaREIN.getEvaluationPassword());
+                pstC.setString(13,teaREIN.getPersionalIntroduction());
                 pstC.executeUpdate();
             }
         } catch (ClassNotFoundException e) {
@@ -1092,8 +1098,27 @@ public class Dao {
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
         Dao dao=new Dao();
-        int flag=dao.MakeFriendPlus(1047,2022);
-        System.out.println(flag);
+        Teacher teacher=new Teacher();
+//        teacher.setID(1031);
+        teacher.setNickName("2423");
+        teacher.setPassword("1111");
+        TeaREIN teaREIN=new TeaREIN();
+//        teaREIN.setID(1031);
+        teaREIN.setSex("21");
+        teaREIN.setEducation("gfdgfd");
+        teaREIN.setTime("43534");
+        teaREIN.setPersionalIntroduction("124234");
+        teaREIN.setType("1");
+        teaREIN.setPrice("124234");
+        teaREIN.setEmail("43534");
+        teaREIN.setDate("32435");
+        teaREIN.setAddressAccess("3432");
+        teaREIN.setSubject("4234");
+        teaREIN.setEvaluationPassword("423423");
+        teaREIN.setGrade("sfsdfsd");
+        dao.TeaInsert(teacher,teaREIN);
+//        int flag=dao.MakeFriendPlus(1047,2022);
+//        System.out.println(flag);
 //        String Edit=new String();
 //        Edit="本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉良好本人感觉";
 //        //不能超过一百个字

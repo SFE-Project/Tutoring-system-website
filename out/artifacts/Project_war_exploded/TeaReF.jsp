@@ -91,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <input type="radio" name="teaREIN.Education" value="博士后">博士后
                 <%--大致时间--%>
                 <label>大致时间</label>
-                <input type="checkbox" name="teaREIN.Date" value="寒假" checkout="checked">寒假
+                <input type="checkbox" name="teaREIN.Date" value="寒假" checked="checked">寒假
                 <input type="checkbox" name="teaREIN.Date" value="平时">平时
                 <input type="checkbox" name="teaREIN.Date" value="暑假">暑假
 

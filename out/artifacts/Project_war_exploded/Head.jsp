@@ -208,24 +208,63 @@
                                     </li>
 
                                     <li>
-                                        <label>可选时间<input type="checkbox" name="teaREIN.Time" value="上午" checked="checked">上午
+                                        <label>具体时间<input type="checkbox" name="teaREIN.Time" value="上午" checked="checked">上午
                                             <input type="checkbox" name="teaREIN.Time" value="下午">下午
                                             <input type="checkbox" name="teaREIN.Time" value="晚上">晚上</label><br/>
                                     </li>
                                     <li>
-                                        <label>
-                                            学科<input type="checkbox" name="teaREIN.Subject" value="数学" checked="checked">数学
-                                            <input type="checkbox" name="teaREIN.Subject" value="语文">语文
-                                            <input type="checkbox" name="teaREIN.Subject" value="外语">外语<br/>
-                                        </label>
+                                        <label>大致时间</label>
+                                        <input type="checkbox" name="teaREIN.Date" value="寒假" checked="checked">寒假
+                                        <input type="checkbox" name="teaREIN.Date" value="平时">平时
+                                        <input type="checkbox" name="teaREIN.Date" value="暑假">暑假
                                     </li>
                                     <li>
                                         <label>
-                                            年级<input type="radio" name="teaREIN.Grade" value="小学">小学
-                                            <input type="radio" name="teaREIN.Grade" value="初中">初中
-                                            <input type="radio" name="teaREIN.Grade" value="高中" checked="checked">高中<br/>
+                                            <label>学科</label><input type="checkbox" name="teaREIN.Subject" value="数学" checked="checked">数学
+                                            <input type="checkbox" name="teaREIN.Subject" value="语文">语文
+                                            <input type="checkbox" name="teaREIN.Subject" value="外语">外语
+                                            <input type="checkbox" name="teaREIN.Subject" value="物理">物理
+                                            <input type="checkbox" name="teaREIN.Subject" value="化学">化学
+                                            <input type="checkbox" name="teaREIN.Subject" value="政治">政治
+                                            <input type="checkbox" name="teaREIN.Subject" value="地理">地理
+                                            <input type="checkbox" name="teaREIN.Subject" value="历史">历史
                                         </label>
                                     </li>
+                                    <li>
+                                        <label>年级</label>
+                                        <input type="checkbox" name="teaREIN.Grade" value="学龄前">学龄前
+                                        <input type="checkbox" name="teaREIN.Grade" value="小学">小学
+                                        <input type="checkbox" name="teaREIN.Grade" value="初中">初中
+                                        <input type="checkbox" name="teaREIN.Grade" value="高中" checked="checked">高中
+                                        <input type="checkbox" name="teaREIN.Grade" value="大学">大学
+                                    </li>
+                                    <li>
+                                        <label>补习类别</label>
+                                        <input type="checkbox" name="teaREIN.Type" value="一对一" checked="checked">一对一
+                                        <input type="checkbox" name="teaREIN.Type" value="一对多">一对多
+                                    </li>
+                                    <li>
+                                        <label>时薪</label>
+                                        <input type="radio" name="teaREIN.Price" value="0/80" checked="checked">80以下
+                                        <input type="radio" name="teaREIN.Price" value="80/150">80~150
+                                        <input type="radio" name="teaREIN.Price" value="150/200">150~200
+                                        <input type="radio" name="teaREIN.Price" value="200++">200以上
+                                    </li>
+                                    <li>
+                                        <label>可接受地点(目前仅支持哈尔滨市内地区)</label>
+                                        <input type="radio" name="teaREIN.AddressAccess" value="南岗" checked="checked">南岗
+                                        <input type="radio" name="teaREIN.AddressAccess" value="道里" checked="checked">道里
+                                        <input type="radio" name="teaREIN.AddressAccess" value="道外" checked="checked">道外
+                                        <input type="radio" name="teaREIN.AddressAccess" value="平房" checked="checked">平房
+                                        <input type="radio" name="teaREIN.AddressAccess" value="松北" checked="checked">松北
+                                        <input type="radio" name="teaREIN.AddressAccess" value="香坊" checked="checked">香坊
+                                        <input type="radio" name="teaREIN.AddressAccess" value="阿城" checked="checked">阿城
+                                        <input type="radio" name="teaREIN.AddressAccess" value="呼兰" checked="checked">呼兰
+                                        <input type="radio" name="teaREIN.AddressAccess" value="双城" checked="checked">双城
+                                    </li>
+                                    <input type="text"  name="teaREIN.EvaluationPassword" value="1111">初始评价资格密码为您设置为1111,请自行设置！<br>
+                                    <a href="http://www.baidu.com">什么是初始评价资格密码?自行设置方式?</a><br>
+                                    <input type="text"  name="teaREIN.PersionalIntroduction" value="暂无个人评价"><br/>
                                     <input type="submit" value="注册">
                                 </form>
                             </div>
