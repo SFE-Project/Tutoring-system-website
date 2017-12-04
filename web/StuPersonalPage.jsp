@@ -307,7 +307,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>会话模式:</h3>
+            <h3>会话模式:(输入用户ID查询与给用户所有对话，并回复)</h3>
             <form action="MessageShow.action" method="get">
                 <input class="text" type="text" name="RecID" placeholder="对方ID" required="">
                 <p hidden><input name="OutID" type="text" value="${studemo.getID()}"></p>

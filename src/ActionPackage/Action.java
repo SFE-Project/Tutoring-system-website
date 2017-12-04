@@ -39,6 +39,7 @@ public class Action {
     private String NickName;
     private String TeaPersionalIntroduction;
     private List<Student> listofstudent=new ArrayList<Student>();
+    private int messageID;
 
 
     public static void main(String[] args) {
@@ -50,6 +51,10 @@ public class Action {
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
         }
+    }
+    public String SingleMessageShowPlus(){
+        message=dao.SingleMessageshowPlus(messageID);
+        return "SINGLEMESSAGESHOWPLUS";
     }
     public String ShowMyFollowers(){
         listofstudent=dao.Followerlist(TeaID);
@@ -135,7 +140,7 @@ public class Action {
     }
     public String MessageShow(){
         listofmessage=dao.MesageShow(OutID,RecID);
-        if(listofmessage==null){
+        if(listofmessage.size()==0){
             return "NOMESSAGE";
         }else{
             return "THISISMESSAGE";
@@ -250,6 +255,14 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+    public int getMessageID() {
+        return messageID;
+    }
+
+    public void setMessageID(int messageID) {
+        this.messageID = messageID;
     }
 
     public List<Student> getListofstudent() {

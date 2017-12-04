@@ -141,5 +141,9 @@
         <action name="SingleStudent" class="ActionPackage.Action" method="SingleStu">
             <result name="SINGLESTU">SingleStuShow.jsp</result>
         </action>
+        <!--点击查看消息具体内容并且置为已读-->
+        <action name="SingleMessageShowPlus" class="ActionPackage.Action" method="SingleMessageShowPlus">
+            <result name="SINGLEMESSAGESHOWPLUS">SuperMessage.jsp</result>
+        </action>
     </package>
 </struts>

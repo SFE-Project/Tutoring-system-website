@@ -7,6 +7,15 @@ public class Message {
     private String Messagecol;
     private int OutID;
     private int RecID;
+    private String RON;
+
+    public String getRON() {
+        return RON;
+    }
+
+    public void setRON(String RON) {
+        this.RON = RON;
+    }
 
     public String getMessagecol() {
         return Messagecol;

@@ -779,23 +779,22 @@ public class Dao {
             pstC.setInt(1,RecID);
             ResultSet rstB=pstB.executeQuery();
             ResultSet rstC=pstC.executeQuery();
-            if((rstB.first())||(rstC.first())){
-                pstA=con.prepareStatement("SELECT * FROM message WHERE (OutID=? AND RecID=?)OR(OutID=? AND RecID=?)");
-                pstA.setInt(1,OutID);
-                pstA.setInt(2,RecID);
-                pstA.setInt(3,RecID);
-                pstA.setInt(4,OutID);
-                ResultSet rstA=pstA.executeQuery();
-                while(rstA.next()){
-                    Message message=new Message();
+            if((rstB.first())||(rstC.first())) {
+                pstA = con.prepareStatement("SELECT * FROM message WHERE (OutID=? AND RecID=?)OR(OutID=? AND RecID=?)");
+                pstA.setInt(1, OutID);
+                pstA.setInt(2, RecID);
+                pstA.setInt(3, RecID);
+                pstA.setInt(4, OutID);
+                ResultSet rstA = pstA.executeQuery();
+                while (rstA.next()) {
+                    Message message = new Message();
                     message.setMessageID(rstA.getInt("ID"));
                     message.setMessagecol(rstA.getString("Messagecol"));
                     message.setOutID(rstA.getInt("OutID"));
                     message.setRecID(rstA.getInt("RecID"));
+                    message.setRON(rstA.getString("RON"));
                     listofmessage.add(message);
                 }
-            }else{
-                return null;
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -805,46 +804,38 @@ public class Dao {
         }
         return listofmessage;
     }
-    public int MessageInsert(int OutID,int RecID,String mess){
-        Connection con=null;
+    public Message SingleMessageshowPlus(int ID){
+        Message message=new Message();
+        Connection connection=null;
         PreparedStatement pstA=null;
         PreparedStatement pstB=null;
-        PreparedStatement pstC=null;
         try {
             Class.forName(driver);
-            con=DriverManager.getConnection(url,username,pswd);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM message WHERE ID=? ");
+            pstA.setInt(1,ID);
+            ResultSet rstA=pstA.executeQuery();
+            if(rstA.first()){
+                pstB=connection.prepareStatement("UPDATE message SET RON=? WHERE ID=?");
+                pstB.setString(1,"已读");
+                pstB.setInt(2,ID);
+                pstB.executeUpdate();
+                message.setMessageID(rstA.getInt("ID"));
+                message.setOutID(rstA.getInt("OutID"));
+                message.setRecID(rstA.getInt("RecID"));
+                message.setMessagecol(rstA.getString("Messagecol"));
+                message.setRON("已读");
 
-              if(!mess.equals("")){
-                    pstA=con.prepareStatement("INSERT INTO message (Messagecol, OutID, RecID) VALUES (?,?,?)");
-                    pstA.setString(1,mess);
-                    pstA.setInt(2,OutID);
-                    pstA.setInt(3,RecID);
-                    pstA.executeUpdate();
-                    pstB=con.prepareStatement("SELECT * FROM persionserver WHERE ID=?");
-                    pstB.setInt(1,OutID);
-                  System.out.println(OutID);
-                    ResultSet rstB=pstB.executeQuery();
-                  System.out.println("num11");
-                    if(rstB.first()){
-                        int num=rstB.getInt("MessageNumber");
-                        pstC=con.prepareStatement("Update persionserver SET MessageNumber=? WHERE ID=?");
-                        pstC.setInt(1,num+1);
-                        pstC.setInt(2,OutID);
-                        pstC.executeUpdate();
-                    }
-                    return 1;
-                }else{
-                    return 0;
-                }
+            }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
         }
-
-        return 0;
+        return message;
     }
+
 
     public List<BSTeacher> ProfileTea(String subject){
         List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
@@ -1165,16 +1156,70 @@ public class Dao {
         return stuREIN;
 
     }
+    public int MessageInsert(int OutID,int RecID,String mess){
+        Connection con=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstC=null;
+        try {
+            Class.forName(driver);
+            con=DriverManager.getConnection(url,username,pswd);
+
+            if(!mess.equals("")){
+                pstA=con.prepareStatement("INSERT INTO message (Messagecol, OutID, RecID, RON) VALUES (?,?,?,?)");
+                pstA.setString(1,mess);
+                pstA.setInt(2,OutID);
+                pstA.setInt(3,RecID);
+                pstA.setString(4,"未读");
+                pstA.executeUpdate();
+                pstB=con.prepareStatement("SELECT * FROM persionserver WHERE ID=?");
+                pstB.setInt(1,OutID);
+                System.out.println(OutID);
+                ResultSet rstB=pstB.executeQuery();
+                System.out.println("num11");
+                if(rstB.first()){
+                    int num=rstB.getInt("MessageNumber");
+                    pstC=con.prepareStatement("Update persionserver SET MessageNumber=? WHERE ID=?");
+                    pstC.setInt(1,num+1);
+                    pstC.setInt(2,OutID);
+                    pstC.executeUpdate();
+                }
+                return 1;
+            }else{
+                return 0;
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+
+        return 0;
+    }
     public static void main(String[] args) {
+        Dao dao=new Dao();
+//        dao.MessageInsert(1001,2000,"jfhsuifru");
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");
 //        TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
 //        List<TeaREIN> listoftea=new ArrayList<TeaREIN>();
-        Dao dao=new Dao();
-        List<Student> studentList=dao.Followerlist(2001);
-        if (studentList.size()==0){
-            System.out.println("kong1");
-        }
+//        Dao dao=new Dao();
+//        List<Message> messageList=new ArrayList<Message>();
+//        messageList=dao.MesageShow(1001,2000);
+//        for(int i=0;i<messageList.size();i++){
+//            System.out.println(messageList.get(i).getMessageID());
+//            System.out.println(messageList.get(i).getMessagecol());
+//            System.out.println(messageList.get(i).getOutID());
+//            System.out.println(messageList.get(i).getRecID());
+//            System.out.println(messageList.get(i).getRON());
+//        }
+//        Message message=dao.SingleMessageshowPlus(100);
+//        System.out.println(message.getMessageID()+" "+message.getRON()+" "+message.getOutID()+" "+message.getRecID()+" "+message.getMessagecol());
+//        List<Student> studentList=dao.Followerlist(2001);
+//        if (studentList.size()==0){
+//            System.out.println("kong1");
+//        }
 //        for(int i=0;i<studentList.size();i++){
 //            System.out.println(studentList.get(i).getID());
 //            System.out.println(studentList.get(i).getNickName());
