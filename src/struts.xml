@@ -150,6 +150,10 @@
             <result name="NOMESSAGEATALL">NoMessageAtall.jsp</result>
             <result name="MESSAGESHOW">Message_User_RON.jsp</result>
         </action>
+        <!--空跳转-->
+        <action name="Jump" class="ActionPackage.Action" method="Jump">
+            <result name="JUMP">MessageSend.jsp</result>
+        </action>
 
     </package>
 </struts>

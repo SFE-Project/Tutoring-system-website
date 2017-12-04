@@ -28,7 +28,8 @@
             <td><s:property value="#temp.getUserID()"></s:property> </td>
             <td><s:property value="#temp.getNickName()"></s:property> </td>
             <td><s:property value="#temp.getRON()"></s:property> </td>
-            <td><a href="MessageShow.action?RecID=${RecID}&OutID=<s:property value='#temp.getUserID()'></s:property>">查看</a> </td>
+            <td><a href="MessageShow.action?RecID=${RecID}&UserID=${RecID}&OutID=<s:property value='#temp.getUserID()'></s:property>">查看</a>
+                <a href="Jump.action?OutID=${RecID}&RecID=<s:property value='#temp.getUserID()'></s:property>">回复</a></td>
         </tr>
     </s:iterator>
 </table>

@@ -41,6 +41,10 @@ public class Action {
     private List<Student> listofstudent=new ArrayList<Student>();
     private int messageID;
     private List<User> listofuser=new ArrayList<User>();
+    private int IDnow;
+    private int SuperOutID;
+    private int SuperRecID;
+    private int WantOutID;
 
 
 
@@ -55,6 +59,10 @@ public class Action {
                     action.listoftri.get(i).getEducation());
         }
     }
+    public String Jump(){
+        dao.Jump(OutID,RecID);
+        return "JUMP";
+    }
     public String GetListofMessageUser(){
         listofuser=dao.GetListofMessageUser(RecID);
         if(listofuser.size()==0){
@@ -64,7 +72,7 @@ public class Action {
         }
     }
     public String SingleMessageShowPlus(){
-        message=dao.SingleMessageshowPlus(messageID);
+        message=dao.SingleMessageshowPlus(messageID,IDnow,WantOutID);
         return "SINGLEMESSAGESHOWPLUS";
     }
     public String ShowMyFollowers(){
@@ -150,7 +158,7 @@ public class Action {
         }
     }
     public String MessageShow(){
-        listofmessage=dao.MesageShow(OutID,RecID);
+        listofmessage=dao.MesageShow(OutID,RecID,UserID);
         if(listofmessage.size()==0){
             return "NOMESSAGE";
         }else{
@@ -268,6 +276,37 @@ public class Action {
         }
     }
 
+    public int getWantOutID() {
+        return WantOutID;
+    }
+
+    public void setWantOutID(int wantOutID) {
+        WantOutID = wantOutID;
+    }
+
+    public int getSuperRecID() {
+        return SuperRecID;
+    }
+
+    public void setSuperRecID(int superRecID) {
+        SuperRecID = superRecID;
+    }
+
+    public int getSuperOutID() {
+        return SuperOutID;
+    }
+
+    public void setSuperOutID(int superOutID) {
+        SuperOutID = superOutID;
+    }
+
+    public int getIDnow() {
+        return IDnow;
+    }
+
+    public void setIDnow(int IDnow) {
+        this.IDnow = IDnow;
+    }
 
     public List<User> getListofuser() {
         return listofuser;

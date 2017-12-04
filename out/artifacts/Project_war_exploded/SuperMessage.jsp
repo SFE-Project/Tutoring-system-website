@@ -11,6 +11,9 @@
     <title>查看消息具体内容界面</title>
 </head>
 <body>
+当前账号${IDnow}
+发送方${SuperOutID}
+接收方${SuperRecID}
 <table  border="10">
     <tr>
         <td>消息编码</td>
@@ -30,12 +33,7 @@
         <td>${message.getMessagecol()}</td></td>
     </tr>
 </table>
-<form action="MessageInsert.action">
-    <input type="hidden" name="OutID" value=${message.getOutID()}>
-    <input type="hidden" name="RecID" value=${message.getRecID()}><br/>
-    此处输入回复内容：<input type="text" name="mess" class="input"/>
-    <input class="sublime" type="submit" value="确定发送"><br/>
-</form>
+<
 
 </body>
 </html>

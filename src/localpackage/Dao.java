@@ -764,7 +764,7 @@ public class Dao {
         }
         return 1;//成功删除
     }
-    public List<Message> MesageShow(int OutID,int RecID){
+    public List<Message> MesageShow(int OutID,int RecID,int UserID){
         List<Message> listofmessage=new ArrayList<Message>();
         Connection con=null;
         PreparedStatement pstA=null;
@@ -804,7 +804,7 @@ public class Dao {
         }
         return listofmessage;
     }
-    public Message SingleMessageshowPlus(int ID){
+    public Message SingleMessageshowPlus(int MessageID,int IDnow,int WantOutID){
         Message message=new Message();
         Connection connection=null;
         PreparedStatement pstA=null;
@@ -812,20 +812,31 @@ public class Dao {
         try {
             Class.forName(driver);
             connection=DriverManager.getConnection(url,username,pswd);
-            pstA=connection.prepareStatement("SELECT * FROM message WHERE ID=? ");
-            pstA.setInt(1,ID);
+            pstA=connection.prepareStatement("SELECT * FROM message WHERE ID=?");
+            pstA.setInt(1,MessageID);
             ResultSet rstA=pstA.executeQuery();
             if(rstA.first()){
-                pstB=connection.prepareStatement("UPDATE message SET RON=? WHERE ID=?");
-                pstB.setString(1,"已读");
-                pstB.setInt(2,ID);
-                pstB.executeUpdate();
-                message.setMessageID(rstA.getInt("ID"));
-                message.setOutID(rstA.getInt("OutID"));
-                message.setRecID(rstA.getInt("RecID"));
-                message.setMessagecol(rstA.getString("Messagecol"));
-                message.setRON("已读");
-
+                if(rstA.getInt("RecID")!=IDnow){
+                    pstB=connection.prepareStatement("UPDATE message SET RON=? WHERE ID=?");
+                    pstB.setString(1,"未读");
+                    pstB.setInt(2,MessageID);
+                    pstB.executeUpdate();
+                    message.setMessageID(rstA.getInt("ID"));
+                    message.setOutID(rstA.getInt("OutID"));
+                    message.setRecID(rstA.getInt("RecID"));
+                    message.setMessagecol(rstA.getString("Messagecol"));
+                    message.setRON("未读");
+                }else if(rstA.getInt("RecID")==IDnow){
+                    pstB=connection.prepareStatement("UPDATE message SET RON=? WHERE ID=?");
+                    pstB.setString(1,"已读");
+                    pstB.setInt(2,MessageID);
+                    pstB.executeUpdate();
+                    message.setMessageID(rstA.getInt("ID"));
+                    message.setOutID(rstA.getInt("OutID"));
+                    message.setRecID(rstA.getInt("RecID"));
+                    message.setMessagecol(rstA.getString("Messagecol"));
+                    message.setRON("已读");
+                }
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -1231,15 +1242,22 @@ public class Dao {
                 ResultSet rstB=pstB.executeQuery();
                 ResultSet rstC=pstC.executeQuery();
                 User user=new User();
-                user.setRON("已读");
-                pstD=connection.prepareStatement("SELECT * FROM message WHERE RecID=? AND OutID=?");
+                pstD=connection.prepareStatement("SELECT * FROM message WHERE (RecID=? AND OutID=?) OR(RecID=? AND OutID=?)");
                 pstD.setInt(1,RecID);
                 pstD.setInt(2,list.get(i));
+                pstD.setInt(3,list.get(i));
+                pstD.setInt(4,RecID);
                 ResultSet rstD=pstD.executeQuery();
+                int flagg=0;
                 while(rstD.next()){
                     if(rstD.getString("RON").equals("未读")){
-                        user.setRON("未读");
+                        flagg=1;
                     }
+                }
+                if(flagg==0){
+                    user.setRON("已读");
+                }else{
+                    user.setRON("未读");
                 }
                 if(rstB.first()&&!rstC.first()){
 
@@ -1264,6 +1282,10 @@ public class Dao {
         }
 
         return userList;
+    }
+//    空跳转，传递信息
+    public void Jump(int OutID,int RecID){
+
     }
     public static void main(String[] args) {
         Dao dao=new Dao();

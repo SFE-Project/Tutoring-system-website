@@ -5,6 +5,8 @@ public class User {
     private String NickName;
     private String UserType;
     private String RON;
+    private int SuperOutID;
+    private int SuperRecID;
 
     public String getRON() {
         return RON;
