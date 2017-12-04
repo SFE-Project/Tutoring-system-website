@@ -85,6 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href="StuReF.action?StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">修改需求</a>
                     <a href='MatchForStuPlus.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
                     <a href='PushUserID.action?UserID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">修改资料</a>
+                    <a href="SingleStudent.action?TeaID=2000&StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">游客视角个人界面</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
