@@ -1197,8 +1197,84 @@ public class Dao {
 
         return 0;
     }
+//查询哪些用户给当前用户发过消息，返回发消息User列表
+    public List<User> GetListofMessageUser(int RecID){
+        List<User>userList=new ArrayList<User>();
+        List<Integer> list = new ArrayList<Integer>();
+        Connection connection=null;
+        PreparedStatement pstA=null;
+        PreparedStatement pstB=null;
+        PreparedStatement pstC=null;
+        PreparedStatement pstD=null;
+        try {
+            Class.forName(driver);
+            connection=DriverManager.getConnection(url,username,pswd);
+            pstA=connection.prepareStatement("SELECT * FROM message WHERE RecID=?");
+            pstA.setInt(1,RecID);
+            ResultSet rstA=pstA.executeQuery();
+            while(rstA.next()){
+                int flag=1;//不相同
+                for(int i=0;i<list.size();i++){
+                    if(list.get(i)==rstA.getInt("OutID")) {
+                        flag = 0;
+                    }
+                }
+                if(flag==1){
+                    list.add(rstA.getInt("OutID"));
+                }
+            }
+            for(int i=0;i<list.size();i++){
+                pstB=connection.prepareStatement("SELECT * FROM student WHERE ID=?");
+                pstC=connection.prepareStatement("SELECT * FROM teacher WHERE ID=?");
+                pstB.setInt(1,list.get(i));
+                pstC.setInt(1,list.get(i));
+                ResultSet rstB=pstB.executeQuery();
+                ResultSet rstC=pstC.executeQuery();
+                User user=new User();
+                user.setRON("已读");
+                pstD=connection.prepareStatement("SELECT * FROM message WHERE RecID=? AND OutID=?");
+                pstD.setInt(1,RecID);
+                pstD.setInt(2,list.get(i));
+                ResultSet rstD=pstD.executeQuery();
+                while(rstD.next()){
+                    if(rstD.getString("RON").equals("未读")){
+                        user.setRON("未读");
+                    }
+                }
+                if(rstB.first()&&!rstC.first()){
+
+                    user.setUserID(rstB.getInt("ID"));
+                    user.setNickName(rstB.getString("NickName"));
+                    user.setUserType("学生");
+                    userList.add(user);
+                }else if(!rstB.first()&&rstC.first()){
+
+                    user.setUserID(rstC.getInt("ID"));
+                    user.setNickName(rstC.getString("NickName"));
+                    user.setUserType("教师");
+                    userList.add(user);
+                }
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+
+        return userList;
+    }
     public static void main(String[] args) {
         Dao dao=new Dao();
+        List<User> listuser=dao.GetListofMessageUser(1001);
+        for(int i=0;i<listuser.size();i++){
+            System.out.println(listuser.get(i).getUserID());
+            System.out.println(listuser.get(i).getNickName());
+            System.out.println(listuser.get(i).getUserType());
+            System.out.println(listuser.get(i).getRON());
+        }
+
 //        dao.MessageInsert(1001,2000,"jfhsuifru");
 //        Dao dao=new Dao();
 //        dao.MessageInsert(1001,2000,"呵呵");

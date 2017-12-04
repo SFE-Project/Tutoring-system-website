@@ -145,5 +145,11 @@
         <action name="SingleMessageShowPlus" class="ActionPackage.Action" method="SingleMessageShowPlus">
             <result name="SINGLEMESSAGESHOWPLUS">SuperMessage.jsp</result>
         </action>
+        <!--查看所有人给自己发消息的人的列表以及关于该人有没有未读消息-->
+        <action name="GetListofMessageUser" class="ActionPackage.Action" method="GetListofMessageUser">
+            <result name="NOMESSAGEATALL">NoMessageAtall.jsp</result>
+            <result name="MESSAGESHOW">Message_User_RON.jsp</result>
+        </action>
+
     </package>
 </struts>

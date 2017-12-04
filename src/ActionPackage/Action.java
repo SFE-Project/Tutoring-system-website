@@ -40,6 +40,9 @@ public class Action {
     private String TeaPersionalIntroduction;
     private List<Student> listofstudent=new ArrayList<Student>();
     private int messageID;
+    private List<User> listofuser=new ArrayList<User>();
+
+
 
 
     public static void main(String[] args) {
@@ -50,6 +53,14 @@ public class Action {
             System.out.println(action.listoftri.get(i).getID()+" "+
                     action.listoftri.get(i).getSex()+" "+
                     action.listoftri.get(i).getEducation());
+        }
+    }
+    public String GetListofMessageUser(){
+        listofuser=dao.GetListofMessageUser(RecID);
+        if(listofuser.size()==0){
+            return "NOMESSAGEATALL";
+        }else{
+            return "MESSAGESHOW";
         }
     }
     public String SingleMessageShowPlus(){
@@ -255,6 +266,15 @@ public class Action {
         }else{
             return "STUFAILEDLOG";
         }
+    }
+
+
+    public List<User> getListofuser() {
+        return listofuser;
+    }
+
+    public void setListofuser(List<User> listofuser) {
+        this.listofuser = listofuser;
     }
 
     public int getMessageID() {
