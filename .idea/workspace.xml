@@ -6,37 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae1ddc49-1d9a-4e86-bf60-50f4d0a58171" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/MessageSend.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/ActionPackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/WEB-INF/classes/localpackage/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" afterPath="$PROJECT_DIR$/out/production/Project/ActionPackage/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" afterPath="$PROJECT_DIR$/out/production/Project/localpackage/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/localpackage/User.class" afterPath="$PROJECT_DIR$/out/production/Project/localpackage/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Project_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Project_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b0c967b5-6d62-4c02-9b4d-cf13676196dc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_44_bin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/MessageShow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/MessageShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/Message_User_RON.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/Message_User_RON.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/NoMessageAtall.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/NoMessageAtall.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SuperMessage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/SuperMessage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/TeaPersionalPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Project_war_exploded/TeaPersionalPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ActionPackage/Action.java" afterPath="$PROJECT_DIR$/src/ActionPackage/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/localpackage/Dao.java" afterPath="$PROJECT_DIR$/src/localpackage/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/localpackage/User.java" afterPath="$PROJECT_DIR$/src/localpackage/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/MessageShow.jsp" afterPath="$PROJECT_DIR$/web/MessageShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Message_User_RON.jsp" afterPath="$PROJECT_DIR$/web/Message_User_RON.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/NoMessageAtall.jsp" afterPath="$PROJECT_DIR$/web/NoMessageAtall.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/SuperMessage.jsp" afterPath="$PROJECT_DIR$/web/SuperMessage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/TeaPersionalPage.jsp" afterPath="$PROJECT_DIR$/web/TeaPersionalPage.jsp" />
-    </list>
+    <list default="true" id="ae1ddc49-1d9a-4e86-bf60-50f4d0a58171" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -365,7 +335,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-157" />
     <option name="y" value="264" />
     <option name="width" value="1933" />
@@ -822,12 +792,12 @@
       <workItem from="1512378854430" duration="2632000" />
       <workItem from="1512387408496" duration="5564000" />
       <workItem from="1512395542426" duration="7229000" />
-      <workItem from="1512403744331" duration="791000" />
+      <workItem from="1512403744331" duration="878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184210000" />
+    <option name="totallyTimeSpent" value="184297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -839,8 +809,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08510638" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -852,7 +821,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23785803" sideWeight="0.50416666" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3040201" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11955168" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11955168" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32788944" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32788944" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
