@@ -9,22 +9,22 @@
         <!--学生注册ok-->
         <action name="StuInsert" class="ActionPackage.Action" method="StuInsert">
             <result name="STUSUCCESSREGIST">stusuccessregist.jsp</result>
-            <result name="STUFAILEDREGIST">FailInfoPage.jsp</result>
+            <result name="STUFAILEDREGIST">Failloglog.jsp</result>
         </action>
         <!--学生登录ok-->
         <action name="StuLog" class="ActionPackage.Action" method="StuLog">
             <result name="STUSUCCESSLOG">StuPersonalPage.jsp</result>
-            <result name="STUFAILEDLOG">FailInfoPage.jsp</result>
+            <result name="STUFAILEDLOG">Failloglog.jsp</result>
         </action>
         <!--教师注册ok-->
         <action name="TeaInsert" class="ActionPackage.Action" method="TeaInsert">
             <result name="TEASUCCESSREGIST">teasuccessregist.jsp</result>
-            <result name="TEAFAILEDREGIST">FailInfoPage.jsp</result>
+            <result name="TEAFAILEDREGIST">Failloglog.jsp</result>
         </action>
         <!--教师登录ok-->
         <action name="TeaLog" class="ActionPackage.Action" method="TeaLog">
             <result name="TEASUCCESSLOG">TeaPersionalPage.jsp</result>
-            <result name="TEAFAILEDLOG">FailInfoPage.jsp</result>
+            <result name="TEAFAILEDLOG">Failloglog.jsp</result>
         </action>
         <!--教师工作信息更新-->
         <action name="TeaREINUpdate" class="ActionPackage.Action" method="TeaREINUpdate">
@@ -153,6 +153,15 @@
         <!--空跳转-->
         <action name="Jump" class="ActionPackage.Action" method="Jump">
             <result name="JUMP">MessageSend.jsp</result>
+        </action>
+
+        <!--学生评价老师-->
+        <action name="Sett" class="ActionPackage.Action" method="SETT">
+            <result name="OK">OK.jsp</result>
+            <result name="NOK">NOK.jsp</result>
+        </action>
+        <action name="PushPushPush" class="ActionPackage.Action" method="Pushpush">
+            <result name="1">AddEvaluation.jsp</result>
         </action>
 
     </package>

@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bridegroom Profile Details -->
 <div class="w3ls-list">
     <div class="container">
-        <h2>Bridegroom Profile Details</h2>
+        <h2>匹配列表</h2>
         <div class="col-md-9 profiles-list-agileits">
 
             <div class="profile_w3layouts_details">
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <tbody>
                     <s:iterator value="#request.stuListAndOneTea.getListofStu()" var="temp">
                         <tr>
-                            <td><a href='SingleTea.action?StuID=<a:property value="StuID"/>&TeaID=<s:property value="#temp.ID"/>'><s:property value="#temp.ID"/> </a> </td>
+                            <td><a href='SingleStudent.action?StuID=<s:property value="#temp.ID"/>&TeaID=0'><s:property value="#temp.ID"/> </a> </td>
                             <td><s:property value="#temp.Sex"/> </td>
                             <td><s:property value="#temp.SexWanted"/> </td>
                             <td><s:property value="#temp.Date"/></td>
@@ -115,39 +115,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>会话模式:</h3>
-            <form action="MessageShow.action" method="get">
-                <input class="text" type="text" name="RecID" placeholder="对方ID" required="">
-                <p hidden><input name="OutID" type="text" value=<a:property value="StuID"/>></p>
-                <input type="submit" value="开始会话">
-                <div class="clearfix"></div>
-            </form>
-            <h3>教师查询:</h3>
-            <form action="SingleTea.action" method="get">
-                <input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">
-                <p hidden><input name="StuID" type="text" value=<a:property value="StuID"/>></p>
-                <input type="submit" value="Search">
-                <div class="clearfix"></div>
-            </form>
-            <div class="view_profile">
-                <h3>教师推荐</h3>
-                <s:iterator value="#request.listofbstea" var="temp">
-                    <ul class="profile_item">
-                        <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
-                            <li class="profile_item-img">
-                                <img src="images/p1.jpg" class="img-responsive" alt="">
-                            </li>
-                            <li class="profile_item-desc">
-                                <h6>ID : <d:property value="#temp.getTeaREIN().getID()"/></h6>
-                                <p><d:property value="#temp.getTeacher().getNickName()"/>,<d:property value="#temp.getTeaREIN().getSex()"/>,<d:property value="#temp.getTeaREIN().getEducation()"/>,
-                                    <d:property value="#temp.getTeaREIN().getTime()"/>,<d:property value="#temp.getTeaREIN().getSubject()"/>
-                                    <d:property value="#temp.getTeaREIN().getGrade()"/> ...</p>
-                            </li>
-                            <div class="clearfix"> </div>
-                        </a>
-                    </ul>
-                </s:iterator>
-            </div>
+
+
+
         </div>
         <div class="clearfix"></div>
     </div>

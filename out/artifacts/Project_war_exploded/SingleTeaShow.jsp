@@ -1,9 +1,9 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: DB
-  Date: 2017/10/27
-  Time: 15:37
-  To change this template use File | Settings | File Templates.
+Created by IntelliJ IDEA.
+User: DB
+Date: 2017/10/27
+Time: 15:37
+To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -19,7 +19,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    当前账号${StuID}${TeaID}
     <title>教师资料</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
@@ -37,10 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--//meta data-->
-    <!-- online fonts -->
-    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-    <!-- /online fonts -->
+
     <!-- nav smooth scroll -->
     <script>
         $(document).ready(function(){
@@ -80,263 +76,114 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3ls-list">
     <div class="container">
         <h2>个人简介</h2>
-        <h2><a href="EvaluationForTea.action?TeaID=${bsTeacher.getTeacher().getID()}">累计评价</a> </h2>
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">
-                    <img src="images/profile-image-men.jpg" alt="profile image" />
+                    <img src="images/touxiang.jpg" alt="profile image" />
                 </div>
                 <div class="w3layouts_details">
-                    <h4>Profile ID : ${bsTeacher.getTeacher().getID()}</h4>
-                    <p>${bsTeacher.getTeacher().getNickName()},${bsTeacher.getTeaREIN().getEmail()},${bsTeacher.getTeaREIN().getSex()},${bsTeacher.getTeaREIN().getEducation()},${bsTeacher.getTeaREIN().getTime()},${bsTeacher.getTeaREIN().getSubject()},${bsTeacher.getTeaREIN().getGrade()},${bsTeacher.getTeaREIN().getPersionalIntroduction()}</p>
+                    <h4>昵称：${bsTeacher.getTeacher().getNickName()} </h4>
+                    ID : ${bsTeacher.getTeacher().getID()}<br> 邮箱 ：${bsTeacher.getTeaREIN().getEmail()} <br>
+                    综合评分：${bsTeacher.getTeaREIN().getStar()}/5</p>
                     <a href='MakeFriends.action?StuID=<a:property value="StuID"/>&TeaID=${bsTeacher.getTeacher().getID()}' data-toggle="modal" data-target="#myModal">好友添加</a>
-                    <a href="/MessageShow.action?OutID=<a:property value="StuID"/>&RecID=${bsTeacher.getTeacher().getID()}" data-toggle="modal" data-target="#myModal">发送信息</a>
+                    <%--<a href="MessageSend.jsp?OutID=<a:property value="StuID"/>&RecID=${bsTeacher.getTeacher().getID()}" data-toggle="modal" data-target="#myModal">发送信息</a>--%>
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="profile_w3layouts_details">
                 <div class="agileits_aboutme">
-                    <h4>About me</h4>
-                    <h5>Brief about me:</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <h5>Family Details:</h5>
+                    <h4>个人简介</h4>
+                    <h5>关于我</h5>
+                    <p>${bsTeacher.getTeaREIN().getPersionalIntroduction()}</p>
+                    <h5>详细信息：</h5>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Mother : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">性别：</label>
                         <div class="col-sm-9 w3_details">
-                            Housewife
+                            ${bsTeacher.getTeaREIN().getSex()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Father : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">教育程度： </label>
                         <div class="col-sm-9 w3_details">
-                            Govt. Employee
+                            ${bsTeacher.getTeaREIN().getEducation()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Sister's : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">时间： </label>
                         <div class="col-sm-9 w3_details">
-                            Not Specified
+                            ${bsTeacher.getTeaREIN().getTime()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Brother's : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">学科 </label>
                         <div class="col-sm-9 w3_details">
-                            Not Specified
+                            ${bsTeacher.getTeaREIN().getSubject()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Income : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">年级：</label>
                         <div class="col-sm-9 w3_details">
-                            Not Specified
+                            ${bsTeacher.getTeaREIN().getGrade()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Stay : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">地点：</label>
                         <div class="col-sm-9 w3_details">
-                            sed, USA
+                            ${bsTeacher.getTeaREIN().getAddressAccess()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Values : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">价格: </label>
                         <div class="col-sm-9 w3_details">
-                            Moderate
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Education Details:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Highest Education : </label>
-                        <div class="col-sm-9 w3_details">
-                            MBA/PGDM
+                            ${bsTeacher.getTeaREIN().getPrice()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">UG Degree : </label>
+                        <label class="col-sm-3 control-label1" for="Relation">类型： </label>
                         <div class="col-sm-9 w3_details">
-                            B.Tech
+                            ${bsTeacher.getTeaREIN().getType()}
                         </div>
                         <div class="clearfix"> </div>
                     </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">School : </label>
+                    <h4>教师评价</h4>
+                    <s:iterator value="#request.stuEvaluationtoTeaList" var="temp">
+                        <label class="col-sm-3 control-label1" for="Relation">评价者：<s:property value="#temp.getEvaluatorID()"/> </label>
                         <div class="col-sm-9 w3_details">
-                            Not Filled in
+                            评分：<s:property value="#temp.getStar()"/>
                         </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">PG Degree : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">PG College : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Occupation : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Annual Income : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Filled in
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Lifestyle:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Appearance : </label>
-                        <div class="col-sm-9 w3_details">
-                            Fair, 55kg
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Assets : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Filled in
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Habits : </label>
-                        <div class="col-sm-9 w3_details">
-                            Vegetarian, Doesn't Drink, Doesn't Smoke
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Languages Known : </label>
-                        <div class="col-sm-9 w3_details">
-                            English, Hindi, Urdu
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Blood Group : </label>
-                        <div class="col-sm-9 w3_details">
-                            AB+
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Stay : </label>
-                        <div class="col-sm-9 w3_details">
-                            sed, USA
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Values : </label>
-                        <div class="col-sm-9 w3_details">
-                            Moderate
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Desired Partner:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Age : </label>
-                        <div class="col-sm-9 w3_details">
-                            20 - 23 Years
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Height : </label>
-                        <div class="col-sm-9 w3_details">
-                            5' 2" to 5' 6"
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Marital Status : </label>
-                        <div class="col-sm-9 w3_details">
-                            Never Married
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Religion : </label>
-                        <div class="col-sm-9 w3_details">
-                            Doesn't Matter
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Caste : </label>
-                        <div class="col-sm-9 w3_details">
-                            Doesn't Matter
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Education : </label>
-                        <div class="col-sm-9 w3_details">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Occupation : </label>
-                        <div class="col-sm-9 w3_details">
-                            IT Software
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Income : </label>
-                        <div class="col-sm-9 w3_details">
-                            No Income
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
+                        <p><s:property value="#temp.getEvaluateContent()"/></p>
+                    </s:iterator>
+
+</div>
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>教师查询:</h3>
-            <form action="SingleTea.action" method="get">
-                <input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">
-                <p hidden><input name="StuID" type="text" value="<a:property value="StuID"/>"></p>
-                <input type="submit" value="Search">
-                <div class="clearfix"></div>
-            </form>
+
             <%--<div class="view_profile">--%>
-                <%--<h3>与他/她相似的教师</h3>--%>
-                <%--<s:iterator value="#request.listofbstea" var="temp">--%>
-                <%--<ul class="profile_item">--%>
-                    <%--<a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>--%>
-                        <%--<li class="profile_item-img">--%>
-                            <%--<img src="images/p1.jpg" class="img-responsive" alt="">--%>
-                        <%--</li>--%>
-                        <%--<li class="profile_item-desc">--%>
-                            <%--<h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>--%>
-                            <%--<p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,--%>
-                                <%--<s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>--%>
-                                <%--<s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>--%>
-                        <%--</li>--%>
-                        <%--<div class="clearfix"> </div>--%>
-                    <%--</a>--%>
-                <%--</ul>--%>
-                <%--</s:iterator>--%>
+            <%--<h3>与他/她相似的教师</h3>--%>
+            <%--<s:iterator value="#request.listofbstea" var="temp">--%>
+            <%--<ul class="profile_item">--%>
+            <%--<a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>--%>
+            <%--<li class="profile_item-img">--%>
+            <%--<img src="images/p1.jpg" class="img-responsive" alt="">--%>
+            <%--</li>--%>
+            <%--<li class="profile_item-desc">--%>
+            <%--<h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>--%>
+            <%--<p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,--%>
+            <%--<s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>--%>
+            <%--<s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>--%>
+            <%--</li>--%>
+            <%--<div class="clearfix"> </div>--%>
+            <%--</a>--%>
+            <%--</ul>--%>
+            <%--</s:iterator>--%>
             <%--</div>--%>
         </div>
         <div class="clearfix"></div>

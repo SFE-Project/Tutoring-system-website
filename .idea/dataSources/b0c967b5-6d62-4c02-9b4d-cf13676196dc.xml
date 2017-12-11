@@ -279,7 +279,12 @@
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="68" parent="16" name="PRIMARY">
+    <column id="68" parent="16" name="Star">
+      <Position>14</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="69" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>

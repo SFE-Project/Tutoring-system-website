@@ -18,7 +18,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    当前账号:${StuID}
     <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Assisted Services :: w3layouts</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
@@ -93,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="radio" name="stuREIN.SexWanted" value="女">女性
                 <input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限
                 <label>大致时间：(为您定制智能详细的月份规划)</label>
-                <input type="checkbox" name="stuREIN.Date" value="寒假" checkout="checked">寒假
+                <input type="checkbox" name="stuREIN.Date" value="寒假" checked="checked">寒假
                 <input type="checkbox" name="stuREIN.Date" value="平时">平时
                 <input type="checkbox" name="stuREIN.Date" value="暑假">暑假
                 <label>具体时间</label>

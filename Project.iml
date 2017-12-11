@@ -12,10 +12,8 @@
       </configuration>
       <facet type="Struts2" name="Struts 2">
         <configuration>
-          <fileset id="s2fileset" name="My Fileset " removed="false" />
           <fileset id="s2fileset2" name="My Fileset 2" removed="false">
             <file>file://$MODULE_DIR$/src/struts.xml</file>
-            <file>jar://A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/struts2-core-2.5.13.jar!/struts-default.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -110,7 +108,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="mysql-connector-java-5.1.44-bin" level="project" />
-    <orderEntry type="library" name="commons-fileupload-1.3.3" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1" level="project" />
+    <orderEntry type="library" name="Struts 2-2.5.13" level="project" />
   </component>
 </module>

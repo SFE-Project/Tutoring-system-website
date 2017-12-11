@@ -5,7 +5,6 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 import org.apache.struts2.ServletActionContext;
 import org.gjt.mm.mysql.Driver;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.xml.transform.Result;
 import javax.xml.ws.soap.Addressing;
 import java.io.*;
@@ -15,7 +14,8 @@ import java.util.List;
 
 public class Dao {
     private static final String driver="com.mysql.jdbc.Driver";
-    private static final String url="jdbc:mysql://localhost:3306/mydatabase?useSSL=false";
+    private static final String url="jdbc:mysql://fusslpgsseus.mysql.sae.sina.com.cn:10013/mydatabase";
+//     private static final String url="jdbc:mysql://localhost:3306/mydatabase?useSSL=false";
     private static final String username="root";
     private static final String pswd="db414133";
 
@@ -148,7 +148,7 @@ public class Dao {
                 teademo.setID(rstA.getInt("ID"));
                 teademo.setNickName(rstA.getString("NickName"));
                 teademo.setPassword(rstA.getString("Password"));
-                pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                pstC=con.prepareStatement("INSERT INTO tearein VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
                 pstC.setInt(1,rstA.getInt("ID"));
                 pstC.setString(2,teaREIN.getSex());
                 pstC.setString(3,teaREIN.getEducation());
@@ -162,6 +162,7 @@ public class Dao {
                 pstC.setString(11,teaREIN.getPrice());
                 pstC.setString(12,teaREIN.getEvaluationPassword());
                 pstC.setString(13,teaREIN.getPersionalIntroduction());
+                pstC.setFloat(14,3);
                 pstC.executeUpdate();
             }
         } catch (ClassNotFoundException e) {
@@ -311,8 +312,11 @@ public class Dao {
                 String Price=rstA.getString("Price");
                 String Date=rstA.getString("Date");
                 String Type=rstA.getString("Type");
-                System.out.println(Sex+" "+Time+" "+Education+" "+Subject+" "+Grade+" "+AddressAccess+" "+Price+" "+Date+" "+Type);
-                pstB=connection.prepareStatement("SELECT * FROM sturein");
+                String DateArrayTea[] = bss.StringIntoArray(Date);
+                String SubArrayTea[] = bss.StringIntoArray(Subject);
+                String TimeArrayTea[] = bss.StringIntoArray(Time);
+                String GradeArrayTea[] = bss.StringIntoArray(Grade);
+                        pstB=connection.prepareStatement("SELECT * FROM sturein");
                 ResultSet rstB=pstB.executeQuery();
                 while(rstB.next()){
                     int flaggrade=0;
@@ -327,16 +331,33 @@ public class Dao {
                     String Priceresp=rstB.getString("Price");
                     String Dateresp=rstB.getString("Date");
                     String Typeresp=rstB.getString("Type");
+                    String DateArrayStu[] = bss.StringIntoArray(Dateresp);
+                    String SubArrayStu[] = bss.StringIntoArray(Subjectresp);
+                    String TimeArrayStu[] = bss.StringIntoArray(Timeresp);
+                    String GradeArrayStu[] = bss.StringIntoArray(Graderesp);
+                    if((Sexresp.equals(Sex)||Sexresp.equals("不限"))&&(Typeresp.equals(Type))
+                            &&(AddressAccess.equals(AddressAccessresp))&&(Price.equals(Priceresp))) {
 
-                    if((Sexresp.equals(Sex)||Sexresp.equals("不限"))&&(Typeresp.equals(Type))&&(AddressAccess.equals(AddressAccessresp))&&(Price.equals(Priceresp))) {
-                        String DateArray[] = bss.StringIntoArray(Date);
-                        String SubArray[] = bss.StringIntoArray(Subject);
-                        String TimeArray[] = bss.StringIntoArray(Time);
-                        String GradeArray[] = bss.StringIntoArray(Grade);
-                        for (int i = 0; i < DateArray.length; i++) { if (DateArray[i].equals(Dateresp)) { flagdate = 1; } }
-                        for (int i = 0; i < SubArray.length; i++) { if (SubArray[i].equals(Subjectresp)) { flagsub = 1; } }
-                        for (int i = 0; i <TimeArray.length;i++) { if(TimeArray[i].equals(Timeresp)){ flagtime=1; } }
-                        for(int i=0;i<GradeArray.length;i++){ if(GradeArray[i].equals(Graderesp)){ flaggrade=1; } }
+                        for (int i = 0; i < DateArrayStu.length; i++) {
+                            for(int j=0;j<DateArrayTea.length;j++){
+                                if (DateArrayStu[i].equals(DateArrayTea[j])) { flagdate = 1; }
+                            }
+                        }
+                        for (int i = 0; i < SubArrayStu.length; i++) {
+                            for(int j=0;j<SubArrayTea.length;j++){
+                                if (SubArrayStu[i].equals(SubArrayTea[j])) { flagsub = 1; }
+                            }
+                        }
+                        for (int i = 0; i <TimeArrayStu.length;i++) {
+                            for(int j=0;j<TimeArrayTea.length;j++){
+                                if(TimeArrayStu[i].equals(TimeArrayTea[j])){ flagtime=1; }
+                            }
+                        }
+                        for(int i=0;i<GradeArrayStu.length;i++){
+                            for(int j=0;j<GradeArrayTea.length;j++){
+                                if(GradeArrayStu[i].equals(GradeArrayTea[j])){ flaggrade=1; }
+                            }
+                        }
                         if(flagdate==1&&flaggrade==1&&flagsub==1&&flagtime==1){
                             System.out.println(rstB.getString("ID"));
                             StuREIN stuREIN=new StuREIN();
@@ -367,6 +388,7 @@ public class Dao {
     }
     //为学生匹配家教
     //改进为学生匹配
+
     public TeaListAndOneStu MatchForStuPlus(int StuID){
         TeaListAndOneStu teaListAndOneStu=new TeaListAndOneStu();
         teaListAndOneStu.setStuID(StuID);
@@ -383,15 +405,20 @@ public class Dao {
             pstA.setInt(1,StuID);
             ResultSet rstA=pstA.executeQuery();
             if(rstA.first()){
-               String SexWanted=rstA.getString("SexWanted");
-               String Time=rstA.getString("Time");
-               String Subject=rstA.getString("Subject");
-               String Grade=rstA.getString("Grade");
-               String AddressAccess=rstA.getString("AddressAccess");
-               String Price=rstA.getString("Price");
-               String Date=rstA.getString("Date");
-               String Type=rstA.getString("Type");
-                System.out.println(SexWanted+" "+Time+" "+Subject+" "+Grade+" "+AddressAccess+" "+Price+" "+Date+" "+Type);
+                String SexWanted=rstA.getString("SexWanted");
+                String Time=rstA.getString("Time");
+                String Subject=rstA.getString("Subject");
+                String Grade=rstA.getString("Grade");
+                String AddressAccess=rstA.getString("AddressAccess");
+                String Price=rstA.getString("Price");
+                String Date=rstA.getString("Date");
+                String Type=rstA.getString("Type");
+                String TimeArrayStu[]=bss.StringIntoArray(Time);
+                String SubjectArrayStu[]=bss.StringIntoArray(Subject);
+                String GradeArrayStu[]=bss.StringIntoArray(Grade);
+                String DateArrayStu[]=bss.StringIntoArray(Date);
+                System.out.println(SexWanted+" "+Time+" "+Subject+" "+Grade+" "+AddressAccess
+                        +" "+Price+" "+Date+" "+Type);
                 pstB=connection.prepareStatement("SELECT * FROM tearein");
                 ResultSet rstB=pstB.executeQuery();
                 while(rstB.next()){
@@ -407,33 +434,51 @@ public class Dao {
                     String Priceresp=rstB.getString("Price");//
                     String Dateresp=rstB.getString("Date");
                     String Typeresp=rstB.getString("Type");//
-                    if((Sexresp.equals(SexWanted)||SexWanted.equals("不限"))&&(Typeresp.equals(Type))&&(AddressAccess.equals(AddressAccessresp))&&(Price.equals(Priceresp))){
+                    if((Sexresp.equals(SexWanted)||SexWanted.equals("不限"))&&
+                            (Typeresp.equals(Type))&&(AddressAccess.equals(AddressAccessresp))&&(Price.equals
+                            (Priceresp))){
                         String DateArray[]=bss.StringIntoArray(Dateresp);
                         String SubArray[]=bss.StringIntoArray(Subjectresp);
                         String TimeArray[]=bss.StringIntoArray(Timeresp);
                         String GradeArray[]=bss.StringIntoArray(Graderesp);
-                        for(int i=0;i<DateArray.length;i++){ if(DateArray[i].equals(Date)){ flagdate=1; } }
-                        for(int i=0;i<SubArray.length;i++){ if(SubArray[i].equals(Subject)){ flagsub=1; } }
-                        for(int i=0;i<TimeArray.length;i++){ if(TimeArray[i].equals(Time)){ flagtime=1;} }
+                        for(int i=0;i<DateArray.length;i++){
+                            for(int j=0;j<DateArrayStu.length;j++){
+                                if(DateArray[i].equals(DateArrayStu[j])){
+                                    flagdate=1;
+                                }
+                            }
+                        }
+                        for(int i=0;i<SubArray.length;i++){
+                            for(int j=0;j<SubjectArrayStu.length;j++){
+                                if(SubArray[i].equals(SubjectArrayStu[j])){ flagsub=1; }
+                            }
+                        }
+                        for(int i=0;i<TimeArray.length;i++){
+                            for(int j=0;j<TimeArrayStu.length;j++){
+                                if(TimeArray[i].equals(TimeArrayStu[j])){ flagtime=1;} }
+                        }
+
                         for(int i=0;i<GradeArray.length;i++){
-                            if(GradeArray[i].equals(Grade)){
-                                flaggrade=1;
+                            for(int j=0;j<GradeArrayStu.length;j++){
+                                if(GradeArray[i].equals(GradeArrayStu[j])){
+                                    flaggrade=1;
+                                }
                             }
                         }
                         if(flagdate==1&&flagsub==1&&flagtime==1&&(flaggrade==1)){
-                           TeaREIN teaREIN=new TeaREIN();
-                           teaREIN.setID(rstB.getInt("ID"));
-                           teaREIN.setSex(rstB.getString("Sex"));
-                           teaREIN.setEducation(rstB.getString("Education"));
-                           teaREIN.setTime(rstB.getString("Time"));
-                           teaREIN.setSubject(rstB.getString("Subject"));
-                           teaREIN.setGrade(rstB.getString("Grade"));
-                           teaREIN.setEmail(rstB.getString("Email"));
-                           teaREIN.setAddressAccess(rstB.getString("AddressAccess"));
-                           teaREIN.setDate(rstB.getString("Date"));
-                           teaREIN.setType(rstB.getString("Type"));
-                           teaREIN.setPrice(rstB.getString("Price"));
-                           listoftea.add(teaREIN);
+                            TeaREIN teaREIN=new TeaREIN();
+                            teaREIN.setID(rstB.getInt("ID"));
+                            teaREIN.setSex(rstB.getString("Sex"));
+                            teaREIN.setEducation(rstB.getString("Education"));
+                            teaREIN.setTime(rstB.getString("Time"));
+                            teaREIN.setSubject(rstB.getString("Subject"));
+                            teaREIN.setGrade(rstB.getString("Grade"));
+                            teaREIN.setEmail(rstB.getString("Email"));
+                            teaREIN.setAddressAccess(rstB.getString("AddressAccess"));
+                            teaREIN.setDate(rstB.getString("Date"));
+                            teaREIN.setType(rstB.getString("Type"));
+                            teaREIN.setPrice(rstB.getString("Price"));
+                            listoftea.add(teaREIN);
                         }
                     }
                 }
@@ -537,6 +582,10 @@ public class Dao {
                 teaREIN.setGrade(rstB.getString("Grade"));
                 teaREIN.setEmail(rstB.getString(("Email")));
                 teaREIN.setPersionalIntroduction(rstB.getString("PersionalIntroduction"));
+                teaREIN.setAddressAccess(rstB.getString("AddressAccess"));
+                teaREIN.setPrice(rstB.getString("Price"));
+                teaREIN.setType(rstB.getString("Type"));
+                teaREIN.setStar(rstB.getFloat("Star"));
                 bsTeacher.setTeacher(teacher);
                 bsTeacher.setTeaREIN(teaREIN);
             }
@@ -551,7 +600,7 @@ public class Dao {
     }
     public List<BSTeacher> AllTheTea(){
         List<BSTeacher> listofbstea=new ArrayList<BSTeacher>();
-
+        int count=0;
         Connection con=null;
         PreparedStatement pstA=null;
         PreparedStatement pstB=null;
@@ -560,11 +609,11 @@ public class Dao {
             con=DriverManager.getConnection(url,username,pswd);
             pstA=con.prepareStatement("SELECT * FROM teacher");
             ResultSet rstA=pstA.executeQuery();
-            while(rstA.next()){
+            while(rstA.next()&&count<8){
                 pstB=con.prepareStatement("SELECT * FROM tearein WHERE ID=?");
                 pstB.setInt(1,rstA.getInt("ID"));
                 ResultSet rstB=pstB.executeQuery();
-                while(rstB.next()){
+                while(rstB.next()&&count<8){
                     BSTeacher bsTeacher=new BSTeacher();
                         Teacher teacher=new Teacher();
                         teacher.setID(rstA.getInt("ID"));
@@ -580,6 +629,7 @@ public class Dao {
                         bsTeacher.setTeaREIN(teaREIN);
                         bsTeacher.setTeacher(teacher);
                         listofbstea.add(bsTeacher);
+                        count++;
                 }
 
             }
@@ -903,7 +953,7 @@ public class Dao {
         try {
             Class.forName(driver);
             con=DriverManager.getConnection(url,username,pswd);
-            pstA=con.prepareStatement("SELECT * FROM tearein");
+            pstA=con.prepareStatement("SELECT * FROM tearein ORDER BY Star DESC");
             ResultSet rstA=pstA.executeQuery();
             int counter=0;
             while(rstA.next()&&counter<8){
@@ -1155,8 +1205,8 @@ public class Dao {
                 stuREIN.setEmail(rstA.getString("Email"));
                 stuREIN.setAddressAccess(rstA.getString("AddressAccess"));
                 stuREIN.setPrice(rstA.getString("Price"));
-                stuREIN.setPrice(rstA.getString("Date"));
-                stuREIN.setPrice(rstA.getString("Type"));
+                stuREIN.setDate(rstA.getString("Date"));
+                stuREIN.setType(rstA.getString("Type"));
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -1284,6 +1334,54 @@ public class Dao {
 
         return userList;
     }
+    //    学生添加评价
+    public int StuAddEvaluationToTea(StuEvaluationtoTea stuEvaluationtoTea,String EvaluationPassword){
+        Connection connection=null;
+        PreparedStatement preparedStatement=null;
+        PreparedStatement preparedStatement1=null;
+        PreparedStatement pstA=null;
+        try {
+            Class.forName(driver);
+//            pstB=con.prepareStatement ("INSERT INTO student VALUES(?,?,?)");
+//            pstB.setInt (1,student.getID());
+//            pstB.setString(2,student.getNickName());
+//            pstB.setString(3,student.getPassword());
+            connection=DriverManager.getConnection(url,username,pswd);
+            preparedStatement1=connection.prepareStatement("SELECT * FROM tearein WHERE ID=?");
+            preparedStatement1.setInt(1,stuEvaluationtoTea.getEvaluatedID());
+            ResultSet rstA=preparedStatement1.executeQuery();
+            if(rstA.first()){
+                float Starnow=rstA.getFloat("Star");
+                System.out.println(Starnow);
+                if(rstA.getString("EvaluationPassword").equals(EvaluationPassword)){
+                    preparedStatement=connection.prepareStatement("INSERT INTO evaluation VALUES(?,?,?,?,?)");
+                    preparedStatement.setInt(1,0);
+                    preparedStatement.setInt(2,stuEvaluationtoTea.getEvaluatorID());
+                    preparedStatement.setInt(3,stuEvaluationtoTea.getEvaluatedID());
+                    preparedStatement.setString(4,stuEvaluationtoTea.getEvaluateContent());
+                    preparedStatement.setInt(5,stuEvaluationtoTea.getStar());
+                    preparedStatement.executeUpdate();
+                    float finalStar=(Starnow+stuEvaluationtoTea.getStar())/2;
+                    pstA=connection.prepareStatement("UPDATE tearein SET Star=? WHERE ID=?");
+                    pstA.setFloat(1,finalStar);
+                    pstA.setInt(2,stuEvaluationtoTea.getEvaluatedID());
+                    pstA.executeUpdate();
+                    return 1;
+                }else{
+                    return 0;
+                }
+
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+        }
+        return 0;
+    }
+
 //    空跳转，传递信息
     public void Jump(int OutID,int RecID){
 

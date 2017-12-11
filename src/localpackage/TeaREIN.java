@@ -14,6 +14,7 @@ public class TeaREIN {
     private String AddressAccess;
     private String EvaluationPassword;
     private String PersionalIntroduction;
+    private float Star;
 
     public String getEvaluationPassword() {
         return EvaluationPassword;
@@ -61,6 +62,14 @@ public class TeaREIN {
 
     public void setDate(String date) {
         Date = date;
+    }
+
+    public float getStar() {
+        return Star;
+    }
+
+    public void setStar(float star) {
+        Star = star;
     }
 
     /**

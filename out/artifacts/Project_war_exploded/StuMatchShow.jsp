@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Groom Profile :: w3layouts</title>
+    <title>信息匹配</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bridegroom Profile Details -->
 <div class="w3ls-list">
     <div class="container">
-        <h2>Bridegroom Profile Details</h2>
+        <h2>匹配列表</h2>
         <div class="col-md-9 profiles-list-agileits">
 
             <div class="profile_w3layouts_details">
@@ -115,13 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>会话模式:</h3>
-            <form action="MessageShow.action" method="get">
-                <input class="text" type="text" name="RecID" placeholder="对方ID" required="">
-                <p hidden><input name="OutID" type="text" value=<a:property value="StuID"/>></p>
-                <input type="submit" value="开始会话">
-                <div class="clearfix"></div>
-            </form>
+
             <h3>教师查询:</h3>
             <form action="SingleTea.action" method="get">
                 <input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">
@@ -130,23 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="clearfix"></div>
             </form>
             <div class="view_profile">
-                <h3>教师推荐</h3>
-                <s:iterator value="#request.listofbstea" var="temp">
-                    <ul class="profile_item">
-                        <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
-                            <li class="profile_item-img">
-                                <img src="images/p1.jpg" class="img-responsive" alt="">
-                            </li>
-                            <li class="profile_item-desc">
-                                <h6>ID : <d:property value="#temp.getTeaREIN().getID()"/></h6>
-                                <p><d:property value="#temp.getTeacher().getNickName()"/>,<d:property value="#temp.getTeaREIN().getSex()"/>,<d:property value="#temp.getTeaREIN().getEducation()"/>,
-                                    <d:property value="#temp.getTeaREIN().getTime()"/>,<d:property value="#temp.getTeaREIN().getSubject()"/>
-                                    <d:property value="#temp.getTeaREIN().getGrade()"/> ...</p>
-                            </li>
-                            <div class="clearfix"> </div>
-                        </a>
-                    </ul>
-                </s:iterator>
+
             </div>
         </div>
         <div class="clearfix"></div>

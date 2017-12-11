@@ -92,6 +92,10 @@ public class Action {
         dao.PushUserID(UserID);
         return "1";
     }
+    public String Pushpush(){
+        dao.PushUserID(UserID);
+        return "1";
+    }
     public String MakeFriendPlus(){
         int flag=dao.MakeFriendPlus(UserID,FollowerID);
         if(flag==0){
@@ -123,15 +127,6 @@ public class Action {
         }else{
             return "EVALUATIONPASSWORDSHOW";
         }
-    }
-    public String EvaluationShow(){
-        stuEvaluationtoTeaList=dao.EvaluationShow(TeaID);
-        if(stuEvaluationtoTeaList==null){
-            return "NOEVALUATION";
-        }else{
-            return "EVALUATIONSHOW";
-        }
-
     }
     public String MatchforTeaPlus(){
         stuListAndOneTea=dao.MatchForTeaPlus(TeaID);
@@ -191,7 +186,7 @@ public class Action {
         }
     }
     public String AllTheTea(){
-        listofbstea=dao.AllTheTea();
+        listofbstea=dao.TopTea();
         return "ALLTHETEACHER";
 
     }
@@ -201,10 +196,11 @@ public class Action {
     }
     public String SingleTea(){
         bsTeacher=dao.SingleTea(TeaID);
-            listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
+        stuEvaluationtoTeaList=dao.EvaluationShow(TeaID);
+        listofbstea=dao.ProfileTea(bsTeacher.getTeaREIN().getSubject());
         return "SINGLETEA";
-
     }
+
     public String MatchForStu(){
         teaListAndOneStu=dao.MatchForStu(StuID);
         if(listoftri!=null){
@@ -273,6 +269,24 @@ public class Action {
             return "STUSUCCESSLOG";
         }else{
             return "STUFAILEDLOG";
+        }
+    }
+
+    private StuEvaluationtoTea stuEvaluationtoTea=new StuEvaluationtoTea();
+
+    public StuEvaluationtoTea getStuEvaluationtoTea() {
+        return stuEvaluationtoTea;
+    }
+
+    public void setStuEvaluationtoTea(StuEvaluationtoTea stuEvaluationtoTea) {
+        this.stuEvaluationtoTea = stuEvaluationtoTea;
+    }
+    public String SETT(){
+        int a=dao.StuAddEvaluationToTea(stuEvaluationtoTea,EvaluationPassword);
+        if(a==0){
+            return "NOK";
+        }else{
+            return "OK";
         }
     }
 

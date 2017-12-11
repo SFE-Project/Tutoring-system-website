@@ -12,8 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-    当前账号${studemo.getID()}
-    <title>Match a Matrimonial Category Bootstrap Responsive Web Template | Groom Profile :: w3layouts</title>
+    <title>个人主页</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -73,11 +72,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bridegroom Profile Details -->
 <div class="w3ls-list">
     <div class="container">
-        <h2>Bridegroom Profile Details</h2>
+        <h2>功能</h2>
         <div class="col-md-9 profiles-list-agileits">
             <div class="single_w3_profile">
                 <div class="agileits_profile_image">
-                    <img src="images/profile-image-men.jpg" alt="profile image" />
+                    <img src="images/touxiang.jpg" alt="profile image" />
                 </div>
                 <div class="w3layouts_details">
                     <h4>ID : ${studemo.getID()}  昵称 :${studemo.getNickName()}</h4>
@@ -86,235 +85,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href='MatchForStuPlus.action?StuID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">一键匹配</a>
                     <a href='PushUserID.action?UserID=${studemo.getID()}' data-toggle="modal" data-target="#myModal">修改资料</a>
                     <a href="SingleStudent.action?TeaID=2000&StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">游客视角个人界面</a>
-                    <a href="GetListofMessageUser.action?RecID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">历史消息记录/所有联系用户/未读信息</a>
+                    <a href="GetListofMessageUser.action?RecID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">消息记录</a>
+                    <%--<a href="AddEvaluation.jsp?StuID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">教师评价</a>--%>
+                    <a href="PushPushPush?UserID=${studemo.getID()}" data-toggle="modal" data-target="#myModal">教师评价</a>
+
+                    <a href="Jump.action?OutID=${studemo.getID()}">发送消息</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="profile_w3layouts_details">
                 <div class="agileits_aboutme">
-                    <h4>About me</h4>
-                    <h5>Brief about me:</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <h5>Family Details:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Mother : </label>
-                        <div class="col-sm-9 w3_details">
-                            Housewife
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Father : </label>
-                        <div class="col-sm-9 w3_details">
-                            Govt. Employee
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Sister's : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Brother's : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Income : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Stay : </label>
-                        <div class="col-sm-9 w3_details">
-                            sed, USA
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Values : </label>
-                        <div class="col-sm-9 w3_details">
-                            Moderate
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Education Details:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Highest Education : </label>
-                        <div class="col-sm-9 w3_details">
-                            MBA/PGDM
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">UG Degree : </label>
-                        <div class="col-sm-9 w3_details">
-                            B.Tech
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">School : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Filled in
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">PG Degree : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">PG College : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Occupation : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Specified
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Annual Income : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Filled in
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Lifestyle:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Appearance : </label>
-                        <div class="col-sm-9 w3_details">
-                            Fair, 55kg
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Assets : </label>
-                        <div class="col-sm-9 w3_details">
-                            Not Filled in
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Habits : </label>
-                        <div class="col-sm-9 w3_details">
-                            Vegetarian, Doesn't Drink, Doesn't Smoke
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Languages Known : </label>
-                        <div class="col-sm-9 w3_details">
-                            English, Hindi, Urdu
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Blood Group : </label>
-                        <div class="col-sm-9 w3_details">
-                            AB+
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Stay : </label>
-                        <div class="col-sm-9 w3_details">
-                            sed, USA
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Family Values : </label>
-                        <div class="col-sm-9 w3_details">
-                            Moderate
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <h5>Desired Partner:</h5>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Age : </label>
-                        <div class="col-sm-9 w3_details">
-                            20 - 23 Years
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Height : </label>
-                        <div class="col-sm-9 w3_details">
-                            5' 2" to 5' 6"
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Marital Status : </label>
-                        <div class="col-sm-9 w3_details">
-                            Never Married
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Religion : </label>
-                        <div class="col-sm-9 w3_details">
-                            Doesn't Matter
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Caste : </label>
-                        <div class="col-sm-9 w3_details">
-                            Doesn't Matter
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Education : </label>
-                        <div class="col-sm-9 w3_details">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Occupation : </label>
-                        <div class="col-sm-9 w3_details">
-                            IT Software
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="form_but1">
-                        <label class="col-sm-3 control-label1" for="Relation">Income : </label>
-                        <div class="col-sm-9 w3_details">
-                            No Income
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
+                    <h4>坚持梦想</h4>
+                    <p>Live for your dream, and even if you do not get there, you still have lived.</p>
+                    <p>梦想还是要有的，万一明天就实现了呢。</p>
+                    <p>                              ---- Jack Ma</p>
+
+                </div>
+                <div class="agileits_aboutme">
+                    <h4>天道酬勤</h4>
+                    <p>Book Hill road for the path, learn from the sea bitter boat.</p>
+                    <p>书山有路勤为径，学海无涯苦作舟。</p>
+                    <p>                              ---- O.SeaSide</p>
+
+                </div>
+                <div class="agileits_aboutme">
+                    <h4>师道长存</h4>
+                    <p>Teacher, so preach demystified also.</p>
+                    <p>师者，所以传道受业解惑也。</p>
+                    <p>                              ---- 韩愈</p>
+
                 </div>
             </div>
         </div>
         <div class="col-md-3 w3ls-aside">
-            <h3>会话模式:(输入用户ID查询与给用户所有对话，并回复)</h3>
-            <form action="MessageShow.action" method="get">
-                <input class="text" type="text" name="RecID" placeholder="对方ID" required="">
-                <p hidden><input name="OutID" type="text" value="${studemo.getID()}"></p>
-                <input type="submit" value="开始会话">
-                <div class="clearfix"></div>
-            </form>
             <h3>教师查询:</h3>
             <form action="SingleTea.action" method="get">
                 <input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">

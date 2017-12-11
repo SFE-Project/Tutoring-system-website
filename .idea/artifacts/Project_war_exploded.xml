@@ -16,6 +16,8 @@
           <element id="file-copy" path="A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/ognl-3.1.15.jar" />
           <element id="file-copy" path="A:/StoreHouse/struts-2.5.13-min-lib/struts-2.5.13/lib/struts2-core-2.5.13.jar" />
           <element id="file-copy" path="A:/StoreHouse/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar" />
+          <element id="library" level="project" name="mysql-connector-java-5.1" />
+          <element id="library" level="project" name="Struts 2-2.5.13" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Project/web/Web" />

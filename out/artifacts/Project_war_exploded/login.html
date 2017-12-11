@@ -1,3 +1,13 @@
+<%--
+Created by IntelliJ IDEA.
+User: DB
+Date: 2017/10/27
+Time: 15:37
+To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="a" uri="/struts-tags" %>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -9,13 +19,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <!-- head -->
 <head>
-	<title>Match a Matrimonial Category Bootstrap Responsive Web Template | Assisted Services :: w3layouts</title>
+	<title>教师资料</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
 	<!-- Custom Theme files -->
-	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->
 	<!--theme-style-->
 	<link href="css/profile.css" rel="stylesheet" type="text/css" media="all" />
 	<!--//theme-style-->
@@ -52,7 +61,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- body -->
 <body>
 
-
 <!-- inner banner -->
 <div class="w3layouts-inner-banner">
 	<div class="container">
@@ -65,33 +73,100 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //inner banner -->
 
 
-<!-- Assisted Services -->
-<div class="w3ls-assisted_Services">
-	<div class="container">
-		<div class="assisted_Services-agileits">
-			<h2>个人资料修改</h2>
-			<form action="StuREINUpdate.action" method="get">
-				<input type="hidden" name="stuREIN.ID" value=${studemo.getID()}>
-				<label>性别：</label>
-				<input type="radio" name="stuREIN.Sex" value="男" checked="checked">男性
-				<input type="radio" name="stuREIN.Sex" value="女">女性
-				<label>需要教师性别：</label><input type="radio" name="stuREIN.SexWanted" value="男" >男性
-				<input type="radio" name="stuREIN.SexWanted" value="女">女性
-				<input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限
-				<label>可选时间：</label><input type="checkbox" name="stuREIN.Time" value="上午" checked="checked">上午
-				<input type="checkbox" name="stuREIN.Time" value="下午">下午
-				<input type="checkbox" name="stuREIN.Time" value="晚上">晚上
-				<label>学科</label><input type="checkbox" name="stuREIN.Subject" value="数学" checked="checked">数学
-				<input type="checkbox" name="stuREIN.Subject" value="语文">语文
-				<input type="checkbox" name="stuREIN.Subject" value="外语">外语
-				<label>年级</label><input type="radio" name="stuREIN.Grade" value="小学">小学
-				<input type="radio" name="stuREIN.Grade" value="初中">初中
-				<input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中
-				<input type="submit" value="提交修改" />
-			</form>
-		</div>
-	</div>
 
+
+<!-- Bridegroom Profile Details -->
+<div class="w3ls-list">
+	<div class="container">
+		<h2>个人简介</h2>
+		<h2><a href="EvaluationForTea.action?TeaID=${bsTeacher.getTeacher().getID()}">累计评价</a> </h2>
+		<div class="col-md-9 profiles-list-agileits">
+			<div class="single_w3_profile">
+				<div class="agileits_profile_image">
+					<img src="images/profile-image-men.jpg" alt="profile image" />
+				</div>
+				<div class="w3layouts_details">
+					<h4>昵称：${bsTeacher.getTeacher().getNickName()} </h4>
+					ID : ${bsTeacher.getTeacher().getID()}<br> 邮箱 ：${bsTeacher.getTeaREIN().getEmail()} </p>
+					<a href='MakeFriends.action?StuID=<a:property value="StuID"/>&TeaID=${bsTeacher.getTeacher().getID()}' data-toggle="modal" data-target="#myModal">好友添加</a>
+					<a href="/MessageShow.action?OutID=<a:property value="StuID"/>&RecID=${bsTeacher.getTeacher().getID()}" data-toggle="modal" data-target="#myModal">发送信息</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="profile_w3layouts_details">
+				<div class="agileits_aboutme">
+					<h4>个人简介</h4>
+					<h5>关于我</h5>
+					<p>${bsTeacher.getTeaREIN().getPersionalIntroduction()}</p>
+					<h5>详细信息：</h5>
+					<div class="form_but1">
+						<label class="col-sm-3 control-label1" for="Relation">性别：</label>
+						<div class="col-sm-9 w3_details">
+							${bsTeacher.getTeaREIN().getSex()}
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="form_but1">
+						<label class="col-sm-3 control-label1" for="Relation">教育程度： </label>
+						<div class="col-sm-9 w3_details">
+							${bsTeacher.getTeaREIN().getEducation()}
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="form_but1">
+						<label class="col-sm-3 control-label1" for="Relation">时间：: </label>
+						<div class="col-sm-9 w3_details">
+							${bsTeacher.getTeaREIN().getTime()}
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="form_but1">
+						<label class="col-sm-3 control-label1" for="Relation">学科 </label>
+						<div class="col-sm-9 w3_details">
+							${bsTeacher.getTeaREIN().getSubject()}
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="form_but1">
+						<label class="col-sm-3 control-label1" for="Relation">年级：</label>
+						<div class="col-sm-9 w3_details">
+							${bsTeacher.getTeaREIN().getGrade()}
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 w3ls-aside">
+			<h3>教师查询:</h3>
+			<form action="SingleTea.action" method="get">
+				<input class="text" type="text" name="TeaID" placeholder="请输入教师ID" required="">
+				<p hidden><input name="StuID" type="text" value="<a:property value="StuID"/>"></p>
+				<input type="submit" value="Search">
+				<div class="clearfix"></div>
+			</form>
+			<%--<div class="view_profile">--%>
+			<%--<h3>与他/她相似的教师</h3>--%>
+			<%--<s:iterator value="#request.listofbstea" var="temp">--%>
+				<%--<ul class="profile_item">--%>
+					<%--<a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>--%>
+						<%--<li class="profile_item-img">--%>
+							<%--<img src="images/p1.jpg" class="img-responsive" alt="">--%>
+							<%--</li>--%>
+						<%--<li class="profile_item-desc">--%>
+							<%--<h6>ID : <s:property value="#temp.getTeaREIN().getID()"/></h6>--%>
+							<%--<p><s:property value="#temp.getTeacher().getNickName()"/>,<s:property value="#temp.getTeaREIN().getSex()"/>,<s:property value="#temp.getTeaREIN().getEducation()"/>,--%>
+								<%--<s:property value="#temp.getTeaREIN().getTime()"/>,<s:property value="#temp.getTeaREIN().getSubject()"/>--%>
+								<%--<s:property value="#temp.getTeaREIN().getGrade()"/> ...</p>--%>
+							<%--</li>--%>
+						<%--<div class="clearfix"> </div>--%>
+						<%--</a>--%>
+					<%--</ul>--%>
+				<%--</s:iterator>--%>
+			<%--</div>--%>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog">
@@ -156,7 +231,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     });
 </script>
-<!-- //Assisted Services -->
+<!-- //Bridegroom Profile Details -->
+
 
 
 <!-- menu js aim -->
@@ -198,3 +274,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //body -->
 </html>
 <!-- //html -->
+

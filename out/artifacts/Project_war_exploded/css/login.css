@@ -404,7 +404,7 @@ input.location {
 .register input[type="submit"]:hover, .agile-send-mail input[type="submit"]:hover {
     background-color:#b18e32;
 }
-ul.w3agile li input[type="radio"] {
+ul.w3agile li input[type="checkbox"] {
 	display: none;
 }
 ul.w3agile li input[type="checkbox"]+label {

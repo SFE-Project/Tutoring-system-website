@@ -10,7 +10,7 @@
 <html>
 <head>
 
-    <title>Classy Forms Widget A Flat Responsive Widget Template :: W3layouts</title>
+    <title>首页</title>
 
     <!-- For-Mobile-Apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,17 +20,16 @@
     <!-- //For-Mobile-Apps -->
 
     <!-- Style --> <link rel="stylesheet" href="css/login.css" type="text/css" media="all" />
+
+    <link href="css/indexbootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/set2.css" />
     <!-- Default-JavaScript-File --> <script type="text/javascript" src="js/jquery.min.js"></script>
 
-    <!-- Web-Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <!-- //Web-Fonts -->
 
 </head>
 <body>
-
-<h1>Classy Forms Widget</h1>
+<!-- //team-->
+<h1>进入首页</h1>
 
 <div class="container">
 
@@ -83,8 +82,8 @@
                                     <input type="password" class="password" name="student.Password" placeholder="密码" required="">
                                     <ul class="w3agile">
                                         <li>
-                                            <input type="checkbox" id="brand1" value="">
-                                            <label for="brand1"><span></span>记住我</label>
+                                            <input type="checkbox" id="brand2" value="">
+                                            <label for="brand2"><span></span>记住我</label>
                                         </li>
                                     </ul>
                                     <input type="submit" value="登陆">
@@ -100,7 +99,7 @@
                                     <input type="password" class="password" name="teacher.Password" placeholder="密码" required="">
                                     <ul class="w3agile">
                                         <li>
-                                            <input type="checkbox" id="brand2" value="">
+                                            <input type="checkbox" id="brand1" value="">
                                             <label for="brand1"><span></span>记住我</label>
                                         </li>
                                     </ul>
@@ -121,9 +120,13 @@
                                             <input type="radio" name="stuREIN.Sex" value="女">女性</label><br/>
                                     </li>
                                     <li>
-                                        <label>需要教师性别<input type="radio" name="stuREIN.SexWanted" value="男" >男性
-                                            <input type="radio" name="stuREIN.SexWanted" value="女">女性
-                                            <input type="radio" name="stuREIN.SexWanted" value="不限" checked="checked">不限</label><br/>
+                                        <label>需要教师性别
+                                            <select name="stuREIN.SexWanted">
+                                                <option value="不限">不限</option>
+                                                <option value="男">男性</option>
+                                                <option value="女">女性</option>
+                                            </select>
+                                        </label>
                                     </li>
 
                                     <li>
@@ -150,11 +153,14 @@
                                     </li>
                                     <li>
                                         <label>
-                                            年级<input type="radio" name="stuREIN.Grade" value="学龄前">学龄前
-                                            <input type="radio" name="stuREIN.Grade" value="小学">小学
-                                            <input type="radio" name="stuREIN.Grade" value="初中">初中
-                                            <input type="radio" name="stuREIN.Grade" value="高中" checked="checked">高中
-                                            <input type="radio" name="stuREIN.Grade" value="大学">大学<br/>
+                                            年级
+                                            <select name="stuREIN.Grade">
+                                                <option value="学龄前">学龄前</option>
+                                                <option value="小学">小学</option>
+                                                <option value="初中">初中</option>
+                                                <option value="高中">高中</option>
+                                                <option value="大学">大学</option>
+                                            </select>
                                         </label>
                                     </li>
                                     <li>
@@ -165,24 +171,29 @@
                                     </li>
                                     <li>
                                         <label>
-                                            时薪要求<input type="radio" name="stuREIN.Price" value="0/80" checked="checked">80以下
-                                            <input type="radio" name="stuREIN.Price" value="80/150">80~150
-                                            <input type="radio" name="stuREIN.Price" value="150/200">150~200
-                                            <input type="radio" name="stuREIN.Price" value="200++">200以上
+                                            时薪要求
+                                            <select name="stuREIN.Price">
+                                                <option value="0/80">80以下</option>
+                                                <option value="80/150">80~150</option>
+                                                <option value="150/200">150~200</option>
+                                                <option value="200++">200以上</option>
+                                            </select>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            可接受地点设置
-                                            <input type="radio" name="stuREIN.AddressAccess" value="南岗" checked="checked">南岗
-                                            <input type="radio" name="stuREIN.AddressAccess" value="道里">道里
-                                            <input type="radio" name="stuREIN.AddressAccess" value="道外">道外
-                                            <input type="radio" name="stuREIN.AddressAccess" value="平房">平房
-                                            <input type="radio" name="stuREIN.AddressAccess" value="松北">松北
-                                            <input type="radio" name="stuREIN.AddressAccess" value="香坊">香坊
-                                            <input type="radio" name="stuREIN.AddressAccess" value="阿城">阿城
-                                            <input type="radio" name="stuREIN.AddressAccess" value="呼兰">呼兰
-                                            <input type="radio" name="stuREIN.AddressAccess" value="双城">双城
+                                            地区
+                                            <select name="stuREIN.AddressAccess">
+                                                <option value="南岗">南岗</option>
+                                                <option value="道里">道里</option>
+                                                <option value="道外">道外</option>
+                                                <option value="平房">平房</option>
+                                                <option value="松北">松北</option>
+                                                <option value="香坊">香坊</option>
+                                                <option value="阿城">阿城</option>
+                                                <option value="呼兰">呼兰</option>
+                                                <option value="双城">双城</option>
+                                            </select>
                                         </label>
                                     </li>
                                     <input type="submit" value="注册">
@@ -201,10 +212,14 @@
                                             <input type="radio" name="teaREIN.Sex" value="女">女性</label><br/>
                                     </li>
                                     <li>
-                                        <label>最高学历<input type="radio" name="teaREIN.Education" value="本科" checked="checked">本科
-                                            <input type="radio" name="teaREIN.Education" value="硕士">硕士
-                                            <input type="radio" name="teaREIN.Education" value="博士">博士
-                                            <input type="radio" name="teaREIN.Education" value="博士后">博士后</label><br/>
+                                        <label>最高学历
+                                        <select name="teaREIN.Education">
+                                            <option value="本科">本科</option>
+                                            <option value="硕士">硕士</option>
+                                            <option value="博士">博士</option>
+                                            <option value="博士后">博士后</option>
+                                        </select>
+                                        </label>
                                     </li>
 
                                     <li>
@@ -245,26 +260,32 @@
                                     </li>
                                     <li>
                                         <label>时薪</label>
-                                        <input type="radio" name="teaREIN.Price" value="0/80" checked="checked">80以下
-                                        <input type="radio" name="teaREIN.Price" value="80/150">80~150
-                                        <input type="radio" name="teaREIN.Price" value="150/200">150~200
-                                        <input type="radio" name="teaREIN.Price" value="200++">200以上
+                                        <select name="teaREIN.Price">
+                                            <option value="0/80">80以下</option>
+                                            <option value="80/150">80~150</option>
+                                            <option value="150/200">150~200</option>
+                                            <option value="200++">200以上</option>
+                                        </select>
                                     </li>
                                     <li>
-                                        <label>可接受地点(目前仅支持哈尔滨市内地区)</label>
-                                        <input type="radio" name="teaREIN.AddressAccess" value="南岗" checked="checked">南岗
-                                        <input type="radio" name="teaREIN.AddressAccess" value="道里" checked="checked">道里
-                                        <input type="radio" name="teaREIN.AddressAccess" value="道外" checked="checked">道外
-                                        <input type="radio" name="teaREIN.AddressAccess" value="平房" checked="checked">平房
-                                        <input type="radio" name="teaREIN.AddressAccess" value="松北" checked="checked">松北
-                                        <input type="radio" name="teaREIN.AddressAccess" value="香坊" checked="checked">香坊
-                                        <input type="radio" name="teaREIN.AddressAccess" value="阿城" checked="checked">阿城
-                                        <input type="radio" name="teaREIN.AddressAccess" value="呼兰" checked="checked">呼兰
-                                        <input type="radio" name="teaREIN.AddressAccess" value="双城" checked="checked">双城
+                                        <label>可接受地区</label>
+                                        <select name="teaREIN.AddressAccess">
+                                            <option value="南岗">南岗</option>
+                                            <option value="道里">道里</option>
+                                            <option value="道外">道外</option>
+                                            <option value="平房">平房</option>
+                                            <option value="松北">松北</option>
+                                            <option value="香坊">香坊</option>
+                                            <option value="阿城">阿城</option>
+                                            <option value="呼兰">呼兰</option>
+                                            <option value="双城">双城</option>
+                                        </select>
                                     </li>
-                                    <input type="text"  name="teaREIN.EvaluationPassword" value="1111">初始评价资格密码为您设置为1111,请自行设置！<br>
-                                    <a href="http://www.baidu.com">什么是初始评价资格密码?自行设置方式?</a><br>
-                                    <input type="text"  name="teaREIN.PersionalIntroduction" value="暂无个人评价"><br/>
+                                    <li>
+                                        <label>评价密钥</label>
+                                        <input type="text"  name="teaREIN.EvaluationPassword" value="1111">初始评价资格密码为您设置为1111,请自行设置！<br>
+                                    <a href="http://www.baidu.com">什么是初始评价资格密码?自行设置方式?</a><br></li>
+                                    <input type="text"  hidden="hidden" name="teaREIN.PersionalIntroduction" value="这个人很懒，什么都没留下">
                                     <input type="submit" value="注册">
                                 </form>
                             </div>
@@ -282,42 +303,29 @@
 
 
 
-    <h3>展示所有教师信息</h3><br/>
-
-    <div class="bs-docs-example">
-        <table class="table table-striped">
-            <tr>
-                <th>昵称</th>
-                <th>性别</th>
-                <th>学历</th>
-                <th>可行时间</th>
-                <th>学科</th>
-                <th>面向年级</th>
-            </tr>
-            <tbody>
-
-            <s:iterator value="#request.listofbstea" var="temp">
-            <tr>
-                <td><a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>
-                    <s:property value="#temp.getTeacher().getNickName()"/>
-                </td>
-                <td><s:property value="#temp.getTeaREIN().getSex()"/></td>
-                <td><s:property value="#temp.getTeaREIN().getEducation()"/> </td>
-                <td><s:property value="#temp.getTeaREIN().getTime()"/> </td>
-                <td><s:property value="#temp.getTeaREIN().getSubject()"/> </td>
-                 <td><s:property value="#temp.getTeaREIN().getGrade()"/> </td>
-            </tr>
-            </s:iterator>
-            </tbody>
-        </table>
-    </div>
-
-
-    <div class="footer">
-        <p> &copy; 2017 Classy Forms Widget. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-    </div>
 
 
 </div>
+<!-- team -->
+
+<h1>金牌教师</h1>
+<div class="jarallax agileits-team agile-section" id="team">
+    <div class="grid">
+        <s:iterator value="#request.listofbstea" var="temp">
+            <figure class="col-md-3 effect-kira">
+                <img src="icon/${temp.getTeacher().getID()}.jpg" alt="t1" class="img-responsive"/>
+                <figcaption>
+                    <h4><s:property value="#temp.getTeacher().getNickName()"/></h4>
+                    <h5><s:property value="#temp.getTeaREIN().getSubject()"/></h5>
+                    <p>
+                        <a href='SingleTea.action?StuID=0&TeaID=<s:property value="#temp.getTeacher().getID()"/>'>个人简介</a>
+                    </p>
+                </figcaption>
+            </figure>
+        </s:iterator>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
 </body>
 </html>
